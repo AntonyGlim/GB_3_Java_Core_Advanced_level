@@ -48,11 +48,13 @@ public class CollectionsTask {
     public static void repeatedWordsNumberInfo(ArrayList<String> arrayList){
 
         Map<String, Integer> mapList = new HashMap<>();
-        int i = 0;
-        for (String a : arrayList){
-            mapList.put(a, (i == 0 ? 1 : i ++));
-            System.out.println(mapList);
+
+        for (String a : arrayList){   // на видео с 1.44
+            Integer number = mapList.get(a);
+            mapList.put(a, number == null ? 1 : number + 1);
+
         }
+        System.out.println(mapList);
     }
 
 }
