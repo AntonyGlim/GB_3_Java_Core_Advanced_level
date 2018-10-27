@@ -37,10 +37,11 @@ public class CollectionsTask {
     }
 
     public static void uniqueWordsListInfo(ArrayList<String> arrayList){
+
         HashSet<String> setList = new HashSet();
-        for (String a : arrayList){
-            setList.add(a);
-        }
+
+        setList.addAll(arrayList);
+
         for (String s : setList){
             System.out.println(s);
         }
