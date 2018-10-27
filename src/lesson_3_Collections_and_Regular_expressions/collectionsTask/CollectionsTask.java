@@ -32,6 +32,19 @@ public class CollectionsTask {
 
         uniqueWordsListInfo(arrayList);
         repeatedWordsNumberInfo(arrayList);
+
+        Map<String, String> phoneBook = new HashMap<>();
+
+        phoneBook.put("3-32-76", "Иванов");
+        phoneBook.put("3-32-79", "Петров");
+        phoneBook.put("3-32-12", "Сидоров");
+        phoneBook.put("3-32-02", "Ким");
+        phoneBook.put("3-32-17", "Заболотный");
+        phoneBook.put("3-32-84", "Сидоров");
+        phoneBook.put("3-32-25", "Иванов");
+        phoneBook.put("3-32-03", "Иванов");
+
+        System.out.println(phoneBook.get("3-32-03"));
     }
 
     public static void uniqueWordsListInfo(ArrayList<String> arrayList){
@@ -49,12 +62,29 @@ public class CollectionsTask {
 
         Map<String, Integer> mapList = new HashMap<>();
 
-        for (String a : arrayList){   // на видео с 1.44
+        for (String a : arrayList){
             Integer number = mapList.get(a);
             mapList.put(a, number == null ? 1 : number + 1);
-
         }
         System.out.println(mapList);
+    }
+}
+
+class Phonebook{
+
+    public void Phonebook(){
+        Map<String, String> phoneBook = new HashMap<>();
+
+        phoneBook.put("3-32-76", "Иванов");
+        phoneBook.put("3-32-79", "Петров");
+        phoneBook.put("3-32-12", "Сидоров");
+        phoneBook.put("3-32-02", "Ким");
+        phoneBook.put("3-32-17", "Заболотный");
+        phoneBook.put("3-32-84", "Сидоров");
+        phoneBook.put("3-32-25", "Иванов");
+        phoneBook.put("3-32-03", "Иванов");
+
+        System.out.println(phoneBook.get("Иванов"));
     }
 
 }
