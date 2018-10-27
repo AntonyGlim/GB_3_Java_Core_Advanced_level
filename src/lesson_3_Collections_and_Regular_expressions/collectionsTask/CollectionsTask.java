@@ -19,6 +19,8 @@
 package lesson_3_Collections_and_Regular_expressions.collectionsTask;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class CollectionsTask {
     public static void main(String[] args) {
@@ -29,6 +31,19 @@ public class CollectionsTask {
         arrayList.add("кожа");  arrayList.add("кран");  arrayList.add("бинт");
         arrayList.add("грот");  arrayList.add("воин");  arrayList.add("воин");
         arrayList.add("воин");  arrayList.add("бинт");  arrayList.add("азот");
+
+        uniqueWordsListInfo(arrayList);
+//        repeatedWordsNumberInfo(arrayList);
+    }
+
+    public static void uniqueWordsListInfo(ArrayList<String> arrayList){
+        HashSet<String> setList = new HashSet();
+        for (String a : arrayList){
+            setList.add(a);
+        }
+        for (String s : setList){
+            System.out.println(s);
+        }
 
     }
 }
