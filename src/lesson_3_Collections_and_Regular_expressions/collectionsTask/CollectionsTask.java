@@ -18,6 +18,17 @@
 
 package lesson_3_Collections_and_Regular_expressions.collectionsTask;
 
-public class CollectionsTask {
+import java.util.ArrayList;
 
+public class CollectionsTask {
+    public static void main(String[] args) {
+
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("азот");  arrayList.add("бинт");  arrayList.add("воин");
+        arrayList.add("грот");  arrayList.add("дюйм");  arrayList.add("жанр");
+        arrayList.add("кожа");  arrayList.add("кран");  arrayList.add("бинт");
+        arrayList.add("грот");  arrayList.add("воин");  arrayList.add("воин");
+        arrayList.add("воин");  arrayList.add("бинт");  arrayList.add("азот");
+
+    }
 }
