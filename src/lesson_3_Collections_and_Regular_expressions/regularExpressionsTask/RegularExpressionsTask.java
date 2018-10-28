@@ -1,7 +1,6 @@
 /**
  *  Необходимо из консоли считать пароль и проверить валидность,
  *  результат будет true или false
- *
  *  Требования:
  *  1. Пароль должен быть не менее 8ми символов.
  *  2. В пароле должно быть число
@@ -22,15 +21,16 @@ public class RegularExpressionsTask {
         System.out.println(userEntersPassword());
     }
 
+
     /**
-     * Метод предназначен для считывания введенных пользователем значений до тех пор,
-     * пока он не получит валидное значение
-     * @return целочисленный порядковый номер дня введенный пользователем
+     * Метод предназначен для считывания введенных пользователем значений
+     * @return возвращает значение валидности введенного значения
      */
     public static boolean userEntersPassword() {
         Scanner in = new Scanner(System.in);
         return isValid(in.nextLine());
     }
+
 
     /**
      * Метод проверяет полученый аргумент на соответствие требованиям
@@ -38,7 +38,7 @@ public class RegularExpressionsTask {
      * @return соответствие строки требованиям
      */
     private static boolean isValid(String str){
-        Pattern p = Pattern.compile("^[a-zA-Z0-9]{8}+$");
+        Pattern p = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8}+$");
         Matcher m = p.matcher(str);
         return m.matches();
     }
