@@ -18,17 +18,8 @@ public class RegularExpressionsTask {
 
     public static void main(String[] args) {
         System.out.println("Введите ваш вариант пароля:");
-        System.out.println(userEntersPassword());
-    }
-
-
-    /**
-     * Метод предназначен для считывания введенных пользователем значений
-     * @return возвращает значение валидности введенного значения
-     */
-    public static boolean userEntersPassword() {
         Scanner in = new Scanner(System.in);
-        return isValid(in.nextLine());
+        System.out.println(isValid(in.nextLine()));
     }
 
 
