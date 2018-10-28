@@ -19,7 +19,7 @@ public class RegularExpressionsTask {
     public static void main(String[] args) {
         System.out.println("Введите ваш вариант пароля:");
         Scanner in = new Scanner(System.in);
-        System.out.println(isValid(in.nextLine()));
+        System.out.println(isValid(in.nextLine()));                         //Выведем корректен-ли пароль
     }
 
 
