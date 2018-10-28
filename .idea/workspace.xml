@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,22 +27,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="45" />
+          <entry key="java" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="45" />
+          <entry key="JAVA" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1542" />
+          <entry key="java" value="1808" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1542" />
+          <entry key="JAVA" value="1808" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -47,11 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+            <state relative-caret-position="272">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -59,25 +62,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-134">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="320">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/enumTask/Lesson2Enum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="51" selection-start-line="51" selection-end-line="71" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,8 +109,10 @@
         <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/OopTask.java" />
         <option value="$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/enumTask/Lesson2Enum.java" />
         <option value="$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/exceptionTask/Lesson2Exception.java" />
-        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java" />
         <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java" />
+        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java" />
+        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java" />
+        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java" />
       </list>
     </option>
   </component>
@@ -180,13 +173,6 @@
               <item name="lesson_3_Collections_and_Regular_expressions" type="462c0819:PsiDirectoryNode" />
               <item name="collectionsTask" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_3_Collections_and_Regular_expressions" type="462c0819:PsiDirectoryNode" />
-              <item name="regularExpressionsTask" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -195,7 +181,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540737880991" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540741032440" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -209,9 +195,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RegularExpressionsTask">
+  <component name="RunManager" selected="Application.CollectionsTaskWorkWithArray">
     <configuration name="CollectionsTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.CollectionsTask" />
+      <module name="GB_3_Java_Core_Advanced_level" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionsTaskPhonebook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.CollectionsTaskPhonebook" />
+      <module name="GB_3_Java_Core_Advanced_level" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CollectionsTaskWorkWithArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.CollectionsTaskWorkWithArray" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
@@ -236,32 +248,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson2Exception" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_2_Exceptions_and_Enum.exceptionTask.Lesson2Exception" />
-      <module name="GB_3_Java_Core_Advanced_level" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson_2_Exceptions_and_Enum.exceptionTask.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NumberOfStringTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_1_OOP_and_Number_of_strings.numberOfStringTask.NumberOfStringTask" />
-      <module name="GB_3_Java_Core_Advanced_level" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson_1_OOP_and_Number_of_strings.numberOfStringTask.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RegularExpressionsTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson_3_Collections_and_Regular_expressions.regularExpressionsTask.RegularExpressionsTask" />
       <module name="GB_3_Java_Core_Advanced_level" />
@@ -276,19 +262,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.NumberOfStringTask" />
-      <item itemvalue="Application.Lesson2Exception" />
       <item itemvalue="Application.Lesson2Enum" />
       <item itemvalue="Application.CollectionsTask" />
       <item itemvalue="Application.RegularExpressionsTask" />
+      <item itemvalue="Application.CollectionsTaskPhonebook" />
+      <item itemvalue="Application.CollectionsTaskWorkWithArray" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RegularExpressionsTask" />
+        <item itemvalue="Application.CollectionsTaskWorkWithArray" />
+        <item itemvalue="Application.CollectionsTaskPhonebook" />
         <item itemvalue="Application.CollectionsTask" />
+        <item itemvalue="Application.RegularExpressionsTask" />
         <item itemvalue="Application.Lesson2Enum" />
-        <item itemvalue="Application.Lesson2Exception" />
-        <item itemvalue="Application.NumberOfStringTask" />
       </list>
     </recent_temporary>
   </component>
@@ -309,7 +295,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12178517" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14372164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -318,7 +304,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30605564" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20294599" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -326,7 +312,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -439,19 +425,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/enumTask/Lesson2Enum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
+        <state relative-caret-position="102">
           <caret line="51" selection-start-line="51" selection-end-line="71" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -461,10 +437,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="223">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
