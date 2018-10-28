@@ -6,34 +6,32 @@
  */
 package lesson_3_Collections_and_Regular_expressions.collectionsTask;
 
+import java.sql.Array;
 import java.util.*;
 
 public class CollectionsTaskWorkWithArray {
     public static void main(String[] args) {
 
-        ArrayList<String> arrayList = new ArrayList<>(); 
-        arrayList.add("азот");  arrayList.add("бинт");  arrayList.add("воин");
-        arrayList.add("грот");  arrayList.add("дюйм");  arrayList.add("жанр");
-        arrayList.add("кожа");  arrayList.add("кран");  arrayList.add("бинт");
-        arrayList.add("грот");  arrayList.add("воин");  arrayList.add("воин");
-        arrayList.add("воин");  arrayList.add("бинт");  arrayList.add("азот");
+        String[] arr = {"азот", "азот", "бинт", "бинт", "бинт", "грот", "грот", "дюйм",
+                        "жанр", "кран", "кожа", "воин", "воин", "воин", "воин", "воин"};
 
         System.out.println("Уникальные значения: ");
-        uniqueWordsListInfo(arrayList);
+        uniqueWordsListInfo(arr);
         System.out.println("\nСколько раз встречается слово в листе: ");
-        repeatedWordsNumberInfo(arrayList);
+        repeatedWordsNumberInfo(arr);
     }
 
-    public static void uniqueWordsListInfo(ArrayList<String> arrayList){
+    public static void uniqueWordsListInfo(String[] arr){
         Set<String> setList = new HashSet();
-        setList.addAll(arrayList);
+        setList.addAll(new ArrayList<>(Arrays.asList(arr)));
         for (String s : setList){
             System.out.println(s);
         }
     }
 
-    public static void repeatedWordsNumberInfo(ArrayList<String> arrayList){
+    public static void repeatedWordsNumberInfo(String[] arr){
         Map<String, Integer> mapList = new HashMap<>();
+        ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(arr));
         for (String a : arrayList){
             Integer number = mapList.get(a);
             mapList.put(a, number == null ? 1 : number + 1);
