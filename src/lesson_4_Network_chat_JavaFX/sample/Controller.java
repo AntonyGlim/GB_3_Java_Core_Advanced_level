@@ -10,6 +10,7 @@ public class Controller {
     @FXML
     TextArea textArea;
 
+
     @FXML
     TextField textField;
 

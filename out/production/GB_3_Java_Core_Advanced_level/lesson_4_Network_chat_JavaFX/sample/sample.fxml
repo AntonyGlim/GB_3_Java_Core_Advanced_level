@@ -6,12 +6,13 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.TextArea?>
-<?scenebuilder=stylesheet /lesson_4_Network_chat_JavaFX/css/styles.css?>
 
-<?import java.net.URL?>
+
+
+
 <VBox fx:controller="lesson_4_Network_chat_JavaFX.sample.Controller"
       xmlns:fx="http://javafx.com/fxml" alignment="center">
-    <stylesheets><URL value="@/lesson_4_Network_chat_JavaFX/css/styles.css"/> </stylesheets>
+
     <TextArea fx:id="textArea" editable="false" VBox.vgrow="ALWAYS"/>
     <HBox>
         <TextField fx:id="textField" HBox.hgrow="ALWAYS"
