@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,38 +16,73 @@
     <session id="-193835386">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="51" />
+          <entry key="fxml" value="1" />
+          <entry key="java" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="51" />
+          <entry key="JAVA" value="53" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3413" />
+          <entry key="fxml" value="1" />
+          <entry key="java" value="3415" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3413" />
+          <entry key="JAVA" value="3415" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="37" selection-start-column="37" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/sample.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -87,10 +121,13 @@
         <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java" />
         <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java" />
         <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java" />
+        <option value="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/sample.fxml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="683" />
     <option name="width" value="683" />
     <option name="height" value="728" />
@@ -100,7 +137,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,45 +153,19 @@
               <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
               <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_2_Exceptions_and_Enum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_2_Exceptions_and_Enum" type="462c0819:PsiDirectoryNode" />
-              <item name="enumTask" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_2_Exceptions_and_Enum" type="462c0819:PsiDirectoryNode" />
-              <item name="enumTask" type="462c0819:PsiDirectoryNode" />
-              <item name="Lesson2Enum.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_3_Collections_and_Regular_expressions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_3_Collections_and_Regular_expressions" type="462c0819:PsiDirectoryNode" />
-              <item name="regularExpressionsTask" type="462c0819:PsiDirectoryNode" />
+              <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540748653451" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541008857159" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -169,20 +179,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RegularExpressionsTask">
-    <configuration name="CollectionsTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.CollectionsTask" />
-      <module name="GB_3_Java_Core_Advanced_level" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="CollectionsTaskPhonebook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.CollectionsTaskPhonebook" />
       <module name="GB_3_Java_Core_Advanced_level" />
@@ -209,12 +206,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lesson2Enum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_2_Exceptions_and_Enum.enumTask.Lesson2Enum" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_4_Network_chat_JavaFX.sample.Main" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_2_Exceptions_and_Enum.enumTask.*" />
+          <option name="PATTERN" value="lesson_4_Network_chat_JavaFX.sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.Main" />
+      <module name="GB_3_Java_Core_Advanced_level" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -236,19 +246,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Lesson2Enum" />
-      <item itemvalue="Application.CollectionsTask" />
       <item itemvalue="Application.RegularExpressionsTask" />
       <item itemvalue="Application.CollectionsTaskPhonebook" />
       <item itemvalue="Application.CollectionsTaskWorkWithArray" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.RegularExpressionsTask" />
         <item itemvalue="Application.CollectionsTaskPhonebook" />
         <item itemvalue="Application.CollectionsTaskWorkWithArray" />
-        <item itemvalue="Application.CollectionsTask" />
-        <item itemvalue="Application.Lesson2Enum" />
       </list>
     </recent_temporary>
   </component>
@@ -266,9 +276,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14372164" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14750378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -295,6 +306,34 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1482602" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30605564" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -402,22 +441,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="51" selection-start-line="51" selection-end-line="71" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -429,9 +456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-304">
           <caret line="14" column="152" selection-start-line="14" selection-start-column="152" selection-end-line="14" selection-end-column="152" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -439,11 +463,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="63" column="78" selection-start-line="63" selection-start-column="78" selection-end-line="63" selection-end-column="78" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#get#0;class#CollectionsTaskPhonebook#0" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
