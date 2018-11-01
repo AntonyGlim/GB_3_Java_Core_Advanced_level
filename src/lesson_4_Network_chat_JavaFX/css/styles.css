@@ -1,4 +1,20 @@
-buttonSend {
-    -fx-font: 14px;
+#buttonSend {
     -fx-padding: 2;
+    -fx-background-color: white;
+}
+
+#buttonSend:hover{
+    -fx-background-color: orange;
+}
+
+#textArea {
+    -fx-background-image: url("/lesson_4_Network_chat_JavaFX/img/logo_grey.png");
+    -fx-background-color: orange;
+
+}
+
+#textField {
+    -fx-background-image: url("/lesson_4_Network_chat_JavaFX/img/logo_grey.png");
+    -fx-background-color: orange;
+
 }
