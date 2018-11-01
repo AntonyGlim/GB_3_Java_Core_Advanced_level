@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/sample.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,16 +41,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="132" />
-          <entry key="fxml" value="315" />
+          <entry key="css" value="159" />
+          <entry key="fxml" value="329" />
           <entry key="java" value="3623" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="132" />
+          <entry key="CSS" value="159" />
           <entry key="JAVA" value="3623" />
-          <entry key="XML" value="315" />
+          <entry key="XML" value="329" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -100,21 +98,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/sample.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+            <state relative-caret-position="439">
+              <caret line="42" column="136" selection-start-line="42" selection-start-column="136" selection-end-line="42" selection-end-column="136" />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="9" />
+            <state relative-caret-position="102">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -167,10 +165,10 @@
         <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java" />
         <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java" />
         <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java" />
-        <option value="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/css/styles.css" />
         <option value="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/css/styles.css" />
       </list>
     </option>
   </component>
@@ -347,15 +345,15 @@
       <updated>1540639534208</updated>
       <workItem from="1541060061877" duration="92000" />
       <workItem from="1541063605023" duration="2258000" />
-      <workItem from="1541093504940" duration="4002000" />
+      <workItem from="1541093504940" duration="5101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6352000" />
+    <option name="totallyTimeSpent" value="7451000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="945" height="728" extended-state="1" />
+    <frame x="0" y="0" width="945" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7262181" visible="true" weight="0.22824858" />
@@ -368,7 +366,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27563027" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27563027" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -538,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -564,11 +555,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/sample.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        <state relative-caret-position="439">
+          <caret line="42" column="136" selection-start-line="42" selection-start-column="136" selection-end-line="42" selection-end-column="136" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

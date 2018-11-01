@@ -1,3 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Button?>
@@ -6,21 +13,38 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.TextArea?>
-
 <?scenebuilder-stylesheet /lesson_4_Network_chat_JavaFX/css/styles.css?>
-
-
 <?import java.net.URL?>
-<VBox fx:controller="lesson_4_Network_chat_JavaFX.sample.Controller"
-      xmlns:fx="http://javafx.com/fxml" alignment="center">
-    <stylesheets><URL value="@/lesson_4_Network_chat_JavaFX/css/styles.css"/></stylesheets>
 
-    <TextArea fx:id="textArea" editable="true" VBox.vgrow="ALWAYS"/>
-    <HBox>
-        <TextField fx:id="textField" HBox.hgrow="ALWAYS"
-                   promptText="Введите сообщение" onAction="#sendMsg" />
-    </HBox>
-    <HBox fx:id="hboxbtn">
-        <Button fx:id="buttonSend" text="SEND" onAction="#sendMsg" HBox.hgrow="ALWAYS"/>
-    </HBox>
+<VBox alignment="center" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson_4_Network_chat_JavaFX.sample.Controller">
+    <stylesheets><URL value="@/lesson_4_Network_chat_JavaFX/css/styles.css" /></stylesheets>
+   <children>
+   
+       <TextArea fx:id="textArea" editable="true" nodeOrientation="LEFT_TO_RIGHT" opacity="0.44" prefHeight="399.0" prefWidth="466.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding></TextArea>
+       <HBox>
+          <children>
+              <TextField fx:id="textField" onAction="#sendMsg" promptText="Введите сообщение" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </padding></TextField>
+          </children>
+       </HBox>
+       <HBox fx:id="hboxbtn">
+          <children>
+              <Button fx:id="buttonSend" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="500.0" onAction="#sendMsg" prefHeight="27.0" style="-fx-border-color: #FF7A00; -fx-background-color: #FF7A00;" text="SEND" textAlignment="CENTER" textFill="WHITE" wrapText="true" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </HBox.margin></Button>
+          </children>
+       </HBox>
+   </children>
 </VBox>
