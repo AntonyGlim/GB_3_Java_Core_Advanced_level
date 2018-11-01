@@ -2,7 +2,6 @@
     -fx-padding: 2;
     -fx-border-color: #FF7A00;
     -fx-background-color: #FF7A00;
-    -fx-textFill="WHITE";
 
 }
 #buttonSend:hover{
@@ -17,5 +16,3 @@
     -fx-text-align: center;
 
 }
-
-style=" " text="SEND" textAlignment="CENTER" textFill="WHITE" wrapText="true" HBox.hgrow="ALWAYS"

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
@@ -16,35 +17,28 @@
 <?scenebuilder-stylesheet /lesson_4_Network_chat_JavaFX/css/styles.css?>
 <?import java.net.URL?>
 
-<VBox alignment="center" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson_4_Network_chat_JavaFX.sample.Controller">
-    <stylesheets><URL value="@/lesson_4_Network_chat_JavaFX/css/styles.css" /></stylesheets>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-   
-       <TextArea fx:id="textArea" editable="true" nodeOrientation="LEFT_TO_RIGHT" opacity="0.44" prefHeight="399.0" prefWidth="466.0" VBox.vgrow="ALWAYS">
-         <VBox.margin>
-            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-         </VBox.margin>
-         <padding>
-            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-         </padding></TextArea>
-       <HBox>
-          <children>
-              <TextField fx:id="textField" onAction="#sendMsg" promptText="Введите сообщение" HBox.hgrow="ALWAYS">
-               <HBox.margin>
-                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-               </HBox.margin>
-               <padding>
-                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-               </padding></TextField>
-          </children>
-       </HBox>
-       <HBox fx:id="hboxbtn">
-          <children>
-              <Button fx:id="buttonSend" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" minWidth="500.0" onAction="#sendMsg" prefHeight="27.0" style="-fx-border-color: #FF7A00; -fx-background-color: #FF7A00;" text="SEND" textAlignment="CENTER" textFill="WHITE" wrapText="true" HBox.hgrow="ALWAYS">
-               <HBox.margin>
-                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
-               </HBox.margin></Button>
-          </children>
-       </HBox>
+      <AnchorPane prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #336666;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="246.0" layoutY="6.0" text="AC-TEPPA messager" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="361.0" prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #ff9933;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button layoutX="274.0" layoutY="2.0" mnemonicParsing="false" style="-fx-background-color: #ff9933;" text="SEND" textFill="WHITE" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TextField layoutX="2.0" layoutY="336.0" prefHeight="25.0" prefWidth="596.0" promptText="Введите сообщение..." AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+      <TextArea layoutX="4.0" layoutY="37.0" prefHeight="291.0" prefWidth="593.0" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="35.0" />
    </children>
-</VBox>
+</AnchorPane>
