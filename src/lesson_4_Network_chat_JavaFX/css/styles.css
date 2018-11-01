@@ -1,20 +1,18 @@
 #buttonSend {
     -fx-padding: 2;
     -fx-background-color: white;
+    -fx-text-alignment: center;
 }
-
 #buttonSend:hover{
     -fx-background-color: orange;
 }
-
+#hboxbtn {
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
 #textArea {
-    -fx-background-image: url("/lesson_4_Network_chat_JavaFX/img/logo_grey.png");
-    -fx-background-color: orange;
-
+    -fx-background-position: right;
+    -fx-text-align: center;
+    -fx-background-color: red;
 }
 
-#textField {
-    -fx-background-image: url("/lesson_4_Network_chat_JavaFX/img/logo_grey.png");
-    -fx-background-color: orange;
-
-}

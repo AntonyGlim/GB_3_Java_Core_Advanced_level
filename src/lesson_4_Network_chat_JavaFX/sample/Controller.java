@@ -5,19 +5,21 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
+import javax.swing.plaf.basic.BasicSplitPaneUI;
+
 public class Controller {
 
     @FXML
     TextArea textArea;
 
-
     @FXML
     TextField textField;
 
-    public void SendMsg(ActionEvent actionEvent) {
+    public void sendMsg(ActionEvent actionEvent) {
 
         textArea.appendText(textField.getText() + "\n");
         textField.clear();
         textField.requestFocus();
     }
+
 }
