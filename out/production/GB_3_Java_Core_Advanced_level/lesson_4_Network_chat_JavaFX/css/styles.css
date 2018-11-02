@@ -14,5 +14,12 @@
 #textArea {
     -fx-background-position: right;
     -fx-text-align: center;
+}
 
+#TextArea .content {
+    -fx-background-color: red;
+}
+
+#mainAnchor{
+    -fx-background-color: rgba(255,0,0,0.99);;
 }

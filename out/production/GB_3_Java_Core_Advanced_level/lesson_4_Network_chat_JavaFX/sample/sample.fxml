@@ -17,7 +17,8 @@
 <?scenebuilder-stylesheet /lesson_4_Network_chat_JavaFX/css/styles.css?>
 <?import java.net.URL?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson_4_Network_chat_JavaFX.sample.Controller">
+<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lesson_4_Network_chat_JavaFX.sample.Controller">
+   <stylesheets><URL value="@/lesson_4_Network_chat_JavaFX/css/styles.css"/></stylesheets>
    <children>
       <AnchorPane prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #336666;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
