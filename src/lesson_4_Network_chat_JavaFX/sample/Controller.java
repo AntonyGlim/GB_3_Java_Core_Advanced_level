@@ -1,15 +1,11 @@
 package lesson_4_Network_chat_JavaFX.sample;
 
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 
-import javax.swing.plaf.basic.BasicSplitPaneUI;
 
 public class Controller {
 
@@ -26,30 +22,35 @@ public class Controller {
     Button buttonExit;
 
     @FXML
-    VBox vBoxChatPlace;
+    VBox vBoxChatPlaceLeft;
+
+    @FXML
+    VBox vBoxChatPlaceRight;
+
 
     boolean rightAlignment = false;
     public void sendMsg(ActionEvent actionEvent) {
         Label label = new Label();
-        label.setText(textField.getText() + "\n");
+        label.setText("  " + textField.getText() + "  ");
+        Label label2 = new Label("\n" + " ");
+
         if (rightAlignment){
-            vBoxChatPlace.setAlignment(Pos.BOTTOM_RIGHT);
-            vBoxChatPlace.getChildren().add(label);
+            vBoxChatPlaceRight.setAlignment(Pos.BOTTOM_RIGHT);
+            vBoxChatPlaceRight.getChildren().add(label);
+            vBoxChatPlaceLeft.getChildren().add(label2);
             rightAlignment = false;
         } else {
-            vBoxChatPlace.setAlignment(Pos.BOTTOM_LEFT);
-            vBoxChatPlace.getChildren().add(label);
+            vBoxChatPlaceLeft.setAlignment(Pos.BOTTOM_LEFT);
+            vBoxChatPlaceLeft.getChildren().add(label);
+            vBoxChatPlaceRight.getChildren().add(label2);
             rightAlignment = true;
         }
 
-
-//        vBoxChatPlace.getChildren().add(label);
-//        vBoxChatPlace.setAlignment(Pos.BOTTOM_LEFT);
-
-//        textArea.appendText(textField.getText() + "\n");
         textField.clear();
         textField.requestFocus();
     }
+
+
     public void exitChat (ActionEvent actionEvent){
         System.exit(0);
     }

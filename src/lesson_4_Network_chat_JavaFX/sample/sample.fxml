@@ -32,12 +32,13 @@
          </children>
       </AnchorPane>
       <TextField fx:id="textField" layoutX="2.0" layoutY="336.0" onAction="#sendMsg" prefHeight="25.0" prefWidth="596.0" promptText="Введите сообщение..." style="-fx-background-color: #ffffff; -fx-border-color: cccccc;" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
-      <VBox fx:id="vBoxChatPlace" layoutX="5.0" layoutY="30.0" prefHeight="200.0" prefWidth="243.0" style="-fx-border-color: #cccccc;" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="35.0" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="125.0" fitWidth="284.0" layoutX="158.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="141.0">
          <image>
             <Image url="@../img/logo_grey.png" />
          </image>
       </ImageView>
+      <VBox fx:id="vBoxChatPlaceRight" layoutX="295.0" layoutY="35.0" prefHeight="297.0" prefWidth="293.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="35.0" />
+      <VBox fx:id="vBoxChatPlaceLeft" layoutX="5.0" layoutY="30.0" prefHeight="297.0" prefWidth="293.0" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="35.0" />
       <AnchorPane prefHeight="30.0" prefWidth="600.0" style="-fx-background-color: #336666;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Label alignment="CENTER" layoutX="243.0" layoutY="6.0" style="-fx-alignment: center;" text="AC-TEPPA messager" textFill="WHITE">
