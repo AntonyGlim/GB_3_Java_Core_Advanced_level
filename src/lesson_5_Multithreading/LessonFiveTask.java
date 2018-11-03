@@ -13,11 +13,11 @@
  */
 package lesson_5_Multithreading;
 
-public interface LessonFiveTask {
-    float[] createArray(int size);
-    void fillArray(float[] arr);
-    void startCheckTime();
-    void calculatingValuesInArray();
+import java.lang.reflect.Method;
 
+interface LessonFiveTask {
+    abstract float[] createArray(int size);
+    abstract float[] fillArray(float[] arr);
+    abstract float[] calculatingValuesInArray(float[] arr);
 
 }
