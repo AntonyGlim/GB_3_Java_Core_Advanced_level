@@ -38,7 +38,15 @@
 package lesson_5_Multithreading;
 
 public class MainMultithreadingTask {
+
+    static final int size = 10;
+    static final int h = size / 2;
+    static float[] arr;
+
     public static void main(String[] args) {
+        LessonFiveTask singleThreadedWork = new SingleThreadedWorkClass();
+        arr = singleThreadedWork.createArray(size);
+        singleThreadedWork.fillArray(arr);
 
     }
 }

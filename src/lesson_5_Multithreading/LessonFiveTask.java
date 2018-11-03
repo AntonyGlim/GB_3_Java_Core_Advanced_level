@@ -10,36 +10,14 @@
  * arr[i] = (float)(arr[i] * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
  * 5) Проверяется время окончания метода System.currentTimeMillis();
  * 6) В консоль выводится время работы: System.out.println(System.currentTimeMillis() - a);
-*/
-
+ */
 package lesson_5_Multithreading;
 
-public class SingleThreadedWorkClass implements LessonFiveTask {
-    public static String numberOfThread = "1 поток: ";
+public interface LessonFiveTask {
+    float[] createArray(int size);
+    void fillArray(float[] arr);
+    void startCheckTime();
+    void calculatingValuesInArray();
 
 
-    @Override
-    public float[] createArray(int size) {
-        float[] arr = new float[size];
-        System.out.println(numberOfThread + "массив создан");
-        return arr;
-    }
-
-    @Override
-    public void fillArray(float[] arr) {
-        for (float f : arr){
-            f = 1;
-            System.out.println(numberOfThread + f);
-        }
-    }
-
-    @Override
-    public void startCheckTime() {
-
-    }
-
-    @Override
-    public void calculatingValuesInArray() {
-
-    }
 }
