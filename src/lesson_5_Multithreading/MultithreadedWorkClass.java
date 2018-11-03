@@ -20,7 +20,6 @@ public class MultithreadedWorkClass extends Thread implements LessonFiveTask {
 
     @Override
     public void run(){
-
     }
 
 }

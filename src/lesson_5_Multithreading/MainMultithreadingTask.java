@@ -41,22 +41,23 @@ public class MainMultithreadingTask {
 
     static final int size = 10000;
     static final int h = size / 2;
-    static float[] arr;
+    static float[] arrS;
+    static float[] arrM;
 
 
     public static void main(String[] args) {
 
         LessonFiveTask st = new SingleThreadedWorkClass();
 
-        arr = st.createArray(size);
-        arr = st.fillArray(arr);
-        arr = st.calculatingValuesInArray(arr);
+        arrS = st.createArray(size);
+        arrS = st.fillArray(arrS);
+        arrS = st.calculatingValuesInArray(arrS);
 
         LessonFiveTask mt = new MultithreadedWorkClass();
 
-        arr = mt.createArray(size);
-        arr = mt.fillArray(arr);
-        arr = mt.calculatingValuesInArray(arr);
+        arrM = mt.createArray(size);
+        arrM = mt.fillArray(arrM);
+        arrM = mt.calculatingValuesInArray(arrM);
 
 
 
