@@ -51,7 +51,17 @@ public class MainMultithreadingTask {
         arr = st.createArray(size);
         arr = st.fillArray(arr);
         arr = st.calculatingValuesInArray(arr);
+
+        LessonFiveTask mt = new MultithreadedWorkClass();
+
+        arr = mt.createArray(size);
+        arr = mt.fillArray(arr);
+        arr = mt.calculatingValuesInArray(arr);
+
+
+
         System.out.println(((SingleThreadedWorkClass) st).timeMethodWorking);
+        System.out.println(((SingleThreadedWorkClass) mt).timeMethodWorking);
 
 
 
