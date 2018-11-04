@@ -39,49 +39,59 @@ package lesson_5_Multithreading;
 
 public class MainMultithreadingTask {
 
-    static final int size = 100;                    //Размеры массива
+    static final int size = 101;                    //Размеры массива
     static float[] arrS = new float[size];          //Массив для 1 потока
     static float[] arrM = new float[size];          //Массив для многопоточности
-    static short threadCount = 2;                   //Количество потоков
+    static float[][] arrMulti = new float[size][];          //Массив для многопоточности
+    static short threadCount = 5;                   //Количество потоков
     static String[][] timeInfo = new String[4][2];  //Массив для контроля времени
-
 
     public static void main(String[] args) {
 
-        MultithreadingTask st = new MultithreadingTask();
-
+    //Наполняем массив значениями (1 поток)
         long timeStart = System.currentTimeMillis();
-        arrS = st.fillArray(arrS);                                              //Наполняем массив значениями
+        arrS = fillArray(arrS);
         timeInfo[0][0] = "Время заполнения (1 поток):";
         timeInfo[0][1] = Long.toString((System.currentTimeMillis() - timeStart)) + " мc.";
         printArray(arrS);
 
+    //Вычисляем значения по формуле (1 поток)
         timeStart = System.currentTimeMillis();
-        arrS = st.calculatingValuesInArray(arrS);                               //Расчитываем каждое значение массива по формуле
+        arrS = calculatingValuesInArray(arrS);
         timeInfo[1][0] = "Время вычисления значений по формуле (1 поток):";
         timeInfo[1][1] = Long.toString((System.currentTimeMillis() - timeStart)) + " мc.";
         printArray(arrS);
 
+    //Наполняем массив значениями (1 поток)
+        timeStart = System.currentTimeMillis();
+        arrM = fillArray(arrS);
+        timeInfo[2][0] = "Время заполнения (1 поток):";
+        timeInfo[2][1] = Long.toString((System.currentTimeMillis() - timeStart)) + " мc.";
+        printArray(arrM);
+        arrMulti = segmentationArray(arrM, threadCount);
+        printDoubleArray(arrMulti);
+        float[] f = gluingArray(arrMulti, size);
+        printArray(f);
 
-//        MultithreadingTask mt = new MultithreadingTask();
-//
-//        arrM = mt.fillArray(arrM, threadCount);
-//
-//        long timeStart = System.currentTimeMillis();
-//        arrM = mt.calculatingValuesInArray(arrM, threadCount);
-//        long timeMethodWorking = (System.currentTimeMillis() - timeStart);
-//        System.out.println(timeMethodWorking + " мc.");
+
+
+
         printDoubleArray(timeInfo);
     }
+
     /**
      * Метод выведет массив в консоль
-     * @param arr
+     * @param arr - получает массив
      */
     public static void printArray(float[] arr){
         for (float f : arr)
             System.out.println(f);
     }
 
+    /**
+     * Метод выведет 2 мерный массив в консоль
+     * @param arr - получает массив
+     */
     public static void printDoubleArray(String[][] arr) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
@@ -90,17 +100,21 @@ public class MainMultithreadingTask {
             System.out.println();
         }
     }
-}
-
-class MultithreadingTask {
-
+    public static void printDoubleArray(float[][] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 
     /**
      * Метод который заполнит массив значениями (1 поток)
      * @param arr - на вход подается пусой массив
      * @return - возвращается массив со значениями
      */
-    public float[] fillArray(float[] arr) {
+    public static float[] fillArray(float[] arr) {
         int count = 1;
         for (int i = 0; i < arr.length ; i++) {
             arr[i] = count;
@@ -113,58 +127,20 @@ class MultithreadingTask {
      * @param arr - на вход подается массив
      * @return - возвращается массив со значениями
      */
-    public float[] calculatingValuesInArray(float[] arr) {
+    public static float[] calculatingValuesInArray(float[] arr) {
         for (int i = 0; i < arr.length ; i++) {
             arr[i] = (float)((arr[i] + 14) * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
         }
         return arr;
     }
 
-    public float[] fillArray(float[] arr, byte threadCount) {
-        String methodsTitle = "Заполнение массива (Количество потоков = " + threadCount + "): ";
-        System.out.println(methodsTitle);
-        float[][] multidimensionalArray = segmentationArray(arr, threadCount);
-
-        for (int i = 0; i < multidimensionalArray.length; i++) {
-            float[] tempArray = multidimensionalArray[i];
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    for (int j = 0; j < tempArray.length; j++) {
-                        tempArray[j] = 1;
-                    }
-                }
-            }).start();
-        }
-        return arr;
-    }
-
-
-
-    public float[] calculatingValuesInArray(float[] arr, byte threadCount) {
-        String methodsTitle = "Расчет элементов массива по формуле (Количество потоков = " + threadCount + "): ";
-        System.out.println(methodsTitle);
-        float[][] multidimensionalArray = segmentationArray(arr, threadCount);
-
-        for (int i = 0; i < multidimensionalArray.length; i++) {
-            float[] tempArray = multidimensionalArray[i];
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    for (int j = 0; j < tempArray.length; j++) {
-                        tempArray[j] = (float)((arr[j] + 14) * Math.sin(0.2f + j / 5) * Math.cos(0.2f + j / 5) * Math.cos(0.4f + j / 2));
-
-                    }
-                }
-            }).start();
-            System.out.println("Поток: " + i);
-        }
-
-        return arr;
-    }
-
-    public static float[][] segmentationArray(float[] arr, int count){
-
+    /**
+     * Метод делит массив на несколько подмассивов
+     * @param arr - массив, который будет разделен на части
+     * @param count - на сколько частей будет разделен массив
+     * @return - Двумерный массив, состоящий из подмассивов
+     */
+    public static float[][] segmentationArray(float[] arr, short count){
         int startIndex = 0;
         int numberOfElementsInArray = arr.length / count;
         int residueOfElements = arr.length % count;
@@ -178,12 +154,33 @@ class MultithreadingTask {
         array[count-1] = new float[numberOfElementsInArray + residueOfElements];
         System.arraycopy(arr, startIndex, array[count-1], 0, array[count-1].length);
 
-        for (int i = 0; i < array.length ; i++) {
-            for (int j = 0; j < array[i].length; j++) {
-//                System.out.print(array[i][j] + " ");
-            }
-//            System.out.println();
+        return array;
+    }
+
+    public static float[] gluingArray(float[][] arr, int size){
+        float[] array = new float[size];
+        int startIndex = 0;
+        for (int i = 0; i < arr.length; i++) {
+            System.arraycopy(arr, startIndex, array[i], 0, arr[i].length);
+            startIndex += arr[i].length - 1;
         }
         return array;
+    }
+
+}
+
+class FillArrayMulti implements Runnable {
+
+    @Override
+    public void run() {
+
+    }
+}
+
+class CalculatingValuesInArray implements Runnable{
+
+    @Override
+    public void run() {
+
     }
 }

@@ -43,12 +43,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="1" />
-          <entry key="java" value="6424" />
+          <entry key="java" value="7032" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6424" />
+          <entry key="JAVA" value="7032" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -63,10 +63,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+            <state relative-caret-position="130">
+              <caret line="159" column="37" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="37" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="method#printArray#0;class#MainMultithreadingTask#0" />
+                <element signature="method#printDoubleArray#0;class#MainMultithreadingTask#0" />
+                <element signature="method#printDoubleArray#1;class#MainMultithreadingTask#0" />
+                <element signature="method#fillArray#0;class#MainMultithreadingTask#0" />
+                <element signature="method#calculatingValuesInArray#0;class#MainMultithreadingTask#0" />
+                <element signature="method#segmentationArray#0;class#MainMultithreadingTask#0" />
+                <element signature="class#FillArrayMulti#0" />
+                <element signature="class#CalculatingValuesInArray#0" />
               </folding>
             </state>
           </provider>
@@ -130,7 +138,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="683" />
     <option name="width" value="683" />
     <option name="height" value="728" />
@@ -172,7 +180,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541361126369" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541364202390" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -283,12 +291,12 @@
       <workItem from="1541252137889" duration="8629000" />
       <workItem from="1541276128957" duration="376000" />
       <workItem from="1541326786744" duration="7223000" />
-      <workItem from="1541336537457" duration="11195000" />
+      <workItem from="1541336537457" duration="14470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27423000" />
+    <option name="totallyTimeSpent" value="30698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -303,7 +311,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20621932" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2831424" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -597,10 +605,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+        <state relative-caret-position="130">
+          <caret line="159" column="37" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="37" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="method#printArray#0;class#MainMultithreadingTask#0" />
+            <element signature="method#printDoubleArray#0;class#MainMultithreadingTask#0" />
+            <element signature="method#printDoubleArray#1;class#MainMultithreadingTask#0" />
+            <element signature="method#fillArray#0;class#MainMultithreadingTask#0" />
+            <element signature="method#calculatingValuesInArray#0;class#MainMultithreadingTask#0" />
+            <element signature="method#segmentationArray#0;class#MainMultithreadingTask#0" />
+            <element signature="class#FillArrayMulti#0" />
+            <element signature="class#CalculatingValuesInArray#0" />
           </folding>
         </state>
       </provider>
