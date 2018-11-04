@@ -39,10 +39,12 @@ package lesson_5_Multithreading;
 
 public class MainMultithreadingTask {
 
-    static final int size = 100;
-    static float[] arrS = new float[size];;
-    static float[] arrM = new float[size];;
-    static byte threadCount = 1;
+    static final int size = 100;                    //Размеры массива
+    static float[] arrS = new float[size];          //Массив для 1 потока
+    static float[] arrM = new float[size];          //Массив для многопоточности
+    static short threadCount = 2;                   //Количество потоков
+    static String[][] timeInfo = new String[4][2];  //Массив для контроля времени
+
 
     public static void main(String[] args) {
 
@@ -50,16 +52,16 @@ public class MainMultithreadingTask {
 
         long timeStart = System.currentTimeMillis();
         arrS = st.fillArray(arrS);                                              //Наполняем массив значениями
-        long timeMethodWorking = (System.currentTimeMillis() - timeStart);
+        timeInfo[0][0] = "Время заполнения (1 поток):";
+        timeInfo[0][1] = Long.toString((System.currentTimeMillis() - timeStart)) + " мc.";
         printArray(arrS);
-        System.out.println(timeMethodWorking + " мc.");
-
 
         timeStart = System.currentTimeMillis();
         arrS = st.calculatingValuesInArray(arrS);                               //Расчитываем каждое значение массива по формуле
-        timeMethodWorking = (System.currentTimeMillis() - timeStart);
+        timeInfo[1][0] = "Время вычисления значений по формуле (1 поток):";
+        timeInfo[1][1] = Long.toString((System.currentTimeMillis() - timeStart)) + " мc.";
         printArray(arrS);
-        System.out.println(timeMethodWorking + " мc.");
+
 
 //        MultithreadingTask mt = new MultithreadingTask();
 //
@@ -69,7 +71,7 @@ public class MainMultithreadingTask {
 //        arrM = mt.calculatingValuesInArray(arrM, threadCount);
 //        long timeMethodWorking = (System.currentTimeMillis() - timeStart);
 //        System.out.println(timeMethodWorking + " мc.");
-
+        printDoubleArray(timeInfo);
     }
     /**
      * Метод выведет массив в консоль
@@ -78,6 +80,15 @@ public class MainMultithreadingTask {
     public static void printArray(float[] arr){
         for (float f : arr)
             System.out.println(f);
+    }
+
+    public static void printDoubleArray(String[][] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
 

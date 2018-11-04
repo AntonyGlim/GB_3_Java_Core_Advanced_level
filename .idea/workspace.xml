@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_5_Multithreading/LessonFiveTask.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,12 +43,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="1" />
-          <entry key="java" value="6052" />
+          <entry key="java" value="6424" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6052" />
+          <entry key="JAVA" value="6424" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -65,11 +63,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1326">
-              <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
+            <state relative-caret-position="559">
+              <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="method#segmentationArray#0;class#MultithreadingTask#0" />
               </folding>
             </state>
           </provider>
@@ -133,7 +130,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="683" />
     <option name="width" value="683" />
     <option name="height" value="728" />
@@ -175,7 +172,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541359932913" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541361126369" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -286,12 +283,12 @@
       <workItem from="1541252137889" duration="8629000" />
       <workItem from="1541276128957" duration="376000" />
       <workItem from="1541326786744" duration="7223000" />
-      <workItem from="1541336537457" duration="10031000" />
+      <workItem from="1541336537457" duration="11195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26259000" />
+    <option name="totallyTimeSpent" value="27423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -600,11 +597,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="135" column="52" selection-start-line="135" selection-start-column="52" selection-end-line="135" selection-end-column="52" />
+        <state relative-caret-position="559">
+          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="method#segmentationArray#0;class#MultithreadingTask#0" />
           </folding>
         </state>
       </provider>
