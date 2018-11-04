@@ -88,19 +88,20 @@ class MultithreadingTask implements LessonFiveTask{
 
     @Override
     public float[] fillArray(float[] arr, byte threadCount) {
-        for (int i = 1; i <= threadCount; i++) {
 
-        }
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for (float f : arr){
-                    f = 1;
-                    System.out.println(numberOfThreadInfo + f);
+        float[][] multidimensionalArray = segmentationArray(arr, threadCount);
+        
+        for (int i = 0; i < multidimensionalArray.length; i++) {
+            float[] tempArray = multidimensionalArray[i];
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    for (int j = 0; j < tempArray.length; j++) {
+                        tempArray[j] = 1;
+                    }
                 }
-            }
-        });
-
+            });
+        }
         return arr;
     }
 
@@ -119,5 +120,29 @@ class MultithreadingTask implements LessonFiveTask{
     @Override
     public float[] calculatingValuesInArray(float[] arr, byte threadCount) {
         return new float[0];
+    }
+
+    public static float[][] segmentationArray(float[] arr, int count){
+
+        int startIndex = 0;
+        int numberOfElementsInArray = arr.length / count;
+        int residueOfElements = arr.length % count;
+        float[][] array = new float[count][];
+
+        for (int i = 0; i < count - 1; i++) {
+            array[i] = new float[numberOfElementsInArray];
+            System.arraycopy(arr, startIndex, array[i], 0, numberOfElementsInArray);
+            startIndex += numberOfElementsInArray;
+        }
+        array[count-1] = new float[numberOfElementsInArray + residueOfElements];
+        System.arraycopy(arr, startIndex, array[count-1], 0, array[count-1].length);
+
+        for (int i = 0; i < array.length ; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
+        return array;
     }
 }
