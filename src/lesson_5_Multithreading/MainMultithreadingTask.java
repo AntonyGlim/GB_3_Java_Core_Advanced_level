@@ -39,58 +39,66 @@ package lesson_5_Multithreading;
 
 public class MainMultithreadingTask {
 
-    static final int size = 10000;
+    static final int size = 100;
     static final int h = size / 2;
     static float[] arrS;
     static float[] arrM;
+    static byte threadCount = 1;
 
 
     public static void main(String[] args) {
 
-        LessonFiveTask st = new SingleThreadedWorkClass();
+        LessonFiveTask st = new MultithreadingTask();
 
-        arrS = st.createArray(size);
-        arrS = st.fillArray(arrS);
-        arrS = st.calculatingValuesInArray(arrS);
+//        arrS = st.createArray(size);
+//        arrS = st.fillArray(arrS);
+//        arrS = st.calculatingValuesInArray(arrS);
 
-        LessonFiveTask mt = new MultithreadedWorkClass();
+        LessonFiveTask mt = new MultithreadingTask();
 
         arrM = mt.createArray(size);
-        arrM = mt.fillArray(arrM);
-        arrM = mt.calculatingValuesInArray(arrM);
+        arrM = mt.fillArray(arrM, threadCount);
 
-        System.out.println(((SingleThreadedWorkClass) st).timeMethodWorking);
-        System.out.println(((SingleThreadedWorkClass) mt).timeMethodWorking);
+        long timeStart = System.currentTimeMillis();
+        arrM = mt.calculatingValuesInArray(arrM, threadCount);
+        long timeMethodWorking = (System.currentTimeMillis() - timeStart);
+        System.out.println(timeMethodWorking + " мc.");
 
     }
 }
 
 class MultithreadingTask implements LessonFiveTask{
 
-    public String numberOfThreadInfo = "1 поток: ";
     public long timeMethodWorking = 0;
 
     @Override
     public float[] createArray(int size) {
+        String methodsTitle = "Создание массива: ";
         float[] arr = new float[size];
-        System.out.println(numberOfThreadInfo + "массив создан");
+        System.out.println(methodsTitle + "массив создан");
         return arr;
     }
 
     @Override
     public float[] fillArray(float[] arr) {
+        String methodsTitle = "Заполнение массива в 1 поток: ";
+        long timeStart = System.currentTimeMillis();
         for (float f : arr){
             f = 1;
-            System.out.println(numberOfThreadInfo + f);
+//            System.out.println(methodsTitle + f);
         }
+        timeMethodWorking = (System.currentTimeMillis() - timeStart);
+        System.out.println(methodsTitle + timeMethodWorking + " мc.");
         return arr;
     }
 
     @Override
     public float[] fillArray(float[] arr, byte threadCount) {
-
+        String methodsTitle = "Заполнение массива (Количество потоков = " + threadCount + "): ";
+        System.out.println(methodsTitle);
+        long timeStart = System.currentTimeMillis();
         float[][] multidimensionalArray = segmentationArray(arr, threadCount);
-        
+
         for (int i = 0; i < multidimensionalArray.length; i++) {
             float[] tempArray = multidimensionalArray[i];
             new Thread(new Runnable() {
@@ -100,26 +108,50 @@ class MultithreadingTask implements LessonFiveTask{
                         tempArray[j] = 1;
                     }
                 }
-            });
+            }).start();
         }
+        timeMethodWorking = (System.currentTimeMillis() - timeStart);
+        System.out.println(methodsTitle + timeMethodWorking + " мc.");
         return arr;
     }
 
     @Override
     public float[] calculatingValuesInArray(float[] arr) {
+        String methodsTitle = "Расчет элементов массива по формуле в 1 поток: ";
         long timeStart = System.currentTimeMillis();
         for (int i = 0; i < arr.length ; i++) {
             arr[i] = (float)((arr[i] + 14) * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
-            System.out.println(numberOfThreadInfo + arr[i]);
+//            System.out.println(methodsTitle + arr[i]);
         }
         timeMethodWorking = (System.currentTimeMillis() - timeStart);
-        System.out.println("Метод выполнялся " + timeMethodWorking + " мc.");
+        System.out.println(methodsTitle + timeMethodWorking + " мc.");
         return arr;
     }
 
     @Override
     public float[] calculatingValuesInArray(float[] arr, byte threadCount) {
-        return new float[0];
+        String methodsTitle = "Расчет элементов массива по формуле (Количество потоков = " + threadCount + "): ";
+        System.out.println(methodsTitle);
+        long timeStart = System.currentTimeMillis();
+        float[][] multidimensionalArray = segmentationArray(arr, threadCount);
+
+        for (int i = 0; i < multidimensionalArray.length; i++) {
+            float[] tempArray = multidimensionalArray[i];
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    for (int j = 0; j < tempArray.length; j++) {
+                        tempArray[j] = (float)((arr[j] + 14) * Math.sin(0.2f + j / 5) * Math.cos(0.2f + j / 5) * Math.cos(0.4f + j / 2));
+
+                    }
+                }
+            }).start();
+            System.out.println("Поток: " + i);
+        }
+        timeMethodWorking = (System.currentTimeMillis() - timeStart);
+        System.out.println(methodsTitle + timeMethodWorking + " мc.");
+
+        return arr;
     }
 
     public static float[][] segmentationArray(float[] arr, int count){
@@ -139,9 +171,9 @@ class MultithreadingTask implements LessonFiveTask{
 
         for (int i = 0; i < array.length ; i++) {
             for (int j = 0; j < array[i].length; j++) {
-                System.out.print(array[i][j] + " ");
+//                System.out.print(array[i][j] + " ");
             }
-            System.out.println();
+//            System.out.println();
         }
         return array;
     }
