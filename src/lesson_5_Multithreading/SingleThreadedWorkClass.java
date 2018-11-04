@@ -15,14 +15,14 @@
 package lesson_5_Multithreading;
 
 public class SingleThreadedWorkClass implements LessonFiveTask {
-    public String numberOfThread = "1 поток: ";
+    public String numberOfThreadInfo = "1 поток: ";
     public long timeMethodWorking = 0;
 
 
     @Override
     public float[] createArray(int size) {
         float[] arr = new float[size];
-        System.out.println(numberOfThread + "массив создан");
+        System.out.println(numberOfThreadInfo + "массив создан");
         return arr;
     }
 
@@ -30,9 +30,14 @@ public class SingleThreadedWorkClass implements LessonFiveTask {
     public float[] fillArray(float[] arr) {
         for (float f : arr){
             f = 1;
-            System.out.println(numberOfThread + f);
+            System.out.println(numberOfThreadInfo + f);
         }
         return arr;
+    }
+
+    @Override
+    public float[] fillArray(float[] arr, byte threadCount) {
+        return new float[0];
     }
 
     @Override
@@ -40,10 +45,15 @@ public class SingleThreadedWorkClass implements LessonFiveTask {
         long timeStart = System.currentTimeMillis();
         for (int i = 0; i < arr.length ; i++) {
             arr[i] = (float)((arr[i] + 14) * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
-            System.out.println(numberOfThread + arr[i]);
+            System.out.println(numberOfThreadInfo + arr[i]);
         }
         timeMethodWorking = (System.currentTimeMillis() - timeStart);
         System.out.println("Метод выполнялся " + timeMethodWorking + " мc.");
         return arr;
+    }
+
+    @Override
+    public float[] calculatingValuesInArray(float[] arr, byte threadCount) {
+        return new float[0];
     }
 }

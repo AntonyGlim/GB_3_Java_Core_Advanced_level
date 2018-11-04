@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_5_Multithreading/LessonFiveTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_5_Multithreading/LessonFiveTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson_5_Multithreading/MultithreadedWorkClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_5_Multithreading/MultithreadedWorkClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_5_Multithreading/SingleThreadedWorkClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_5_Multithreading/SingleThreadedWorkClass.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +26,9 @@
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.67" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -43,25 +46,28 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="1" />
-          <entry key="java" value="4278" />
+          <entry key="java" value="4383" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4278" />
+          <entry key="JAVA" value="4383" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+            <state relative-caret-position="192">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -69,14 +75,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MultithreadedWorkClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="697">
+              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="28" />
               <folding>
+                <element signature="e#501#502#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
                 <element signature="e#373#374#0" expanded="true" />
                 <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#1111#1112#0" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,10 +95,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/SingleThreadedWorkClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="376">
+              <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="28" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#1343#1344#0" expanded="true" />
+                <element signature="e#1378#1379#0" expanded="true" />
+                <element signature="e#2010#2011#0" expanded="true" />
+                <element signature="e#2045#2046#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/LessonFiveTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="340">
+              <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -150,10 +164,10 @@
         <option value="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/lesson_4_Network_chat_JavaFX/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/src/lesson_5_Multithreading/MultithreadingTask.java" />
-        <option value="$PROJECT_DIR$/src/lesson_5_Multithreading/SingleThreadedWorkClass.java" />
         <option value="$PROJECT_DIR$/src/lesson_5_Multithreading/LessonFiveTask.java" />
-        <option value="$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java" />
+        <option value="$PROJECT_DIR$/src/lesson_5_Multithreading/SingleThreadedWorkClass.java" />
         <option value="$PROJECT_DIR$/src/lesson_5_Multithreading/MultithreadedWorkClass.java" />
+        <option value="$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java" />
       </list>
     </option>
   </component>
@@ -177,7 +191,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,6 +213,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,16 +329,18 @@
       <updated>1540639534208</updated>
       <workItem from="1541252137889" duration="8629000" />
       <workItem from="1541276128957" duration="376000" />
+      <workItem from="1541326786744" duration="1720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9005000" />
+    <option name="totallyTimeSpent" value="10725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15204236" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15431164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -333,7 +349,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16693944" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25040916" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -583,20 +599,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MultithreadingTask.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/LessonFiveTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="340">
+          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -605,21 +611,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/SingleThreadedWorkClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state relative-caret-position="376">
+          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="28" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1378#1379#0" expanded="true" />
+            <element signature="e#2010#2011#0" expanded="true" />
+            <element signature="e#2045#2046#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MultithreadedWorkClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="697">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="28" />
           <folding>
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
             <element signature="e#373#374#0" expanded="true" />
             <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

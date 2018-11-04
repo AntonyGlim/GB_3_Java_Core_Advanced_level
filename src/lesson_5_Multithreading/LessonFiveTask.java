@@ -16,5 +16,7 @@ package lesson_5_Multithreading;
 interface LessonFiveTask {
     float[] createArray(int size);
     float[] fillArray(float[] arr);
+    float[] fillArray(float[] arr, byte threadCount);
     float[] calculatingValuesInArray(float[] arr);
+    float[] calculatingValuesInArray(float[] arr, byte threadCount);
 }

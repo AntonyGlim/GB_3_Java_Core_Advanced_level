@@ -59,15 +59,8 @@ public class MainMultithreadingTask {
         arrM = mt.fillArray(arrM);
         arrM = mt.calculatingValuesInArray(arrM);
 
-
-
         System.out.println(((SingleThreadedWorkClass) st).timeMethodWorking);
         System.out.println(((SingleThreadedWorkClass) mt).timeMethodWorking);
-
-
-
-
-
 
     }
 }
