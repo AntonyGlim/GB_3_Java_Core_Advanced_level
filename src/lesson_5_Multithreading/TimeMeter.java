@@ -21,9 +21,8 @@ public class TimeMeter {
 
     public String timeInfo(String title){
         this.title = title;
-        String timeMessage;
         workingTime = stopTime - startTime;
-        timeMessage = (title + ". Длительность выполнения: " + workingTime + " мс.");
+        String timeMessage = (title + ". Длительность выполнения: " + workingTime + " мс.");
         return timeMessage;
     }
 
