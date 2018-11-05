@@ -39,44 +39,44 @@ package lesson_5_Multithreading;
 
 public class MainMultithreadingTask {
 
-    static final int size = 101;                    //Размеры массива
+    static final int size = 100001;                    //Размеры массива
     static float[] arrS = new float[size];          //Массив для 1 потока
     static float[] arrM = new float[size];          //Массив для многопоточности
     static float[][] arrMulti = new float[size][];          //Массив для многопоточности
     static short threadCount = 5;                   //Количество потоков
-    static String[][] timeInfo = new String[4][2];  //Массив для контроля времени
 
     public static void main(String[] args) {
 
     //Наполняем массив значениями (1 поток)
-        long timeStart = System.currentTimeMillis();
+        TimeMeter timeMeter_1 = new TimeMeter("Заполнение массива единицами в 1 поток");
+        timeMeter_1.timeStart();
         arrS = fillArray(arrS);
-        timeInfo[0][0] = "Время заполнения (1 поток):";
-        timeInfo[0][1] = Long.toString((System.currentTimeMillis() - timeStart)) + " мc.";
+        timeMeter_1.timeStop();
         printArray(arrS);
 
     //Вычисляем значения по формуле (1 поток)
-        timeStart = System.currentTimeMillis();
+        TimeMeter timeMeter_2 = new TimeMeter("Вычисления элементов массива по формуле в 1 поток");
+        timeMeter_2.timeStart();
         arrS = calculatingValuesInArray(arrS);
-        timeInfo[1][0] = "Время вычисления значений по формуле (1 поток):";
-        timeInfo[1][1] = Long.toString((System.currentTimeMillis() - timeStart)) + " мc.";
+        timeMeter_2.timeStop();
         printArray(arrS);
 
     //Наполняем массив значениями (1 поток)
-        timeStart = System.currentTimeMillis();
-        arrM = fillArray(arrS);
-        timeInfo[2][0] = "Время заполнения (1 поток):";
-        timeInfo[2][1] = Long.toString((System.currentTimeMillis() - timeStart)) + " мc.";
-        printArray(arrM);
-        arrMulti = segmentationArray(arrM, threadCount);
-        printDoubleArray(arrMulti);
-        float[] f = gluingArray(arrMulti, size);
-        printArray(f);
+//        timeStart = System.currentTimeMillis();
+//        arrM = fillArray(arrS);
+//        timeInfo[2][0] = "Время заполнения (1 поток):";
+//        timeInfo[2][1] = Long.toString((System.currentTimeMillis() - timeStart)) + " мc.";
+//        printArray(arrM);
+//        arrMulti = segmentationArray(arrM, threadCount);
+//        printDoubleArray(arrMulti);
+//        float[] f = gluingArray(arrMulti, size);
+//        printArray(f);
 
 
+        timeMeter_1.timeInfo();
+        timeMeter_2.timeInfo();
 
-
-        printDoubleArray(timeInfo);
+//        printDoubleArray(timeInfo);
     }
 
     /**
