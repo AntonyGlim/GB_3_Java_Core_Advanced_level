@@ -37,8 +37,8 @@ package lesson_5_Multithreading;
 
 public class MainMultithreadingTask {
 
-    static final int size = 10000000;                   //Размеры массива
-    static final short threadCount = 400;                 //Количество потоков
+    static final int size = 50000000;                   //Размеры массива
+    static final short threadCount = 40;                 //Количество потоков
 
     public static void main(String[] args) {
 
