@@ -33,8 +33,6 @@
  * Для второго метода замеряете время разбивки массива на 2, просчета каждого из двух массивов и склейки.
  */
 
-
-
 package lesson_5_Multithreading;
 
 public class MainMultithreadingTask {
@@ -48,7 +46,7 @@ public class MainMultithreadingTask {
     public static void main(String[] args) {
 
     //Наполняем массив значениями (1 поток)
-        TimeMeter timeMeter_1 = new TimeMeter("Заполнение первого массива единицами в 1 поток");
+        TimeMeter timeMeter_1 = new TimeMeter();
         timeMeter_1.timeStart();
         arrS = fillArray(arrS);
         timeMeter_1.timeStop();
@@ -56,7 +54,7 @@ public class MainMultithreadingTask {
 //        printArray(arrS);
 
     //Вычисляем значения по формуле (1 поток)
-        TimeMeter timeMeter_2 = new TimeMeter("Произведены вычисления элементов массива по формуле в 1 поток");
+        TimeMeter timeMeter_2 = new TimeMeter();
         timeMeter_2.timeStart();
         arrS = calculatingValuesInArray(arrS);
         timeMeter_2.timeStop();
@@ -64,7 +62,7 @@ public class MainMultithreadingTask {
 //        printArray(arrS);
 
     //Наполняем массив значениями (1 поток)
-        TimeMeter timeMeter_3 = new TimeMeter("Заполнение второго массива единицами в 1 поток");
+        TimeMeter timeMeter_3 = new TimeMeter();
         timeMeter_3.timeStart();
         arrM = fillArray(arrM);
         timeMeter_3.timeStop();
@@ -72,7 +70,7 @@ public class MainMultithreadingTask {
 //        printArray(arrM);
 
     //Делим массив на части
-        TimeMeter timeMeter_4 = new TimeMeter("Деление массива на части (по количеству потоков: " + threadCount + ")");
+        TimeMeter timeMeter_4 = new TimeMeter();
         timeMeter_4.timeStart();
         arrMulti = segmentationArray(arrM, threadCount);
         timeMeter_4.timeStop();
@@ -80,7 +78,7 @@ public class MainMultithreadingTask {
 //        printDoubleArray(arrMulti);
 
     //Формируем массив с потоками и запускаем массив с потоками
-        TimeMeter timeMeter_5 = new TimeMeter("Вычисляем массив в потоках (количество потоков: " + threadCount + ")");
+        TimeMeter timeMeter_5 = new TimeMeter();
         timeMeter_5.timeStart();
         Thread[] arrThreads = new Thread[threadCount];
         for (int i = 0; i < arrThreads.length; i++) {
@@ -97,23 +95,21 @@ public class MainMultithreadingTask {
         timeMeter_5.timeStop();
         System.out.println(timeMeter_5.timeInfo("Произведены вычисления элементов массива по формуле (по количеству потоков: " + threadCount + ")"));
 
-      //Собираем массив обратно
-        TimeMeter timeMeter_6 = new TimeMeter("Собираем массив из частей (по количеству потоков: " + threadCount + ")");
+    //Собираем массив обратно
+        TimeMeter timeMeter_6 = new TimeMeter();
         timeMeter_6.timeStart();
         arrM = gluingArray(arrMulti, size);
         timeMeter_6.timeStop();
         System.out.println(timeMeter_6.timeInfo("Второй массив собран из частей (по количеству потоков: " + threadCount + ")"));
-//        printArray(arrM);
 
-        System.out.println();
-        System.out.println();
-        timeMeter_1.timeInfo();
-        timeMeter_2.timeInfo();
-        timeMeter_4.timeInfo();
-        timeMeter_5.timeInfo();
-        timeMeter_6.timeInfo();
+    //Сравниваем работу потоков и выводим информацию о них
+        long oneThreadWorkingTime = timeMeter_2.getWorkingTime() ;
+        long multiThreadWorkingTime = timeMeter_4.getWorkingTime() + timeMeter_5.getWorkingTime() + timeMeter_6.getWorkingTime();
+        System.out.println("Для одного потока вычисления длились: " + oneThreadWorkingTime + " мс.");
+        System.out.println("Для мультипотока вычисления длились: " + multiThreadWorkingTime + " мс.");
+        float difference = (float)oneThreadWorkingTime / (float)multiThreadWorkingTime;
+        System.out.println("Мультипоток отработал в " + difference + " раз быстрее чем один поток.");
 
-//        printDoubleArray(timeInfo);
     }
 
     /**

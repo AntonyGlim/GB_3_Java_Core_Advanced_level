@@ -11,10 +11,6 @@ public class TimeMeter {
     private long startTime;                     //Время начала отсчета
     private long stopTime;                      //Время конца отсчета
 
-    TimeMeter(String title){
-        this.title = title;
-    }
-
     public void timeStart(){
         startTime = System.currentTimeMillis();
     }
@@ -23,15 +19,15 @@ public class TimeMeter {
         stopTime = System.currentTimeMillis();
     }
 
-    public void timeInfo(){
-        workingTime = stopTime - startTime;
-        System.out.println(this.title + ". Длительность выполнялся: " + workingTime + " мс.");
-    }
-
     public String timeInfo(String title){
+        this.title = title;
         String timeMessage;
         workingTime = stopTime - startTime;
-        timeMessage = (title + ". Длительность выполнялся: " + workingTime + " мс.");
+        timeMessage = (title + ". Длительность выполнения: " + workingTime + " мс.");
         return timeMessage;
+    }
+
+    public long getWorkingTime() {
+        return workingTime;
     }
 }
