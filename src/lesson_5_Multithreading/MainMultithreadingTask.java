@@ -39,42 +39,51 @@ package lesson_5_Multithreading;
 
 public class MainMultithreadingTask {
 
-    static final int size = 100001;                    //Размеры массива
+    static final int size = 33;                    //Размеры массива
     static float[] arrS = new float[size];          //Массив для 1 потока
     static float[] arrM = new float[size];          //Массив для многопоточности
     static float[][] arrMulti = new float[size][];          //Массив для многопоточности
-    static short threadCount = 5;                   //Количество потоков
+    static short threadCount = 8;                   //Количество потоков
 
     public static void main(String[] args) {
 
-    //Наполняем массив значениями (1 поток)
-        TimeMeter timeMeter_1 = new TimeMeter("Заполнение массива единицами в 1 поток");
-        timeMeter_1.timeStart();
-        arrS = fillArray(arrS);
-        timeMeter_1.timeStop();
-        printArray(arrS);
+//    //Наполняем массив значениями (1 поток)
+//        TimeMeter timeMeter_1 = new TimeMeter("Заполнение массива единицами в 1 поток");
+//        timeMeter_1.timeStart();
+//        arrS = fillArray(arrS);
+//        timeMeter_1.timeStop();
+//        printArray(arrS);
+//
+//    //Вычисляем значения по формуле (1 поток)
+//        TimeMeter timeMeter_2 = new TimeMeter("Вычисления элементов массива по формуле в 1 поток");
+//        timeMeter_2.timeStart();
+//        arrS = calculatingValuesInArray(arrS);
+//        timeMeter_2.timeStop();
+//        printArray(arrS);
 
-    //Вычисляем значения по формуле (1 поток)
-        TimeMeter timeMeter_2 = new TimeMeter("Вычисления элементов массива по формуле в 1 поток");
-        timeMeter_2.timeStart();
-        arrS = calculatingValuesInArray(arrS);
-        timeMeter_2.timeStop();
-        printArray(arrS);
+      //Наполняем массив значениями (1 поток)
+        arrM = fillArray(arrS);
+        printArray(arrM);
 
-    //Наполняем массив значениями (1 поток)
-//        timeStart = System.currentTimeMillis();
-//        arrM = fillArray(arrS);
-//        timeInfo[2][0] = "Время заполнения (1 поток):";
-//        timeInfo[2][1] = Long.toString((System.currentTimeMillis() - timeStart)) + " мc.";
-//        printArray(arrM);
-//        arrMulti = segmentationArray(arrM, threadCount);
-//        printDoubleArray(arrMulti);
-//        float[] f = gluingArray(arrMulti, size);
-//        printArray(f);
+      //Делм массив на части
+        TimeMeter timeMeter_4 = new TimeMeter("Деление массива на части (по количеству потоков: " + threadCount + ")");
+        timeMeter_4.timeStart();
+        arrMulti = segmentationArray(arrM, threadCount);
+        timeMeter_4.timeStop();
+        printDoubleArray(arrMulti);
+
+      //Собираем массив обратно
+        TimeMeter timeMeter_6 = new TimeMeter("Собираем массив из частей (по количеству потоков: " + threadCount + ")");
+        timeMeter_6.timeStart();
+        arrM = gluingArray(arrMulti, size);
+        timeMeter_6.timeStop();
+        printArray(arrM);
 
 
-        timeMeter_1.timeInfo();
-        timeMeter_2.timeInfo();
+//        timeMeter_1.timeInfo();
+//        timeMeter_2.timeInfo();
+        timeMeter_4.timeInfo();
+        timeMeter_6.timeInfo();
 
 //        printDoubleArray(timeInfo);
     }
@@ -84,8 +93,10 @@ public class MainMultithreadingTask {
      * @param arr - получает массив
      */
     public static void printArray(float[] arr){
-        for (float f : arr)
-            System.out.println(f);
+        for (float f : arr) {
+            System.out.print(f + " ");
+        }
+        System.out.println();
     }
 
     /**
@@ -117,7 +128,7 @@ public class MainMultithreadingTask {
     public static float[] fillArray(float[] arr) {
         int count = 1;
         for (int i = 0; i < arr.length ; i++) {
-            arr[i] = count;
+            arr[i] = count - 1 + i;
         }
         return arr;
     }
@@ -157,12 +168,18 @@ public class MainMultithreadingTask {
         return array;
     }
 
+    /**
+     * Метод собирает массив из несколько подмассивов
+     * @param arr - двумерный массив, из которого необходимо собрать один массив
+     * @param size - длина массива
+     * @return - одномерный массив, собраный из подмассивов
+     */
     public static float[] gluingArray(float[][] arr, int size){
         float[] array = new float[size];
         int startIndex = 0;
         for (int i = 0; i < arr.length; i++) {
-            System.arraycopy(arr, startIndex, array[i], 0, arr[i].length);
-            startIndex += arr[i].length - 1;
+            System.arraycopy(arr[i], 0, array, startIndex, arr[i].length);
+            startIndex += arr[i].length;
         }
         return array;
     }
