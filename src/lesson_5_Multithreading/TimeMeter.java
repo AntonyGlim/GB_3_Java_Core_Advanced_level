@@ -25,6 +25,13 @@ public class TimeMeter {
 
     public void timeInfo(){
         workingTime = stopTime - startTime;
-        System.out.println(title + ". Длительность выполнялся: " + workingTime + " мс.");
+        System.out.println(this.title + ". Длительность выполнялся: " + workingTime + " мс.");
+    }
+
+    public String timeInfo(String title){
+        String timeMessage;
+        workingTime = stopTime - startTime;
+        timeMessage = (title + ". Длительность выполнялся: " + workingTime + " мс.");
+        return timeMessage;
     }
 }
