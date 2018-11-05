@@ -1,5 +1,8 @@
 package lesson_5_Multithreading;
 
+/**
+ * Клас создает анимацию ожидания пользователем
+ */
 public class UserWaitingAnimation implements Runnable {
     @Override
     public void run() {
@@ -10,7 +13,6 @@ public class UserWaitingAnimation implements Runnable {
                 e.printStackTrace();
             }
             System.out.print(". ");
-
         }
     }
 }
