@@ -39,11 +39,11 @@ package lesson_5_Multithreading;
 
 public class MainMultithreadingTask {
 
-    static final int size = 100;                    //Размеры массива
+    static final int size = 10000000;                    //Размеры массива
     static float[] arrS = new float[size];          //Массив для 1 потока
     static float[] arrM = new float[size];          //Массив для многопоточности
     static float[][] arrMulti = new float[size][];          //Массив для многопоточности
-    static short threadCount = 8;                   //Количество потоков
+    static short threadCount = 2;                   //Количество потоков
 
     public static void main(String[] args) {
 
@@ -72,28 +72,24 @@ public class MainMultithreadingTask {
         TimeMeter timeMeter_4 = new TimeMeter("Деление массива на части (по количеству потоков: " + threadCount + ")");
         timeMeter_4.timeStart();
         arrMulti = segmentationArray(arrM, threadCount);
-        timeMeter_4.timeStop();
         System.out.println("2-й массив поделен так:");
         printDoubleArray(arrMulti);
+        timeMeter_4.timeStop();
 
-    //Формируем массив с потоками
-        Thread[] arrThreads = new Thread[threadCount];
-        for (int i = 0; i < arrThreads.length; i++) {
-            arrThreads[i] = new Thread(new CalculatingValuesInArrayMulti(arrMulti[i]));
-        }
-
-    //Запускаем массив с потоками
+    //Формируем массив с потоками и запускаем массив с потоками
         TimeMeter timeMeter_5 = new TimeMeter("Вычисляем массив в потоках (количество потоков: " + threadCount + ")");
         timeMeter_5.timeStart();
+        Thread[] arrThreads = new Thread[threadCount];
         for (int i = 0; i < arrThreads.length; i++) {
             CalculatingValuesInArrayMulti cvi = new CalculatingValuesInArrayMulti(arrMulti[i]);
+            arrThreads[i] = new Thread(cvi);
             arrThreads[i].start();
             try {
                 arrThreads[i].join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            arrMulti[i] = cvi.arr;
+            arrMulti[i] = cvi.getArr();
         }
         timeMeter_5.timeStop();
 
@@ -212,18 +208,3 @@ public class MainMultithreadingTask {
 
 }
 
-class CalculatingValuesInArrayMulti implements Runnable{
-
-    float[] arr;
-
-    CalculatingValuesInArrayMulti(float[] arr){
-        this.arr = arr;
-    }
-
-    @Override
-    public void run() {
-        for (int i = 0; i < arr.length ; i++) {
-            arr[i] = (float)((arr[i] + 14) * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
-        }
-    }
-}
