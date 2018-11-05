@@ -12,7 +12,7 @@ public class UserWaitingAnimation implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.print(". ");
+            System.out.print(".");
         }
     }
 }

@@ -35,12 +35,10 @@
 
 package lesson_5_Multithreading;
 
-import java.util.Arrays;
-
 public class MainMultithreadingTask {
 
     static final int size = 10000000;                   //Размеры массива
-    static final short threadCount = 4;                 //Количество потоков
+    static final short threadCount = 400;                 //Количество потоков
 
     public static void main(String[] args) {
 
@@ -121,38 +119,6 @@ public class MainMultithreadingTask {
         float difference = (float)oneThreadWorkingTime / (float)multiThreadWorkingTime;
         System.out.println("Мультипоток отработал в " + difference + " раз быстрее чем один поток.");
 
-    }
-
-    /**
-     * Метод выведет массив в консоль
-     * @param arr - получает массив
-     */
-    public static void printArray(float[] arr){
-        for (float f : arr) {
-            System.out.print(f + " ");
-        }
-        System.out.println();
-    }
-
-    /**
-     * Метод выведет 2 мерный массив в консоль
-     * @param arr - получает массив
-     */
-    public static void printDoubleArray(String[][] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
-    public static void printDoubleArray(float[][] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j] + " ");
-            }
-            System.out.println();
-        }
     }
 
     /**

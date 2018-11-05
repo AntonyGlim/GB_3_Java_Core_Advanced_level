@@ -16,7 +16,6 @@ public class CalculatingValuesInArrayMulti implements Runnable {
         MainMultithreadingTask.calculatingValuesInArray(arr);
     }
 
-
     public float[] getArr() {
         return arr;
     }
