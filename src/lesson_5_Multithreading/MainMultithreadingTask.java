@@ -39,7 +39,7 @@ package lesson_5_Multithreading;
 
 public class MainMultithreadingTask {
 
-    static final int size = 33;                    //Размеры массива
+    static final int size = 10000000;                    //Размеры массива
     static float[] arrS = new float[size];          //Массив для 1 потока
     static float[] arrM = new float[size];          //Массив для многопоточности
     static float[][] arrMulti = new float[size][];          //Массив для многопоточности
@@ -47,42 +47,64 @@ public class MainMultithreadingTask {
 
     public static void main(String[] args) {
 
-//    //Наполняем массив значениями (1 поток)
-//        TimeMeter timeMeter_1 = new TimeMeter("Заполнение массива единицами в 1 поток");
-//        timeMeter_1.timeStart();
-//        arrS = fillArray(arrS);
-//        timeMeter_1.timeStop();
-//        printArray(arrS);
-//
-//    //Вычисляем значения по формуле (1 поток)
-//        TimeMeter timeMeter_2 = new TimeMeter("Вычисления элементов массива по формуле в 1 поток");
-//        timeMeter_2.timeStart();
-//        arrS = calculatingValuesInArray(arrS);
-//        timeMeter_2.timeStop();
+    //Наполняем массив значениями (1 поток)
+        TimeMeter timeMeter_1 = new TimeMeter("Заполнение массива единицами в 1 поток");
+        timeMeter_1.timeStart();
+        arrS = fillArray(arrS);
+        timeMeter_1.timeStop();
 //        printArray(arrS);
 
-      //Наполняем массив значениями (1 поток)
+    //Вычисляем значения по формуле (1 поток)
+        TimeMeter timeMeter_2 = new TimeMeter("Вычисления элементов массива по формуле в 1 поток");
+        timeMeter_2.timeStart();
+        arrS = calculatingValuesInArray(arrS);
+        timeMeter_2.timeStop();
+//        printArray(arrS);
+
+    //Наполняем массив значениями (1 поток)
         arrM = fillArray(arrS);
-        printArray(arrM);
+//        printArray(arrM);
 
-      //Делм массив на части
+    //Делим массив на части
         TimeMeter timeMeter_4 = new TimeMeter("Деление массива на части (по количеству потоков: " + threadCount + ")");
         timeMeter_4.timeStart();
         arrMulti = segmentationArray(arrM, threadCount);
         timeMeter_4.timeStop();
-        printDoubleArray(arrMulti);
+//        printDoubleArray(arrMulti);
+
+    //Формируем массив с потоками
+        Thread[] arrThreads = new Thread[threadCount];
+        for (int i = 0; i < arrThreads.length; i++) {
+            arrThreads[i] = new Thread(new CalculatingValuesInArray(arrMulti[i]));
+        }
+
+    //Запускаем массив с потоками
+        TimeMeter timeMeter_5 = new TimeMeter("Вычисляем массив в потоках (количество потоков: " + threadCount + ")");
+        timeMeter_5.timeStart();
+        for (int i = 0; i < arrThreads.length; i++) {
+            CalculatingValuesInArray cvi = new CalculatingValuesInArray(arrMulti[i]);
+            arrThreads[i].start();
+            try {
+                arrThreads[i].join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            arrMulti[i] = cvi.arr;
+        }
+        timeMeter_5.timeStop();
 
       //Собираем массив обратно
         TimeMeter timeMeter_6 = new TimeMeter("Собираем массив из частей (по количеству потоков: " + threadCount + ")");
         timeMeter_6.timeStart();
         arrM = gluingArray(arrMulti, size);
         timeMeter_6.timeStop();
-        printArray(arrM);
+//        printArray(arrM);
 
 
-//        timeMeter_1.timeInfo();
-//        timeMeter_2.timeInfo();
+        timeMeter_1.timeInfo();
+        timeMeter_2.timeInfo();
         timeMeter_4.timeInfo();
+        timeMeter_5.timeInfo();
         timeMeter_6.timeInfo();
 
 //        printDoubleArray(timeInfo);
@@ -164,7 +186,6 @@ public class MainMultithreadingTask {
         }
         array[count-1] = new float[numberOfElementsInArray + residueOfElements];
         System.arraycopy(arr, startIndex, array[count-1], 0, array[count-1].length);
-
         return array;
     }
 
@@ -196,8 +217,20 @@ class FillArrayMulti implements Runnable {
 
 class CalculatingValuesInArray implements Runnable{
 
+    float[] arr;
+
+    CalculatingValuesInArray(){
+    }
+
+    CalculatingValuesInArray(float[] arr){
+        this.arr = arr;
+    }
+
     @Override
     public void run() {
-
+        for (int i = 0; i < arr.length ; i++) {
+            arr[i] = (float)((arr[i] + 14) * Math.sin(0.2f + i / 5) * Math.cos(0.2f + i / 5) * Math.cos(0.4f + i / 2));
+        }
     }
+
 }
