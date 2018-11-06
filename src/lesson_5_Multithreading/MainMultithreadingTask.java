@@ -78,7 +78,7 @@ public class MainMultithreadingTask {
     //Делим массив на части
         TimeMeter timeMeter_4 = new TimeMeter();
         timeMeter_4.timeStart();
-        float[][] arrMulti = new float[size][];                 //Массив для многопоточности двумерный
+        float[][] arrMulti;                                     //Массив для многопоточности двумерный
         arrMulti = segmentationArray(arrM, threadCount);        //Делим массив на части
         timeMeter_4.timeStop();
         System.out.println(timeMeter_4.timeInfo("\nВторой массив поделен на части (по количеству потоков: " + threadCount + ")"));
@@ -129,7 +129,7 @@ public class MainMultithreadingTask {
     public static float[] fillArray(float[] arr) {
         int count = 1;
         for (int i = 0; i < arr.length ; i++) {
-            arr[i] = 1;
+            arr[i] = count;
         }
         return arr;
     }
