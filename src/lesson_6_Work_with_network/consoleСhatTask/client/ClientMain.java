@@ -16,7 +16,7 @@ package lesson_6_Work_with_network.consoleСhatTask.client;
 
 public class ClientMain {
     public static void main(String[] args) {
-        
+
     }
 
 }
