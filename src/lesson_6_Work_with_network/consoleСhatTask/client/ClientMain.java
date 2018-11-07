@@ -63,11 +63,11 @@ public class ClientMain {
     }
 
     public void sendMsg() {
-        try {
-//            System.out.println(out.writeUTF);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            System.out.println(" ");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
 }

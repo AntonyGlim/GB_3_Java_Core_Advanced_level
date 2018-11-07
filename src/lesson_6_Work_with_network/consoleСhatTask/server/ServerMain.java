@@ -14,8 +14,29 @@
 
 package lesson_6_Work_with_network.consoleСhatTask.server;
 
-public class ServerMain {
-    public static void main(String[] args) {
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
 
+import static lesson_6_Work_with_network.consoleСhatTask.Constants.PORT;
+
+public class ServerMain {
+
+    DataInputStream in;
+    DataOutputStream out;
+    ServerSocket serverSocket;
+    Socket client;
+
+    ServerMain() {
+        try {
+            serverSocket = new ServerSocket(PORT);
+            client = serverSocket.accept();
+            System.out.print("Кдиент подключился.");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
