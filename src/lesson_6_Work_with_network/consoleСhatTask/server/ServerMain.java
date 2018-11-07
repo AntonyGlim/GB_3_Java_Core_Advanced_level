@@ -29,16 +29,15 @@ public class ServerMain {
     ServerSocket serverSocket;
     Socket client;
 
-    ServerMain() {
+    public ServerMain() {
         try {
             serverSocket = new ServerSocket(PORT);
+            System.out.println("Сервер ожидает подключения пользователя...");
             client = serverSocket.accept();
-            System.out.print("Пользователь подключился");
+            System.out.println("Пользователь подключился");
 
             out = new DataOutputStream(client.getOutputStream());
             in = new DataInputStream(client.getInputStream());
-
-
 
             while (!client.isClosed()){
                 String msg = in.readUTF();
