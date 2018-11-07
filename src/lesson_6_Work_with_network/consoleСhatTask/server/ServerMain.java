@@ -33,7 +33,31 @@ public class ServerMain {
         try {
             serverSocket = new ServerSocket(PORT);
             client = serverSocket.accept();
-            System.out.print("Кдиент подключился.");
+            System.out.print("Пользователь подключился");
+
+            out = new DataOutputStream(client.getOutputStream());
+            in = new DataInputStream(client.getInputStream());
+
+
+
+            while (!client.isClosed()){
+                String msg = in.readUTF();
+                if (msg.equalsIgnoreCase("/q")){
+                    System.out.println("Пользователь решил покинуть чат...");
+                    out.writeUTF("Вы решили покинуть чат, соединение будет разорвано");
+                    out.flush();
+                    break;
+                }
+                System.out.println("Пользователь ввел: " + msg);
+                out.writeUTF("Эхо: " + msg);
+                out.flush();
+            }
+
+            in.close();
+            out.close();
+            client.close();
+
+            System.out.println("Соединение закрыто");
 
         } catch (IOException e) {
             e.printStackTrace();
