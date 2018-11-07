@@ -14,11 +14,60 @@
 
 package lesson_6_Work_with_network.consoleСhatTask.client;
 
+import lesson_6_Work_with_network.consoleСhatTask.Constants;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
 public class ClientMain {
 
     private String  userNik;
+    private Socket socket;
+    private DataInputStream in;
+    private DataOutputStream out;
 
     public ClientMain(String userNik){
+
         this.userNik = userNik;
+        try {
+            socket = new Socket(Constants.IPADRESS, Constants.PORT);
+            in = new DataInputStream(socket.getInputStream());
+            out = new DataOutputStream(socket.getOutputStream());
+
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        while (true) {
+                            String str = in.readUTF();
+                            if(str.equals("/serverClosed")) break;
+                            System.out.println(str + "\n");
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } finally {
+                        try {
+                            socket.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }).start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+
+    public void sendMsg() {
+        try {
+//            System.out.println(out.writeUTF);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
