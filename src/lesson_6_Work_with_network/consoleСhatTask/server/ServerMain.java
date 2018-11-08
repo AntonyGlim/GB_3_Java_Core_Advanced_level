@@ -40,29 +40,45 @@ public class ServerMain {
 
             out = new DataOutputStream(client.getOutputStream());
             in = new DataInputStream(client.getInputStream());
+
             String userNik;
             userNik = in.readUTF();
             out.writeUTF("Здравствуйте, " + userNik + "! Введите Ваше сообщение и нажмите Enter.");
             System.out.println("Пользователь с ником \"" + userNik + "\" подключился к серверу.");
 
-            while (!client.isClosed()){
-                String msg = in.readUTF();
-                if (msg.equalsIgnoreCase("/q")){
-                    System.out.println(userNik + " решил покинуть чат...");
-                    out.writeUTF(userNik + ": \"" + msg + "\", соединение будет прервано.");
-                    out.flush();
-                    break;
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (!client.isClosed()){
+                        try {
+                            String msg = in.readUTF();
+                            if (msg.equalsIgnoreCase("/q")){
+                                System.out.println(userNik + " решил покинуть чат...");
+                                out.writeUTF(userNik + ": \"" + msg + "\", соединение будет прервано.");
+                                out.flush();
+                                break;
+                            }
+                            System.out.println(userNik + ": " + msg);
+                            out.writeUTF(userNik + ": " + msg);
+                            out.flush();
+
+                        }catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
+                    try {
+                        in.close();
+                        out.close();
+                        client.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    
+                    System.out.println("Соединение закрыто.");
                 }
-                System.out.println(userNik + ": " + msg);
-                out.writeUTF(userNik + ": " + msg);
-                out.flush();
-            }
+            }).start();
 
-            in.close();
-            out.close();
-            client.close();
-
-            System.out.println("Соединение закрыто.");
 
         } catch (IOException e) {
             e.printStackTrace();
