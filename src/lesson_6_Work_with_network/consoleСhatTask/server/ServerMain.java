@@ -38,13 +38,12 @@ public class ServerMain {
             System.out.println("Сервер ожидает подключения пользователя...");
             client = serverSocket.accept();
 
-
             out = new DataOutputStream(client.getOutputStream());
             in = new DataInputStream(client.getInputStream());
             String userNik;
             userNik = in.readUTF();
             out.writeUTF("Ваш ник: " + userNik);
-            System.out.println("Пользователь с ником: " + userNik + " подключился.");
+            System.out.println("Пользователь с ником \"" + userNik + "\" подключился к серверу.");
 
             while (!client.isClosed()){
                 String msg = in.readUTF();

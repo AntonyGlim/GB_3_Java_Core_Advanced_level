@@ -32,7 +32,7 @@ public class ClientMain {
     public ClientMain(){
 
         Scanner readFromConsole = new Scanner(System.in);
-        System.out.print("Введите Ваш ник: ");
+        System.out.print("Для начала общения введите Ваш ник: ");
         String userNik = readFromConsole.nextLine();
         this.userNik = userNik;
 
@@ -64,5 +64,5 @@ public class ClientMain {
             e.printStackTrace();
         }
     }
-    
+
 }
