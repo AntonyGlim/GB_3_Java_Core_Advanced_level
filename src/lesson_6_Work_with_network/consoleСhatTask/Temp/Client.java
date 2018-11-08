@@ -11,6 +11,10 @@ public class Client {
     private BufferedReader br;          //Для чтения из консоли
     private DataInputStream in;         //Для чтения извне
     private DataOutputStream out;       //Для отправки наружу
+    private SendMessage sendMessage;
+    private Thread sendThread;
+    private ReceiveMessage receiveMessage;  //Получить письмо
+    private Thread receiveThread;
 
     Client() throws IOException {
 
@@ -19,13 +23,20 @@ public class Client {
         in = new DataInputStream(socket.getInputStream());
         out = new DataOutputStream(socket.getOutputStream());
 
-        while (!socket.isOutputShutdown()){
-            if(br.ready()){
-                String clientMsg = br.readLine();
-                out.writeUTF(clientMsg);
-                out.flush();
-                if(clientMsg.equalsIgnoreCase("/q")) break;
-            }
+        sendMessage = new SendMessage(br, out, socket);
+        sendThread = new Thread(sendMessage);
+
+        receiveMessage = new ReceiveMessage(in, socket);
+        receiveThread = new Thread(receiveMessage);
+
+        sendThread.start();
+        receiveThread.setDaemon(true);
+        receiveThread.start();
+
+        try {
+            sendThread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
         in.close();
@@ -34,3 +45,4 @@ public class Client {
         System.out.println("Соединение прервано.");
     }
 }
+

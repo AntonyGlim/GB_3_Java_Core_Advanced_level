@@ -27,6 +27,7 @@ public class Server {
             String msgFromClient = in.readUTF();
             if (msgFromClient.equalsIgnoreCase("/q")) break;
             System.out.println(msgFromClient);
+
         }
     }
 }
