@@ -14,6 +14,8 @@
 
 package lesson_6_Work_with_network.consoleСhatTask.server;
 
+import lesson_6_Work_with_network.consoleСhatTask.client.ClientMain;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -29,26 +31,31 @@ public class ServerMain {
     ServerSocket serverSocket;
     Socket client;
 
+
     public ServerMain() {
         try {
             serverSocket = new ServerSocket(PORT);
             System.out.println("Сервер ожидает подключения пользователя...");
             client = serverSocket.accept();
-            System.out.println("Пользователь подключился");
+
 
             out = new DataOutputStream(client.getOutputStream());
             in = new DataInputStream(client.getInputStream());
+            String userNik;
+            userNik = in.readUTF();
+            out.writeUTF("Ваш ник: " + userNik);
+            System.out.println("Пользователь с ником: " + userNik + " подключился.");
 
             while (!client.isClosed()){
                 String msg = in.readUTF();
                 if (msg.equalsIgnoreCase("/q")){
-                    System.out.println("Пользователь решил покинуть чат...");
-                    out.writeUTF("Вы решили покинуть чат, соединение будет разорвано");
+                    System.out.println(userNik + " решил покинуть чат...");
+                    out.writeUTF("Вы решили покинуть чат, соединение будет прервано.");
                     out.flush();
                     break;
                 }
-                System.out.println("Пользователь ввел: " + msg);
-                out.writeUTF("Эхо: " + msg);
+                System.out.println(userNik + ": " + msg);
+                out.writeUTF(userNik + " Эхо: " + msg);
                 out.flush();
             }
 
@@ -56,7 +63,7 @@ public class ServerMain {
             out.close();
             client.close();
 
-            System.out.println("Соединение закрыто");
+            System.out.println("Соединение закрыто.");
 
         } catch (IOException e) {
             e.printStackTrace();

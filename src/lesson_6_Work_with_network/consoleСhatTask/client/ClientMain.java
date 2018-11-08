@@ -19,6 +19,7 @@ import lesson_6_Work_with_network.consoleСhatTask.Constants;
 import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.Scanner;
 
 public class ClientMain {
 
@@ -28,14 +29,21 @@ public class ClientMain {
     private DataInputStream in;
     private DataOutputStream out;
 
-    public ClientMain(String userNik){
+    public ClientMain(){
 
+        Scanner readFromConsole = new Scanner(System.in);
+        System.out.print("Введите Ваш ник: ");
+        String userNik = readFromConsole.nextLine();
         this.userNik = userNik;
+
         try {
             socket = new Socket(Constants.IPADRESS, Constants.PORT);
             br = new BufferedReader(new InputStreamReader(System.in)) ;
             in = new DataInputStream(socket.getInputStream());
             out = new DataOutputStream(socket.getOutputStream());
+
+            out.writeUTF(userNik);
+            System.out.println(in.readUTF());
 
             while (!socket.isOutputShutdown()){
                 if(br.ready()){
@@ -46,14 +54,15 @@ public class ClientMain {
                     if(clientMsg.equalsIgnoreCase("/q")) break;
                 }
             }
-            System.out.println("Соединение будет прервано...");
+
             in.close();
             out.close();
             socket.close();
+            System.out.println("Соединение прервано.");
 
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
+    
 }
