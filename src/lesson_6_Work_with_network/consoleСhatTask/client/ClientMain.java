@@ -42,6 +42,7 @@ public class ClientMain {
                     String clientMsg = br.readLine();
                     out.writeUTF(clientMsg);
                     out.flush();
+                    System.out.println(in.readUTF());
                     if(clientMsg.equalsIgnoreCase("/q")) break;
                 }
             }
