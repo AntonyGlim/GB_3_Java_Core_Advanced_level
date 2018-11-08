@@ -42,19 +42,19 @@ public class ServerMain {
             in = new DataInputStream(client.getInputStream());
             String userNik;
             userNik = in.readUTF();
-            out.writeUTF("Ваш ник: " + userNik);
+            out.writeUTF("Здравствуйте, " + userNik + "! Введите Ваше сообщение и нажмите Enter.");
             System.out.println("Пользователь с ником \"" + userNik + "\" подключился к серверу.");
 
             while (!client.isClosed()){
                 String msg = in.readUTF();
                 if (msg.equalsIgnoreCase("/q")){
                     System.out.println(userNik + " решил покинуть чат...");
-                    out.writeUTF("Вы решили покинуть чат, соединение будет прервано.");
+                    out.writeUTF(userNik + ": \"" + msg + "\", соединение будет прервано.");
                     out.flush();
                     break;
                 }
                 System.out.println(userNik + ": " + msg);
-                out.writeUTF(userNik + " Эхо: " + msg);
+                out.writeUTF(userNik + ": " + msg);
                 out.flush();
             }
 
