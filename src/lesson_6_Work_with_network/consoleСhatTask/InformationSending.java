@@ -21,7 +21,12 @@ public class InformationSending implements Runnable {
     @Override
     public void run() {
         try {
-            new MessageOut(br, out);                                        //Вызываем метод отправки сообщений
+            while (true){                                                   //Отправка сообщений
+                String msg = br.readLine();
+                out.writeUTF(msg);
+                out.flush();
+                if (msg.equalsIgnoreCase("/q"))System.exit(0);
+            }
 
         } catch (IOException e) {
             e.printStackTrace();

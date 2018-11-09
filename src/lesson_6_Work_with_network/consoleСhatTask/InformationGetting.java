@@ -18,7 +18,11 @@ public class InformationGetting  implements Runnable{
     @Override
     public void run() {
         try {
-            new MessageIn(in);                                      //Вызываем метод отправки сообщений
+            while (true) {                                                  //Получение сообщений
+                String msg = in.readUTF();
+                System.out.println(msg);
+                if (msg.equalsIgnoreCase("/q")) System.exit(0);
+            }
 
         } catch (IOException e) {
             e.printStackTrace();
