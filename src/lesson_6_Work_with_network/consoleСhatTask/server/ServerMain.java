@@ -29,7 +29,7 @@ public class ServerMain {
         threadOut.join();
 
         System.out.println("Соединение прервано (from ServerMain)");
-        client.close();
+//        client.close();
         serverSocket.close();
 
     }

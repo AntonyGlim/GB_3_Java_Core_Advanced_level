@@ -24,7 +24,7 @@ public class ServerOut  implements Runnable{
                 String msg = br.readLine();
                 out.writeUTF(msg);
                 out.flush();
-//                if (msg.equalsIgnoreCase("/q")) break;
+                if (msg.equalsIgnoreCase("/q")) break;
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -32,6 +32,7 @@ public class ServerOut  implements Runnable{
         try {
             br.close();
             out.close();
+            socket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -27,6 +27,7 @@ public class ClientIn implements Runnable{
         }
         try {
             in.close();
+            socket.close();
             System.out.println("Соединение прервано (from ClientIn)");
         } catch (IOException e) {
             e.printStackTrace();

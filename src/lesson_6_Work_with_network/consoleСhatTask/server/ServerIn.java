@@ -23,6 +23,14 @@ public class ServerIn  implements Runnable{
     public void run() {
         try {
             new MessageIn(in);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            in.close();
+            client.close();
+            System.out.println("Соединение прервано (from ClientIn)");
         } catch (IOException e) {
             e.printStackTrace();
         }

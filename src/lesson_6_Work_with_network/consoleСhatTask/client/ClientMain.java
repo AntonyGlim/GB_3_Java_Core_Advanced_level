@@ -24,7 +24,7 @@ public class ClientMain {
         threadOut.join();
 
         System.out.println("Соединение прервано (from ClientMain)");
-        socket.close();
+//        socket.close();
 
     }
 }
