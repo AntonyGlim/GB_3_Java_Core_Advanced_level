@@ -1,5 +1,7 @@
 package lesson_6_Work_with_network.consoleСhatTask.server;
 
+import lesson_6_Work_with_network.consoleСhatTask.MessageOut;
+
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -17,22 +19,12 @@ public class ServerOut  implements Runnable{
         out = new DataOutputStream(socket.getOutputStream());
         br = new BufferedReader(new InputStreamReader(System.in));
     }
+
     @Override
     public void run() {
         try {
-            while (!socket.isOutputShutdown()){
-                String msg = br.readLine();
-                out.writeUTF(msg);
-                out.flush();
-                if (msg.equalsIgnoreCase("/q")) break;
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            br.close();
-            out.close();
-            socket.close();
+            new MessageOut(br, out);
+
         } catch (IOException e) {
             e.printStackTrace();
         }
