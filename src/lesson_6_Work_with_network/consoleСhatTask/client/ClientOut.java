@@ -29,14 +29,14 @@ public class ClientOut implements Runnable{
             }
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                br.close();
-                out.close();
-                socket.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
+        try {
+            br.close();
+            out.close();
+            socket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }

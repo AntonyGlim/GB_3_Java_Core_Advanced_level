@@ -26,8 +26,18 @@ public class Server {
         while (true){
             String msgFromClient = in.readUTF();
             System.out.println(msgFromClient);
-            out.writeUTF("User send^ " + msgFromClient);
-            if (msgFromClient.equalsIgnoreCase("/q")) break;
+            out.writeUTF("User send: " + msgFromClient);
+            if (msgFromClient.equalsIgnoreCase("/q")) {
+                break;
+            }
+        }
+        try {
+            in.close();
+            client.close();
+            System.out.println("Соединение прервано (from Server)");
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
+

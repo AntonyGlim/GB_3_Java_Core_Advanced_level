@@ -11,18 +11,12 @@ public class MessageIn {
             while (!socket.isClosed()) {
                 String msg = in.readUTF();
                 System.out.println(msg);
-                if (msg.equalsIgnoreCase("/q")) break;
+                if (msg.equalsIgnoreCase("/q")){
+                    break;
+                }
             }
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                in.close();
-                socket.close();
-                System.out.println("Соединение прервано");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 }
