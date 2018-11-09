@@ -18,18 +18,17 @@ public class ServerMain {
         client = serverSocket.accept();
         System.out.println("Пользователь подключился.");
 
-
         Thread threadOut = new Thread(new ServerOut(client));
         Thread threadIn = new Thread(new ServerIn(client));
 
+        threadIn.setDaemon(true);
         threadIn.start();
-        threadOut.start();
 
-        threadIn.join();
+        threadOut.start();
         threadOut.join();
 
         System.out.println("Соединение прервано (from ServerMain)");
-//        client.close();
+        client.close();
         serverSocket.close();
 
     }

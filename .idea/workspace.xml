@@ -2,12 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GB_3_Java_Core_Advanced_level/lesson_6_Work_with_network/Lesson_6/Client/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/Chat/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/Chat/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/Chat/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/Chat/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/Chat/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/Chat/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/Chat/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/Chat/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/Chat/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/Chat/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/Chat/nbproject/project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/build/built-jar.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/build/classes/.netbeans_automatic_build" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/build/classes/.netbeans_update_resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/dist/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/lib/nblibraries.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/manifest.mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/nbproject/build-impl.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/nbproject/genfiles.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/nbproject/private/private.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/nbproject/private/private.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/nbproject/project.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/ReadInMetro/chatClient/nbproject/project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerOut.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,23 +54,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="98" />
+          <entry key="java" value="101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="98" />
+          <entry key="JAVA" value="101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5580" />
+          <entry key="java" value="5607" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5580" />
+          <entry key="JAVA" value="5607" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -99,10 +121,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Server.java">
+        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="16" selection-start-line="16" selection-end-line="19" selection-end-column="39" />
+            <state relative-caret-position="347">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,56 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerOut.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="21" selection-start-line="21" selection-end-line="33" selection-end-column="9" />
+            <state relative-caret-position="308">
+              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,43 +145,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java">
+        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/MessageIn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerStart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientStart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" selection-start-line="6" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="-34">
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -277,9 +218,9 @@
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerOut.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java" />
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java" />
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java" />
       </list>
     </option>
   </component>
@@ -344,44 +285,6 @@
               <item name="consoleСhatTask" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
-              <item name="consoleСhatTask" type="462c0819:PsiDirectoryNode" />
-              <item name="Temp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
-              <item name="fromNetExample" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
-              <item name="Lesson_6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
-              <item name="Lesson_6" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
-              <item name="Lesson_6" type="462c0819:PsiDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -393,7 +296,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541793931401" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541794481840" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RunDashboard">
@@ -511,18 +414,18 @@
       <workItem from="1541745493498" duration="202000" />
       <workItem from="1541745738194" duration="7378000" />
       <workItem from="1541761832369" duration="871000" />
-      <workItem from="1541780808083" duration="10069000" />
+      <workItem from="1541780808083" duration="10653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46689000" />
+    <option name="totallyTimeSpent" value="47273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21406959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18154311" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -532,7 +435,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3371522" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2782324" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -829,13 +732,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" selection-start-line="6" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/StartS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -863,17 +759,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/MessageIn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="21" selection-start-line="21" selection-end-line="33" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -900,20 +799,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="21" selection-start-line="21" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientStart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="69">
+          <caret line="6" selection-start-line="6" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -922,21 +825,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        <state relative-caret-position="308">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-34">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>

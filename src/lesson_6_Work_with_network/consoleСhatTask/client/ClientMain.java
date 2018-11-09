@@ -17,14 +17,14 @@ public class ClientMain {
         Thread threadOut = new Thread(new ClientOut(socket));
         Thread threadIn = new Thread(new ClientIn(socket));
 
+        threadIn.setDaemon(true);
         threadIn.start();
-        threadOut.start();
 
-        threadIn.join();
+        threadOut.start();
         threadOut.join();
 
         System.out.println("Соединение прервано (from ClientMain)");
-//        socket.close();
+        socket.close();
 
     }
 }
