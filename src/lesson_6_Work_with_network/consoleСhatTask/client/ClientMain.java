@@ -13,13 +13,13 @@ public class ClientMain {
     ClientMain() throws IOException, InterruptedException {
         socket = new Socket(IPADRESS, PORT);
 
-        Thread threadIn = new Thread(new ClientIn(socket));
         Thread threadOut = new Thread(new ClientOut(socket));
+        Thread threadIn = new Thread(new ClientIn(socket));
 
-        threadIn.setDaemon(true);
         threadIn.start();
-
         threadOut.start();
+
+        threadIn.join();
         threadOut.join();
 
         System.out.println("Соединение прервано (from ClientMain)");

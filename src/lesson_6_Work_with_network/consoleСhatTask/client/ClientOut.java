@@ -33,7 +33,6 @@ public class ClientOut implements Runnable{
         try {
             br.close();
             out.close();
-            socket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }

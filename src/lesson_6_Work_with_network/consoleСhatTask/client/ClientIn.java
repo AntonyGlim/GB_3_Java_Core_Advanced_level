@@ -19,13 +19,18 @@ public class ClientIn implements Runnable{
 
     @Override
     public void run() {
-        new MessageIn(socket, in);
+        try {
+            new MessageIn(in);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         try {
             in.close();
-
             System.out.println("Соединение прервано (from ClientIn)");
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }

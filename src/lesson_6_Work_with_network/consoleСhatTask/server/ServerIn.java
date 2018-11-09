@@ -21,7 +21,11 @@ public class ServerIn  implements Runnable{
 
     @Override
     public void run() {
-        new MessageIn(client, in);
+        try {
+            new MessageIn(in);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 }

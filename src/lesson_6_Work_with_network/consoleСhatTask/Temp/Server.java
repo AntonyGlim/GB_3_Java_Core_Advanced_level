@@ -32,8 +32,11 @@ public class Server {
             }
         }
         try {
+            br.close();
+            out.close();
             in.close();
             client.close();
+            serverSocket.close();
             System.out.println("Соединение прервано (from Server)");
         } catch (IOException e) {
             e.printStackTrace();
