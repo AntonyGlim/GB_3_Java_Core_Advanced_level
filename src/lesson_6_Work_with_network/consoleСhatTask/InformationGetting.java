@@ -4,6 +4,9 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.net.Socket;
 
+/**
+ * Класс предназначен для получения информации извне
+ */
 public class InformationGetting  implements Runnable{
 
     private Socket socket;
@@ -21,7 +24,7 @@ public class InformationGetting  implements Runnable{
             while (true) {                                                  //Получение сообщений
                 String msg = in.readUTF();
                 System.out.println(msg);
-                if (msg.equalsIgnoreCase("/q")) System.exit(0);
+                if (msg.equalsIgnoreCase("/q")) System.exit(0);         //У меня не получилось выйти иначе! Пояните, пожалуйста, как правильно выйти и закрыть все потоки
             }
 
         } catch (IOException e) {

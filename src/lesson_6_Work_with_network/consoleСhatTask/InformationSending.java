@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
 
+/**
+ * Класс предназначен для отправки информации вовне
+ */
 public class InformationSending implements Runnable {
 
     private Socket socket;
@@ -25,7 +28,7 @@ public class InformationSending implements Runnable {
                 String msg = br.readLine();
                 out.writeUTF(msg);
                 out.flush();
-                if (msg.equalsIgnoreCase("/q"))System.exit(0);
+                if (msg.equalsIgnoreCase("/q"))System.exit(0);        //У меня не получилось выйти иначе! Пояните, пожалуйста, как правильно выйти и закрыть все потоки
             }
 
         } catch (IOException e) {
