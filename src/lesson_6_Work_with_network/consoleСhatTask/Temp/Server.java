@@ -23,11 +23,10 @@ public class Server {
         in = new DataInputStream(client.getInputStream());
         out = new DataOutputStream(client.getOutputStream());
 
-        while (!client.isClosed()){
+        while (true){
             String msgFromClient = in.readUTF();
-            if (msgFromClient.equalsIgnoreCase("/q")) break;
             System.out.println(msgFromClient);
-
+            if (msgFromClient.equalsIgnoreCase("/q")) break;
         }
     }
 }

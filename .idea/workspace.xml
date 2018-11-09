@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/StartServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/StartServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientStart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientStart.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,7 +53,7 @@
     <session id="-136247156">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.15" value="1" />
@@ -73,23 +65,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="fxml" value="1" />
-          <entry key="java" value="52" />
+          <entry key="java" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="52" />
+          <entry key="JAVA" value="53" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1184" />
+          <entry key="java" value="1220" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1184" />
+          <entry key="JAVA" value="1220" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -100,18 +92,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/StartServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-end-line="7" />
-              <folding>
-                <element signature="e#0#142#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -193,8 +173,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="442">
+              <caret line="26" selection-start-line="26" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/fromNetExample/ClientFromNet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="21" column="33" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -264,14 +256,12 @@
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Client.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/ReceiveMessage.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/SendMessage.java" />
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Server.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerStart.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerOut.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/MessageIn.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/ClientHandler.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java" />
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/Server.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/StartServer.java" />
@@ -279,6 +269,8 @@
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Main.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/sample.fxml" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientStart.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Server.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java" />
       </list>
     </option>
   </component>
@@ -391,7 +383,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541757557963" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541760041957" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RunDashboard">
@@ -507,16 +499,15 @@
       <workItem from="1541619297802" duration="3909000" />
       <workItem from="1541658334599" duration="441000" />
       <workItem from="1541745493498" duration="202000" />
-      <workItem from="1541745738194" duration="6114000" />
+      <workItem from="1541745738194" duration="7378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34485000" />
+    <option name="totallyTimeSpent" value="35749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1160" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3011111" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -528,7 +519,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25998053" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25998053" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -789,16 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/fromNetExample/ClientFromNet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="39" column="48" lean-forward="true" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -929,23 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/StartS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientStart.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -963,10 +927,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/fromNetExample/ClientFromNet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/StartS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

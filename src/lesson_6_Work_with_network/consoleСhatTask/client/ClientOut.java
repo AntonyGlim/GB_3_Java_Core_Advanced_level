@@ -14,7 +14,7 @@ public class ClientOut implements Runnable{
 
     public ClientOut(Socket socket) throws IOException {
         this.socket = socket;
-        out = new DataOutputStream(new Socket().getOutputStream());
+        out = new DataOutputStream(socket.getOutputStream());
         br = new BufferedReader(new InputStreamReader(System.in));
     }
 
@@ -22,10 +22,12 @@ public class ClientOut implements Runnable{
     public void run() {
         while (true){
             try {
-                String msg = br.readLine();
-                out.writeUTF(msg);
-                out.flush();
-                if (msg.equalsIgnoreCase("/q")) break;
+                if(br.ready()) {
+                    String msg = br.readLine();
+                    out.writeUTF(msg);
+                    out.flush();
+                    if (msg.equalsIgnoreCase("/q")) break;
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             } finally {
