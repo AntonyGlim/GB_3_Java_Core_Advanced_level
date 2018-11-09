@@ -2,10 +2,8 @@ package lesson_6_Work_with_network.consoleСhatTask.client;
 
 import lesson_6_Work_with_network.consoleСhatTask.MessageIn;
 
-import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.Socket;
 
 public class ClientIn implements Runnable{
