@@ -11,10 +11,10 @@ public class MessageOut {
             String msg = br.readLine();
             out.writeUTF(msg);
             out.flush();
-            if (msg.equalsIgnoreCase("/q")) break;
+            if (msg.equalsIgnoreCase("/q"))System.exit(0);
         }
 
-        br.close();
-        out.close();
+//        br.close();
+//        out.close();
     }
 }

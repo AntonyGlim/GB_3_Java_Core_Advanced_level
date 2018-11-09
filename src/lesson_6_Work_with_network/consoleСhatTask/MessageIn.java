@@ -9,7 +9,7 @@ public class MessageIn {
             while (true) {
                 String msg = in.readUTF();
                 System.out.println(msg);
-                if (msg.equalsIgnoreCase("/q")) break;
+                if (msg.equalsIgnoreCase("/q")) System.exit(0);
             }
     }
 }
