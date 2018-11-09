@@ -19,6 +19,8 @@ public class ClientIn implements Runnable{
 
     @Override
     public void run() {
-        new MessageIn(socket, in);
+        while (true) {
+            new MessageIn(socket, in);
+        }
     }
 }

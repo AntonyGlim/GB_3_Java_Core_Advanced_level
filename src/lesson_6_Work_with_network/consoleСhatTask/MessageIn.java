@@ -7,11 +7,12 @@ import java.net.Socket;
 public class MessageIn {
 
     public MessageIn (Socket socket, DataInputStream in){
-            while (!socket.isClosed()){
         try {
-            String msg = in.readUTF();
-            System.out.println(msg);
-            if (msg.equalsIgnoreCase("/q")) break;
+            while (!socket.isClosed()) {
+                String msg = in.readUTF();
+                System.out.println(msg);
+                if (msg.equalsIgnoreCase("/q")) break;
+            }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
@@ -25,4 +26,4 @@ public class MessageIn {
         }
     }
 }
-}
+
