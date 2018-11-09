@@ -6,25 +6,28 @@ import java.net.Socket;
 import static lesson_6_Work_with_network.consoleСhatTask.Constants.IPADRESS;
 import static lesson_6_Work_with_network.consoleСhatTask.Constants.PORT;
 
+/**
+ * Класс описывает логику работы Клиента
+ */
 public class ClientMain {
 
-    private Socket socket;
+    private Socket socket;                                          //Сокет предназначен для связи Клиента с Сервером
 
-    ClientMain() throws IOException, InterruptedException {
+    ClientMain() throws IOException, InterruptedException {         //Пробрасываем исключения в старт
 
-        socket = new Socket(IPADRESS, PORT);
+        socket = new Socket(IPADRESS, PORT);                        //Создаем новый клиентский Сокет
 
-        Thread threadOut = new Thread(new ClientOut(socket));
-        Thread threadIn = new Thread(new ClientIn(socket));
+        Thread threadOut = new Thread(new ClientOut(socket));       //Создаем поток отвечающий за отправку Клиентом информации
+        Thread threadIn = new Thread(new ClientIn(socket));         //Создаем поток отвечающий за получение Клиентом информации
 
-        threadIn.setDaemon(true);
+        threadIn.setDaemon(true);                                   //Поток получения переводим в фоновый режим
         threadIn.start();
 
         threadOut.start();
-        threadOut.join();
+        threadOut.join();                                           //Ждем выполнения основного потока
 
-        System.out.println("Соединение прервано (from ClientMain)");
-        socket.close();
+        System.out.println("Соединение прервано.");
+        socket.close();                                             //Закрываем Сокет
 
     }
 }
