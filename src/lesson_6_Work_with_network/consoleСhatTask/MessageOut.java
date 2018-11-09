@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
+/**
+ * Класс хранит метод отправки информации вовне
+ */
 public class MessageOut {
 
     public MessageOut(BufferedReader br, DataOutputStream out) throws IOException {

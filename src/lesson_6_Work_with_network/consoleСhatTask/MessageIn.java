@@ -3,6 +3,9 @@ package lesson_6_Work_with_network.consoleСhatTask;
 import java.io.DataInputStream;
 import java.io.IOException;
 
+/**
+ * Класс хранит метод получения информации извне
+ */
 public class MessageIn {
 
     public MessageIn (DataInputStream in) throws IOException {

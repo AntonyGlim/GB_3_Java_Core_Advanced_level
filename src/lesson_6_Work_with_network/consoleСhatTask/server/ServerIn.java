@@ -6,6 +6,9 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.net.Socket;
 
+/**
+ * Класс предназначен для получения информации извне
+ */
 public class ServerIn  implements Runnable{
 
     private Socket client;
@@ -20,7 +23,7 @@ public class ServerIn  implements Runnable{
     @Override
     public void run() {
         try {
-            new MessageIn(in);
+            new MessageIn(in);                                              //Вызываем метод отправки сообщений
 
         } catch (IOException e) {
             e.printStackTrace();
