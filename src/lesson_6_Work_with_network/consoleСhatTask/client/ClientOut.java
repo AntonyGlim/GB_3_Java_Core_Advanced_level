@@ -25,7 +25,7 @@ public class ClientOut implements Runnable{
                 String msg = br.readLine();
                 out.writeUTF(msg);
                 out.flush();
-                if (msg.equalsIgnoreCase("/q")) break;
+//                if (msg.equalsIgnoreCase("/q")) break;
             }
         } catch (IOException e) {
             e.printStackTrace();
