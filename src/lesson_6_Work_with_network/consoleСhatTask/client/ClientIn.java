@@ -1,5 +1,7 @@
 package lesson_6_Work_with_network.consoleСhatTask.client;
 
+import lesson_6_Work_with_network.consoleСhatTask.MessageIn;
+
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -19,20 +21,6 @@ public class ClientIn implements Runnable{
 
     @Override
     public void run() {
-        while (!socket.isClosed()){
-            try {
-                System.out.println(in.readUTF());
-            } catch (IOException e) {
-                e.printStackTrace();
-            } finally {
-                try {
-                    in.close();
-                    socket.close();
-                    System.out.println("Соединение прервано");
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
+        new MessageIn(socket, in);
     }
 }
