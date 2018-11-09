@@ -13,11 +13,11 @@ public class ClientMain {
     ClientMain() throws IOException, InterruptedException {
         socket = new Socket(IPADRESS, PORT);
 
-        Thread threadIn = new Thread(new ClientIn(socket));
+//        Thread threadIn = new Thread(new ClientIn(socket));
         Thread threadOut = new Thread(new ClientOut(socket));
 
-        threadIn.setDaemon(true);
-        threadIn.start();
+//        threadIn.setDaemon(true);
+//        threadIn.start();
 
         threadOut.start();
         threadOut.join();

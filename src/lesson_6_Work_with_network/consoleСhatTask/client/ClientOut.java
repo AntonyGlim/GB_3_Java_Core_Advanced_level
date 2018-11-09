@@ -20,24 +20,22 @@ public class ClientOut implements Runnable{
 
     @Override
     public void run() {
-        while (true){
+        try {
+            while (!socket.isOutputShutdown()){
+                String msg = br.readLine();
+                out.writeUTF(msg);
+                out.flush();
+                if (msg.equalsIgnoreCase("/q")) break;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
             try {
-                if(br.ready()) {
-                    String msg = br.readLine();
-                    out.writeUTF(msg);
-                    out.flush();
-                    if (msg.equalsIgnoreCase("/q")) break;
-                }
+                br.close();
+                out.close();
+                socket.close();
             } catch (IOException e) {
                 e.printStackTrace();
-            } finally {
-                try {
-                    br.close();
-                    out.close();
-                    socket.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
             }
         }
     }
