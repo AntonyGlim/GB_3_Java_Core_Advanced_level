@@ -5,8 +5,15 @@ import java.io.IOException;
 
 public class ServerStart {
     public static void main(String[] args) {
+        try {
 
-            new ServerStart();
+            new ServerMain();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 }

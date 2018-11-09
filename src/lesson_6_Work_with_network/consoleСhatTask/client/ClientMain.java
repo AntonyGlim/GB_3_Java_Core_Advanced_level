@@ -11,6 +11,7 @@ public class ClientMain {
     private Socket socket;
 
     ClientMain() throws IOException, InterruptedException {
+
         socket = new Socket(IPADRESS, PORT);
 
         Thread threadOut = new Thread(new ClientOut(socket));
@@ -24,6 +25,6 @@ public class ClientMain {
 
         System.out.println("Соединение прервано (from ClientMain)");
         socket.close();
-    }
 
+    }
 }
