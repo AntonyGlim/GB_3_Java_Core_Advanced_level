@@ -34,7 +34,7 @@ public class ServerMain {
         threadOut.join();                                                               //Ждем выполнения основного потока
 
         System.out.println("Соединение прервано.");
-        client.close();                                                                 //Закрываем Сокет
+//        client.close();                                                                 //Закрываем Сокет
         serverSocket.close();                                                           //Закрываем Сетевой Сокет
 
     }
