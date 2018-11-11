@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainClient/MainClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainServer/MainClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleEchoServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationSending.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationSending.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,23 +33,23 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="146" />
+          <entry key="java" value="157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="146" />
+          <entry key="JAVA" value="157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="7384" />
+          <entry key="java" value="8101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7384" />
+          <entry key="JAVA" value="8101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -100,83 +98,121 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationSending.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="49" selection-start-line="49" selection-start-column="2" selection-end-line="54" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationGetting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-83">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainServer/MainClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainClient/MainClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-83">
-              <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#148#149#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
-                <element signature="e#1765#1766#0" expanded="true" />
-                <element signature="e#1806#1807#0" expanded="true" />
-                <element signature="e#2654#3072#0" expanded="true" />
-                <element signature="e#3071#3072#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="33" selection-start-line="33" selection-end-line="33" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ClientMain.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-561">
+                  <caret column="12" selection-start-column="12" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleClient.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1224">
+                  <caret line="72" selection-start-line="72" selection-end-line="72" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ServerMain.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleEchoServer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="427">
+                  <caret line="85" selection-start-line="85" selection-end-line="85" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationSending.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="308">
+                  <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationGetting.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="402">
+                  <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Constants.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="53" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="53" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ServerMain.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-646">
+                  <caret line="11" column="29" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -206,10 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/Pool.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/CrossDistance.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/Course.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/Barier.java" />
         <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Badger.java" />
         <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Cat.java" />
         <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Dog.java" />
@@ -257,6 +289,10 @@
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainClass.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainServer/MainClass.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainClient/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ServerMain.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ClientMain.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleClient.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleEchoServer.java" />
       </list>
     </option>
   </component>
@@ -266,7 +302,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="622" />
     <option name="y" value="-13" />
     <option name="width" value="960" />
@@ -294,6 +330,55 @@
               <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
+              <item name="consoleСhatTask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
+              <item name="consoleСhatTask" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
+              <item name="consoleСhatTask" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
+              <item name="simpleEchoServerAndClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_7_NetworkChat_part_1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_7_NetworkChat_part_1" type="462c0819:PsiDirectoryNode" />
+              <item name="lessonMaterials" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -303,7 +388,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541939054236" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541951188597" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
@@ -319,26 +404,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainClass (2)">
-    <configuration name="ClientStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_6_Work_with_network.consoleСhatTask.client.ClientStart" />
+  <component name="RunManager" selected="Application.SimpleClient">
+    <configuration name="ClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.lessonMaterials.ClientMain" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_6_Work_with_network.consoleСhatTask.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainClass (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_6_Work_with_network.methodicalInstructionsEchoServer.MainServer.MainClass" />
-      <module name="GB_3_Java_Core_Advanced_level" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson_6_Work_with_network.methodicalInstructionsEchoServer.MainServer.*" />
+          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.lessonMaterials.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -359,12 +431,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_6_Work_with_network.methodicalInstructionsEchoServer.MainClass" />
+    <configuration name="ServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.lessonMaterials.ServerMain" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_6_Work_with_network.methodicalInstructionsEchoServer.*" />
+          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.lessonMaterials.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -372,12 +444,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_6_Work_with_network.consoleСhatTask.server.ServerStart" />
+    <configuration name="SimpleClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_6_Work_with_network.simpleEchoServerAndClient.SimpleClient" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_6_Work_with_network.consoleСhatTask.server.*" />
+          <option name="PATTERN" value="lesson_6_Work_with_network.simpleEchoServerAndClient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleEchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_6_Work_with_network.simpleEchoServerAndClient.SimpleEchoServer" />
+      <module name="GB_3_Java_Core_Advanced_level" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson_6_Work_with_network.simpleEchoServerAndClient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -386,19 +471,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ClientStart" />
-      <item itemvalue="Application.ServerStart" />
-      <item itemvalue="Application.MainClass" />
-      <item itemvalue="Application.MainClass (1)" />
       <item itemvalue="Application.MainClass (2)" />
+      <item itemvalue="Application.SimpleEchoServer" />
+      <item itemvalue="Application.SimpleClient" />
+      <item itemvalue="Application.ServerMain" />
+      <item itemvalue="Application.ClientMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SimpleClient" />
+        <item itemvalue="Application.SimpleEchoServer" />
+        <item itemvalue="Application.ClientMain" />
+        <item itemvalue="Application.ServerMain" />
         <item itemvalue="Application.MainClass (2)" />
-        <item itemvalue="Application.MainClass (1)" />
-        <item itemvalue="Application.ClientStart" />
-        <item itemvalue="Application.MainClass" />
-        <item itemvalue="Application.ServerStart" />
       </list>
     </recent_temporary>
   </component>
@@ -427,18 +512,19 @@
       <workItem from="1541800230848" duration="482000" />
       <workItem from="1541833863456" duration="1209000" />
       <workItem from="1541877735436" duration="749000" />
-      <workItem from="1541930197608" duration="7241000" />
+      <workItem from="1541930197608" duration="13123000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62345000" />
+    <option name="totallyTimeSpent" value="68227000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19969743" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8367347" weight="0.19969743" />
+      <window_info id="Structure" order="1" sideWeight="0.1632653" side_tool="true" weight="0.19969743" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -447,7 +533,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2782324" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2782324" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -455,7 +541,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.17839608" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.20785597" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -468,8 +554,8 @@
       <window_info anchor="right" id="Database" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19969743" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8367347" visible="true" weight="0.19969743" />
+      <window_info id="Structure" order="1" sideWeight="0.1632653" side_tool="true" visible="true" weight="0.19969743" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -478,7 +564,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2782324" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2782324" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -486,7 +572,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.17839608" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.20785597" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -506,34 +592,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/OopTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/numberOfStringTask/NumberOfStringTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/exceptionTask/Lesson2Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/enumTask/Lesson2Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="51" selection-start-line="51" selection-end-line="71" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -626,43 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationSending.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="49" selection-start-line="49" selection-start-column="2" selection-end-line="54" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -673,27 +694,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationGetting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="359">
           <caret line="36" lean-forward="true" selection-start-line="1" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainServer/MainClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
         </state>
       </provider>
     </entry>
@@ -709,6 +713,91 @@
             <element signature="e#1806#1807#0" expanded="true" />
             <element signature="e#2654#3072#0" expanded="true" />
             <element signature="e#3071#3072#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainServer/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="67" selection-start-line="22" selection-start-column="67" selection-end-line="22" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationGetting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationSending.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ServerMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleEchoServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
