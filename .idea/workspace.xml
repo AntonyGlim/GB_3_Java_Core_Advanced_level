@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleEchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MyWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/BaseAuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MyServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -33,23 +37,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="157" />
+          <entry key="fxml" value="1" />
+          <entry key="java" value="176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="157" />
+          <entry key="JAVA" value="176" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8101" />
+          <entry key="fxml" value="9" />
+          <entry key="java" value="8236" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8101" />
+          <entry key="JAVA" value="8236" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -98,121 +106,110 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="33" selection-start-line="33" selection-end-line="33" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ClientMain.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-561">
-                  <caret column="12" selection-start-column="12" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleClient.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1224">
-                  <caret line="72" selection-start-line="72" selection-end-line="72" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ServerMain.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleEchoServer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="427">
-                  <caret line="85" selection-start-line="85" selection-end-line="85" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationSending.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationGetting.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="24" selection-start-line="24" selection-end-line="24" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="402">
-                  <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Constants.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="53" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="53" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ServerMain.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-646">
-                  <caret line="11" column="29" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MyServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-66">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+                <element signature="e#1592#1593#0" expanded="true" />
+                <element signature="e#1625#1626#0" expanded="true" />
+                <element signature="e#1663#1664#0" expanded="true" />
+                <element signature="e#1693#1694#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MainClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <folding>
+                <element signature="e#139#140#0" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MyWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="71" column="41" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/BaseAuthService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/AuthService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/ClientHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="30" column="49" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#277#278#0" expanded="true" />
+                <element signature="e#304#305#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MainClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -242,21 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Badger.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Cat.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Dog.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Human.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Player.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Team.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/OopTask.java" />
-        <option value="$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/enumTask/Lesson2Enum.java" />
-        <option value="$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/exceptionTask/Lesson2Exception.java" />
-        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java" />
-        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java" />
-        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java" />
-        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java" />
-        <option value="$PROJECT_DIR$/src/lesson_5_Multithreading/CalculatingValuesInArrayMulti.java" />
-        <option value="$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/fromNetExample/ServerMain.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/fromNetExample/ClientFromNet.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/fromNetExample/ServerFromNet.java" />
@@ -293,6 +275,21 @@
         <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ClientMain.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleClient.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleEchoServer.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/AuthService.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/MainServer.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/ServerStart.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/Controller.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/Main.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/AuthService.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/BaseAuthService.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/Constants.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MyServer.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MyWindow.java" />
       </list>
     </option>
   </component>
@@ -347,29 +344,6 @@
               <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
               <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
-              <item name="consoleСhatTask" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
-              <item name="consoleСhatTask" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_6_Work_with_network" type="462c0819:PsiDirectoryNode" />
-              <item name="simpleEchoServerAndClient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lesson_7_NetworkChat_part_1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -377,7 +351,23 @@
               <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lesson_7_NetworkChat_part_1" type="462c0819:PsiDirectoryNode" />
-              <item name="lessonMaterials" type="462c0819:PsiDirectoryNode" />
+              <item name="methodicalInstruction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_7_NetworkChat_part_1" type="462c0819:PsiDirectoryNode" />
+              <item name="methodicalInstruction" type="462c0819:PsiDirectoryNode" />
+              <item name="MainClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_7_NetworkChat_part_1" type="462c0819:PsiDirectoryNode" />
+              <item name="methodicalInstruction" type="462c0819:PsiDirectoryNode" />
+              <item name="MainServer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -388,9 +378,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541951188597" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541956381728" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lesson_7_NetworkChat_part_1.methodicalInstruction.MainServer" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -404,13 +399,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SimpleClient">
-    <configuration name="ClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.lessonMaterials.ClientMain" />
+  <component name="RunManager" selected="Application.MainClass (1)">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson_6.client.Main" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.lessonMaterials.*" />
+          <option name="PATTERN" value="Lesson_6.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -418,12 +413,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainClass (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_6_Work_with_network.methodicalInstructionsEchoServer.MainClient.MainClass" />
+    <configuration name="MainClass (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.methodicalInstruction.MainClient.MainClass" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_6_Work_with_network.methodicalInstructionsEchoServer.MainClient.*" />
+          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.methodicalInstruction.MainClient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -431,12 +426,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.lessonMaterials.ServerMain" />
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.methodicalInstruction.MainServer.MainClass" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.lessonMaterials.*" />
+          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.methodicalInstruction.MainServer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -444,12 +439,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_6_Work_with_network.simpleEchoServerAndClient.SimpleClient" />
+    <configuration name="ServerStart (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.lessonMaterials.server.ServerStart" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_6_Work_with_network.simpleEchoServerAndClient.*" />
+          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.lessonMaterials.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -457,12 +452,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleEchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_6_Work_with_network.simpleEchoServerAndClient.SimpleEchoServer" />
+    <configuration name="ServerStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson_6.server.ServerStart" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_6_Work_with_network.simpleEchoServerAndClient.*" />
+          <option name="PATTERN" value="Lesson_6.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -471,19 +466,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MainClass (2)" />
-      <item itemvalue="Application.SimpleEchoServer" />
-      <item itemvalue="Application.SimpleClient" />
-      <item itemvalue="Application.ServerMain" />
-      <item itemvalue="Application.ClientMain" />
+      <item itemvalue="Application.ServerStart" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ServerStart (1)" />
+      <item itemvalue="Application.MainClass" />
+      <item itemvalue="Application.MainClass (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SimpleClient" />
-        <item itemvalue="Application.SimpleEchoServer" />
-        <item itemvalue="Application.ClientMain" />
-        <item itemvalue="Application.ServerMain" />
-        <item itemvalue="Application.MainClass (2)" />
+        <item itemvalue="Application.MainClass (1)" />
+        <item itemvalue="Application.MainClass" />
+        <item itemvalue="Application.ServerStart (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ServerStart" />
       </list>
     </recent_temporary>
   </component>
@@ -512,18 +507,18 @@
       <workItem from="1541800230848" duration="482000" />
       <workItem from="1541833863456" duration="1209000" />
       <workItem from="1541877735436" duration="749000" />
-      <workItem from="1541930197608" duration="13123000" />
+      <workItem from="1541930197608" duration="17559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68227000" />
+    <option name="totallyTimeSpent" value="72663000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8367347" weight="0.19969743" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8367347" visible="true" weight="0.19969743" />
       <window_info id="Structure" order="1" sideWeight="0.1632653" side_tool="true" weight="0.19969743" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -533,7 +528,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2782324" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2782324" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -592,51 +587,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="14" column="152" selection-start-line="14" selection-start-column="152" selection-end-line="14" selection-end-column="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="63" column="78" selection-start-line="63" selection-start-column="78" selection-end-line="63" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1406">
-          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/CalculatingValuesInArrayMulti.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/fromNetExample/ServerMain.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/StartC.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/SendMessageServer.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/StartS.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/InS.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/OutS.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/Client.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/Server.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ClientMain.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/sample.fxml" />
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/StartServer.java" />
@@ -724,17 +674,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ServerMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="53" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="53" />
+        <state>
+          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        <state relative-caret-position="1224">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleEchoServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationSending.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -751,51 +735,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="402">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationSending.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="45" column="53" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+        <state relative-caret-position="-41">
+          <caret line="11" column="178" selection-start-line="11" selection-start-column="178" selection-end-line="11" selection-end-column="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/AuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/MainServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/ServerStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/AuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#1592#1593#0" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ClientMain.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        <state relative-caret-position="204">
+          <caret line="30" column="49" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ServerMain.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/BaseAuthService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
+        <state relative-caret-position="221">
+          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleEchoServer.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleClient.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MyWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="357">
+          <caret line="71" column="41" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
