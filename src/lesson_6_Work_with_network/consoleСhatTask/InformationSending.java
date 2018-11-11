@@ -47,11 +47,11 @@ public class InformationSending implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        try {
-            socket.close();
-            System.out.println("socket.close() - done");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            socket.close();
+//            System.out.println("socket.close() - done");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 }
