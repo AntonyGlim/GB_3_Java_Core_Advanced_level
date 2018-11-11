@@ -24,15 +24,34 @@ public class InformationSending implements Runnable {
     @Override
     public void run() {
         try {
-            while (true){                                                   //Отправка сообщений
-                String msg = br.readLine();
-                out.writeUTF(msg);
-                out.flush();
-                if (msg.equalsIgnoreCase("/q"))System.exit(0);        //У меня не получилось выйти иначе! Пояните, пожалуйста, как правильно выйти и закрыть все потоки
+            while (true) {                                                   //Отправка сообщений
+                    String msg = br.readLine();
+                    out.writeUTF(msg);
+                    out.flush();
+                    if (msg.equalsIgnoreCase("/q"))
+                        break;
             }
 
         } catch (IOException e) {
             e.printStackTrace();
         }
+        try {
+            br.close();
+            System.out.println("br.close() - done");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            out.close();
+            System.out.println("out.close() - done");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+//        try {
+//            socket.close();
+//            System.out.println("socket.close() - done");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 }

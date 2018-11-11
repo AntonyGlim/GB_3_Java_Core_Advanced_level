@@ -24,7 +24,7 @@ public class InformationGetting  implements Runnable{
             while (true) {                                                  //Получение сообщений
                 String msg = in.readUTF();
                 System.out.println(msg);
-                if (msg.equalsIgnoreCase("/q")) System.exit(0);         //У меня не получилось выйти иначе! Пояните, пожалуйста, как правильно выйти и закрыть все потоки
+//                if (msg.equalsIgnoreCase("/q")) System.exit(0);         //У меня не получилось выйти иначе! Пояните, пожалуйста, как правильно выйти и закрыть все потоки
             }
 
         } catch (IOException e) {
@@ -32,11 +32,16 @@ public class InformationGetting  implements Runnable{
         }
         try {
             in.close();
-            socket.close();
-            System.out.println("Соединение прервано (from ClientIn)");
+            System.out.println("in.close() - done (InformationGetting)");
         } catch (IOException e) {
             e.printStackTrace();
         }
+//        try {
+//            socket.close();
+//            System.out.println("socket.close() - done");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
     }
 }
