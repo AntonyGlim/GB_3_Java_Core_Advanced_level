@@ -52,23 +52,23 @@ public class ClientHandler {
                             }
                         }
                         // цикл для работы
-                        while (true) { //TODO добавить здесь проверку вида: if (str.startsWith ("//w nick3 Сообщение")) - String[] whisper = str.split(" "); нам интересен whisper[1] (ник) которому мы в спец методе отправим сообщение
+                        while (true) {
                             String str = in.readUTF();
                             if(str.equals("/end")) {
                                 out.writeUTF("/serverClosed");
                                 break;
                             }
-                            if (str.startsWith ("/w")){
-                                String[] whisper = str.split(" "); //TODO преобразовать массив обратно в String и отсечь все лишнее
+                            if (str.startsWith ("/w")){                     //Если сообщение приватное
+                                String[] whisper = str.split(" ");
                                 String userNick = whisper[1];
 
-                                StringBuffer result = new StringBuffer();
-                                for (int i = 2; i < whisper.length; i++) {
+                                StringBuffer result = new StringBuffer();       //Преобразовать массив обратно в String и отсечь все лишнее
+                                for (int i = 2; i < whisper.length; i++) {      //Начинаем с третьего элемента массива, т.к. первые 2 это ключевое слово и ник
                                     result.append(whisper[i] + " ");
                                 }
                                 String msg = result.toString();
 
-                                server.whisperTo (userNick, msg, ClientHandler.this);
+                                server.whisperTo (userNick, msg, ClientHandler.this);  //Посылаем приватное сообщение
 
                             } else {
                                 server.broadCastMsg(nick + ": " + str);
@@ -110,6 +110,10 @@ public class ClientHandler {
         }
     }
 
+    /**
+     * Добавили метод, чтобы работать с ником Клиента
+     * @return
+     */
     public String getNick(){
         return nick;
     }

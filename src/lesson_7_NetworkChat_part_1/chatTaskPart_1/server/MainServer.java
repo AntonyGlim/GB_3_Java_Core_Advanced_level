@@ -58,12 +58,18 @@ public class MainServer {
         }
     }
 
-    //TODO метод для отправки шепота конкретному клиенту
+    /**
+     * Метод для отправки шепота(приватного сообщения) конкретному клиенту
+     * На стороне отправившего и получившего будут разные сообщения.
+     * @param nick - клиент, которомы необходимо отправить приватное сообщение
+     * @param msg - сообщение (без ключевого слова)
+     * @param clientHandler - экземпляр класса, для получения ника того, кто посылает сообщения
+     */
     public void whisperTo (String nick, String msg, ClientHandler clientHandler){
-        //TODO найти конкретного пользователя по нику и отправить ему сообщение
-        for (ClientHandler o: clients) {
+
+        for (ClientHandler o : clients) {
             String userNick = o.getNick();
-            if(userNick.equals(nick)){
+            if(userNick.equals(nick)){                                                                  //Если в списках пользователей такой ник есть
                 o.sendMsg(clientHandler.getNick() + ": private to you: " + msg);
                 clientHandler.sendMsg(clientHandler.getNick() + ": private to " + nick + ": " + msg);
                 break;
@@ -71,6 +77,11 @@ public class MainServer {
         }
     }
 
+    /**
+     * Метод передает нформацию занят-ли предполагаемый ник
+     * @param newNick - ник, который нужно проверить
+     * @return boolean да - этот ник свободен / нет - ник занят
+     */
     public boolean isNickEmpty (String newNick){
         boolean result = true;
         for (ClientHandler o : clients){

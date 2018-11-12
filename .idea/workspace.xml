@@ -66,12 +66,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="9" />
-          <entry key="java" value="8565" />
+          <entry key="java" value="9264" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8565" />
+          <entry key="JAVA" value="9264" />
           <entry key="XML" value="9" />
         </counts>
       </usages-collector>
@@ -160,11 +160,11 @@
           <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="39" column="53" lean-forward="true" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+            <state relative-caret-position="-620">
+              <caret line="64" column="106" selection-start-line="64" selection-start-column="106" selection-end-line="64" selection-end-column="106" />
               <folding>
                 <element signature="e#4722#4723#0" expanded="true" />
                 <element signature="e#4749#4750#0" expanded="true" />
@@ -173,16 +173,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="73" column="30" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="30" />
+            <state relative-caret-position="247">
+              <caret line="71" column="104" selection-start-line="71" selection-start-column="104" selection-end-line="71" selection-end-column="104" />
               <folding>
-                <element signature="e#2527#2528#0" expanded="true" />
-                <element signature="e#2562#2563#0" expanded="true" />
-                <element signature="e#2674#2675#0" expanded="true" />
-                <element signature="e#2712#2713#0" expanded="true" />
+                <element signature="e#2626#2627#0" expanded="true" />
+                <element signature="e#2661#2662#0" expanded="true" />
+                <element signature="e#2773#2774#0" expanded="true" />
+                <element signature="e#2811#2812#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -357,7 +357,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542051674770" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542053336161" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlite-jdbc-3.8.11.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -491,12 +491,12 @@
       <workItem from="1541877735436" duration="749000" />
       <workItem from="1541930197608" duration="17738000" />
       <workItem from="1542014680020" duration="7152000" />
-      <workItem from="1542048876650" duration="3142000" />
+      <workItem from="1542048876650" duration="5044000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83136000" />
+    <option name="totallyTimeSpent" value="85038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -512,7 +512,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28150573" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18821605" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -657,26 +657,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="73" column="30" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="30" />
+        <state relative-caret-position="-620">
+          <caret line="64" column="106" selection-start-line="64" selection-start-column="106" selection-end-line="64" selection-end-column="106" />
           <folding>
-            <element signature="e#2527#2528#0" expanded="true" />
-            <element signature="e#2562#2563#0" expanded="true" />
-            <element signature="e#2674#2675#0" expanded="true" />
-            <element signature="e#2712#2713#0" expanded="true" />
+            <element signature="e#4722#4723#0" expanded="true" />
+            <element signature="e#4749#4750#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ClientHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="39" column="53" lean-forward="true" selection-start-line="39" selection-start-column="53" selection-end-line="39" selection-end-column="53" />
+        <state relative-caret-position="247">
+          <caret line="71" column="104" selection-start-line="71" selection-start-column="104" selection-end-line="71" selection-end-column="104" />
           <folding>
-            <element signature="e#4722#4723#0" expanded="true" />
-            <element signature="e#4749#4750#0" expanded="true" />
+            <element signature="e#2626#2627#0" expanded="true" />
+            <element signature="e#2661#2662#0" expanded="true" />
+            <element signature="e#2773#2774#0" expanded="true" />
+            <element signature="e#2811#2812#0" expanded="true" />
           </folding>
         </state>
       </provider>
