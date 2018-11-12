@@ -40,7 +40,7 @@ public class ClientHandler {
                                 if(newNick != null) {  //TODO добавить здесь проверку на одинаковые ники
                                     sendMsg("/authok");
                                     nick = newNick;
-                                    server.subscribe(ClientHandler.this, nick);
+                                    server.subscribe(ClientHandler.this);
                                     break;
                                 } else {
                                     sendMsg("Неверный логин/пароль!");
@@ -64,8 +64,7 @@ public class ClientHandler {
                                 }
                                 String msg = result.toString();
 
-                                server.whisperTo (userNick, msg);
-                                server.broadCastMsg(nick + ": private to you " + userNick + ": " + msg);  //Работает
+                                server.whisperTo (userNick, (nick + ": private to you: " + msg));
 
                             } else {
                                 server.broadCastMsg(nick + ": " + str);
@@ -105,5 +104,9 @@ public class ClientHandler {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public String getNick(){
+        return nick;
     }
 }
