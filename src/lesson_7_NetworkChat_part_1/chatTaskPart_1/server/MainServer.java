@@ -53,7 +53,7 @@ public class MainServer {
     }
     // метод для рассылки сообщения всем клиентам
     public void broadCastMsg(String msg) {
-        for (ClientHandler o: clients) {
+        for (ClientHandler o : clients) {
             o.sendMsg(msg);
         }
     }
@@ -69,6 +69,17 @@ public class MainServer {
                 break;
             }
         }
+    }
+
+    public boolean isNickEmpty (String newNick){
+        boolean result = true;
+        for (ClientHandler o : clients){
+            if (newNick.equals(o.getNick())){
+                result = false;
+                break;
+            }
+        }
+        return result;
     }
 
     // подписываем клиента и добавляем его в список клиентов

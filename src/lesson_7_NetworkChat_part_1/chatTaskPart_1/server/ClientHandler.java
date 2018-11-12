@@ -38,10 +38,14 @@ public class ClientHandler {
                                 String newNick = AuthService.getNickByLoginAndPass(tokens[1], tokens[2]);
                                // если ответ не равен null отправляем ответ клиенту о том, что авторизация прошла успешно
                                 if(newNick != null) {  //TODO добавить здесь проверку на одинаковые ники
-                                    sendMsg("/authok");
-                                    nick = newNick;
-                                    server.subscribe(ClientHandler.this);
-                                    break;
+                                    if (server.isNickEmpty(newNick)){
+                                        sendMsg("/authok");
+                                        nick = newNick;
+                                        server.subscribe(ClientHandler.this);
+                                        break;
+                                    } else {
+                                        sendMsg("Такой пользователь уже присутствует в сети!");
+                                    }
                                 } else {
                                     sendMsg("Неверный логин/пароль!");
                                 }
