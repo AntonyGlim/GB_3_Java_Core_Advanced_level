@@ -54,7 +54,21 @@ public class ClientHandler {
                                 out.writeUTF("/serverClosed");
                                 break;
                             }
-                            server.broadCastMsg(nick + ": " + str);
+                            if (str.startsWith ("/w")){
+                                String[] whisper = str.split(" "); //TODO преобразовать массив обратно в String и отсечь все лишнее
+                                String userNik = whisper[1];
+
+                                StringBuffer result = new StringBuffer();
+                                for (int i = 2; i < whisper.length; i++) {
+                                    result.append(whisper[i] + " ");
+                                }
+                                String msg = result.toString();
+
+                                server.whisperTo (userNik, msg);
+                                
+                            } else {
+                                server.broadCastMsg(nick + ": " + str);
+                            }
                         }
                     } catch (IOException e) {
                         e.printStackTrace();
