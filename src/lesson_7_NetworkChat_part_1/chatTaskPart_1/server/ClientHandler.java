@@ -64,7 +64,7 @@ public class ClientHandler {
                                 }
                                 String msg = result.toString();
 
-                                server.whisperTo (userNick, (nick + ": private to you: " + msg));
+                                server.whisperTo (userNick, msg, ClientHandler.this);
 
                             } else {
                                 server.broadCastMsg(nick + ": " + str);

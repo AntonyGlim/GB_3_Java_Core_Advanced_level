@@ -59,12 +59,13 @@ public class MainServer {
     }
 
     //TODO метод для отправки шепота конкретному клиенту
-    public void whisperTo (String nick, String msg){
+    public void whisperTo (String nick, String msg, ClientHandler clientHandler){
         //TODO найти конкретного пользователя по нику и отправить ему сообщение
         for (ClientHandler o: clients) {
             String userNick = o.getNick();
             if(userNick.equals(nick)){
-                o.sendMsg(msg);
+                o.sendMsg(clientHandler.getNick() + ": private to you: " + msg);
+                clientHandler.sendMsg(clientHandler.getNick() + ": private to " + nick + ": " + msg);
                 break;
             }
         }
