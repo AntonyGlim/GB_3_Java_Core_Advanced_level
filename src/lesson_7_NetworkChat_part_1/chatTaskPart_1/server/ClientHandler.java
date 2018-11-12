@@ -56,7 +56,7 @@ public class ClientHandler {
                             }
                             if (str.startsWith ("/w")){
                                 String[] whisper = str.split(" "); //TODO преобразовать массив обратно в String и отсечь все лишнее
-                                String userNik = whisper[1];
+                                String userNick = whisper[1];
 
                                 StringBuffer result = new StringBuffer();
                                 for (int i = 2; i < whisper.length; i++) {
@@ -64,8 +64,9 @@ public class ClientHandler {
                                 }
                                 String msg = result.toString();
 
-                                server.whisperTo (userNik, msg);
-                                
+                                server.whisperTo (userNick, msg);
+                                server.broadCastMsg(nick + ": " + userNick + ": " + msg);  //Работает
+
                             } else {
                                 server.broadCastMsg(nick + ": " + str);
                             }

@@ -59,7 +59,7 @@ public class MainServer {
     }
 
     //TODO метод для отправки шепота конкретному клиенту
-    public void whisperTo (String nik, String msg){
+    public void whisperTo (String nick, String msg){
         //TODO найти конкретного пользователя по нику и отправить ему сообщение
     }
 
