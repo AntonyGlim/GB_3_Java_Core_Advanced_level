@@ -37,7 +37,7 @@ public class ClientHandler {
                                 // запрашиваем ник в БД
                                 String newNick = AuthService.getNickByLoginAndPass(tokens[1], tokens[2]);
                                // если ответ не равен null отправляем ответ клиенту о том, что авторизация прошла успешно
-                                if(newNick != null) {
+                                if(newNick != null) {  //TODO добавить здесь проверку на одинаковые ники
                                     sendMsg("/authok");
                                     nick = newNick;
                                     server.subscribe(ClientHandler.this);
@@ -48,7 +48,7 @@ public class ClientHandler {
                             }
                         }
                         // цикл для работы
-                        while (true) {
+                        while (true) { //TODO добавить здесь проверку вида: if (str.startsWith ("//w nick3 Сообщение")) - String[] whisper = str.split(" "); нам интересен whisper[1] (ник) которому мы в спец методе отправим сообщение
                             String str = in.readUTF();
                             if(str.equals("/end")) {
                                 out.writeUTF("/serverClosed");
