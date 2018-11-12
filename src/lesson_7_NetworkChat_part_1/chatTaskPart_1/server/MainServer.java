@@ -11,7 +11,7 @@ import java.util.Scanner;
 import java.util.Vector;
 
 public class MainServer {
-
+//TODO СДЕЛАТЬ ВЕКТОР 2 МЕРНЫМ ПЕРВЫЙ ТИП - ClientHandler а второй String будет хранить Nick
     Vector<ClientHandler> clients;
 
     public MainServer() throws SQLException {

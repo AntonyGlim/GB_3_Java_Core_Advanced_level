@@ -94,12 +94,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1748" />
+          <entry key="java" value="1895" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1748" />
+          <entry key="JAVA" value="1895" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -147,20 +147,20 @@
           <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="67" column="101" selection-start-line="67" selection-start-column="101" selection-end-line="67" selection-end-column="101" />
+            <state relative-caret-position="357">
+              <caret line="70" column="44" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+            <state relative-caret-position="170">
+              <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -254,8 +254,8 @@
         <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ServerStart.java" />
         <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/client/sample.fxml" />
         <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/AuthService.java" />
-        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java" />
         <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java" />
       </list>
     </option>
   </component>
@@ -265,11 +265,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="112" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="960" />
     <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="height" value="1160" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -331,7 +330,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542027533569" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542034601944" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/sqlite-jdbc-3.8.11.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -464,18 +463,18 @@
       <workItem from="1541833863456" duration="1209000" />
       <workItem from="1541877735436" duration="749000" />
       <workItem from="1541930197608" duration="17738000" />
-      <workItem from="1542014680020" duration="4238000" />
+      <workItem from="1542014680020" duration="6187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77080000" />
+    <option name="totallyTimeSpent" value="79029000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="112" width="1936" height="1056" extended-state="6" />
+    <frame x="960" y="0" width="960" height="1160" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8367347" visible="true" weight="0.20202559" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8367347" visible="true" weight="0.26444444" />
       <window_info id="Structure" order="1" sideWeight="0.1632653" side_tool="true" weight="0.19969743" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -485,7 +484,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31419286" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28237584" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -633,17 +632,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        <state relative-caret-position="357">
+          <caret line="70" column="44" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ClientHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="67" column="101" selection-start-line="67" selection-start-column="101" selection-end-line="67" selection-end-column="101" />
+        <state relative-caret-position="170">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
         </state>
       </provider>
     </entry>
