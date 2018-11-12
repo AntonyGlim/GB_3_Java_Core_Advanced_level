@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_8_11_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GB_3_Java_Core_Advanced_level.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GB_3_Java_Core_Advanced_level.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MainClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MyWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/BaseAuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/ClientHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MainClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MyServer.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,61 +25,83 @@
     <session id="-193835386">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.44" value="2" />
+          <entry key="project.open.time.72" value="1" />
+          <entry key="project.open.time.86" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="51" />
+          <entry key="class" value="1" />
+          <entry key="fxml" value="1" />
+          <entry key="java" value="176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="51" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="176" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3413" />
+          <entry key="fxml" value="9" />
+          <entry key="java" value="8236" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3413" />
+          <entry key="JAVA" value="8236" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
     </session>
     <session id="-136247156">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="3" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="fxml" value="2" />
+          <entry key="java" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="62" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="java" value="1229" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="1229" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -81,11 +112,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/client/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
-              <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+            <state relative-caret-position="-1147">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/client/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/AuthService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="109" selection-start-line="13" selection-start-column="109" selection-end-line="13" selection-end-column="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/client/sample.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ClientHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-258">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ServerStart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -102,7 +188,17 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>азот</find>
+      <find>BufferedReader</find>
+      <find>serv</find>
+      <find>sock</find>
+      <find>socket</find>
     </findStrings>
+    <replaceStrings>
+      <replace>serverSocke</replace>
+      <replace>serverSocket</replace>
+      <replace>socket</replace>
+      <replace>client</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -110,26 +206,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/numberOfStringTask/NumberOfStringTask.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/Wall.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/Pool.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/CrossDistance.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/Course.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/Barier.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Badger.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Cat.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Dog.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Human.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Player.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Team.java" />
-        <option value="$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/OopTask.java" />
-        <option value="$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/enumTask/Lesson2Enum.java" />
-        <option value="$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/exceptionTask/Lesson2Exception.java" />
-        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java" />
-        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java" />
-        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java" />
-        <option value="$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java" />
-        <option value="$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/ReceiveMessage.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/SendMessage.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/StartServer.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Controller.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Main.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/Server.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Server.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerOut.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Constants.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/MessageIn.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/MessageOut.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientStart.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerStart.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationGetting.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationSending.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainServer/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainClient/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ServerMain.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ClientMain.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleClient.java" />
+        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleEchoServer.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/AuthService.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/MainServer.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/ServerStart.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/Controller.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/Main.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/AuthService.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/BaseAuthService.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MainClass.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/Constants.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MyServer.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MyWindow.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/client/Controller.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/client/Main.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ServerStart.java" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/client/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/AuthService.java" />
       </list>
     </option>
   </component>
@@ -140,18 +267,19 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="112" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="622" />
+    <option name="y" value="-13" />
+    <option name="width" value="960" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,18 +296,37 @@
               <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
               <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_5_Multithreading" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_7_NetworkChat_part_1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_7_NetworkChat_part_1" type="462c0819:PsiDirectoryNode" />
+              <item name="chatTaskPart_1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541486668301" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542015340984" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/sqlite-jdbc-3.8.11.2.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="lesson_7_NetworkChat_part_1.methodicalInstruction.MainServer" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -193,13 +340,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainMultithreadingTask">
-    <configuration name="CollectionsTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.CollectionsTask" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.chatTaskPart_1.client.Main" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.*" />
+          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.chatTaskPart_1.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -207,12 +354,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionsTaskPhonebook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.CollectionsTaskPhonebook" />
+    <configuration name="MainClass (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.methodicalInstruction.MainClient.MainClass" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.*" />
+          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.methodicalInstruction.MainClient.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -220,12 +367,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CollectionsTaskWorkWithArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.CollectionsTaskWorkWithArray" />
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.methodicalInstruction.MainServer.MainClass" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_3_Collections_and_Regular_expressions.collectionsTask.*" />
+          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.methodicalInstruction.MainServer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -233,12 +380,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainMultithreadingTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_5_Multithreading.MainMultithreadingTask" />
+    <configuration name="ServerStart (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.lessonMaterials.server.ServerStart" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_5_Multithreading.*" />
+          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.lessonMaterials.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -246,12 +393,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegularExpressionsTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_3_Collections_and_Regular_expressions.regularExpressionsTask.RegularExpressionsTask" />
+    <configuration name="ServerStart (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.chatTaskPart_1.server.ServerStart" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson_3_Collections_and_Regular_expressions.regularExpressionsTask.*" />
+          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.chatTaskPart_1.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -260,19 +407,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.CollectionsTask" />
-      <item itemvalue="Application.RegularExpressionsTask" />
-      <item itemvalue="Application.CollectionsTaskPhonebook" />
-      <item itemvalue="Application.CollectionsTaskWorkWithArray" />
-      <item itemvalue="Application.MainMultithreadingTask" />
+      <item itemvalue="Application.ServerStart (1)" />
+      <item itemvalue="Application.MainClass" />
+      <item itemvalue="Application.MainClass (1)" />
+      <item itemvalue="Application.ServerStart (2)" />
+      <item itemvalue="Application.Main (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainMultithreadingTask" />
-        <item itemvalue="Application.RegularExpressionsTask" />
-        <item itemvalue="Application.CollectionsTaskPhonebook" />
-        <item itemvalue="Application.CollectionsTaskWorkWithArray" />
-        <item itemvalue="Application.CollectionsTask" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.ServerStart (2)" />
+        <item itemvalue="Application.MainClass (1)" />
+        <item itemvalue="Application.MainClass" />
+        <item itemvalue="Application.ServerStart (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -287,36 +434,51 @@
       <option name="presentableId" value="Default" />
       <updated>1540639534208</updated>
       <workItem from="1541485319409" duration="1351000" />
+      <workItem from="1541489425339" duration="3953000" />
+      <workItem from="1541571101577" duration="698000" />
+      <workItem from="1541581199558" duration="2400000" />
+      <workItem from="1541614771033" duration="3747000" />
+      <workItem from="1541619297802" duration="3909000" />
+      <workItem from="1541658334599" duration="441000" />
+      <workItem from="1541745493498" duration="202000" />
+      <workItem from="1541745738194" duration="7378000" />
+      <workItem from="1541761832369" duration="871000" />
+      <workItem from="1541780808083" duration="16001000" />
+      <workItem from="1541799951358" duration="43000" />
+      <workItem from="1541800230848" duration="482000" />
+      <workItem from="1541833863456" duration="1209000" />
+      <workItem from="1541877735436" duration="749000" />
+      <workItem from="1541930197608" duration="17738000" />
+      <workItem from="1542014680020" duration="514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1351000" />
+    <option name="totallyTimeSpent" value="73356000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="112" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14498934" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8367347" visible="true" weight="0.20202559" />
+      <window_info id="Structure" order="1" sideWeight="0.1632653" side_tool="true" weight="0.19969743" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30552545" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2780441" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.20709492" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -325,7 +487,39 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8367347" visible="true" weight="0.19969743" />
+      <window_info id="Structure" order="1" sideWeight="0.1632653" side_tool="true" visible="true" weight="0.19969743" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Learn" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2782324" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.20785597" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -334,139 +528,195 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/Barier.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/SendMessage.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/fromNetExample/ClientFromNet.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/java/lang/Thread.class" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/ClientHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/StartS.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Server.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/Server.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerOut.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/MessageIn.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/MessageOut.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientStart.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerStart.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainClass.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainClient/MainClass.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/methodicalInstructionsEchoServer/MainServer/MainClass.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ServerMain.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleClient.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/ClientMain.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientMain.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/simpleEchoServerAndClient/SimpleEchoServer.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationSending.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/InformationGetting.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerMain.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/sample.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/client/Controller.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/AuthService.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/ClientHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/MainServer.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/lessonMaterials/server/ServerStart.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/AuthService.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MainClass.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Constants.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/Constants.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/ClientHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/BaseAuthService.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MainClass.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainServer/MyServer.java" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/client/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        <state relative-caret-position="-1147">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/Course.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ServerStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-258">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/CrossDistance.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/client/sample.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state relative-caret-position="306">
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/Pool.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/client/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/barrier/Wall.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/methodicalInstruction/MainClient/MyWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="259">
+          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Badger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Cat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Dog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Human.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/team/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="64" selection-start-line="44" selection-start-column="64" selection-end-line="44" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/oopTask/OopTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_1_OOP_and_Number_of_strings/numberOfStringTask/NumberOfStringTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/exceptionTask/Lesson2Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_2_Exceptions_and_Enum/enumTask/Lesson2Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="51" selection-start-line="51" selection-end-line="71" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTask.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/regularExpressionsTask/RegularExpressionsTask.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/AuthService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="13" column="109" selection-start-line="13" selection-start-column="109" selection-end-line="13" selection-end-column="109" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskWorkWithArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="14" column="152" selection-start-line="14" selection-start-column="152" selection-end-line="14" selection-end-column="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_3_Collections_and_Regular_expressions/collectionsTask/CollectionsTaskPhonebook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="63" column="78" selection-start-line="63" selection-start-column="78" selection-end-line="63" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_5_Multithreading/MainMultithreadingTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>GB_3_Java_Core_Advanced_level</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>sqlite-jdbc-3.8.11.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
