@@ -40,7 +40,7 @@ public class ClientHandler {
                                 if(newNick != null) {  //TODO добавить здесь проверку на одинаковые ники
                                     sendMsg("/authok");
                                     nick = newNick;
-                                    server.subscribe(ClientHandler.this);
+                                    server.subscribe(ClientHandler.this, nick);
                                     break;
                                 } else {
                                     sendMsg("Неверный логин/пароль!");

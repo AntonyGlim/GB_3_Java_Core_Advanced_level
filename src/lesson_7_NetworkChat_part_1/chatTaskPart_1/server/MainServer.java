@@ -13,12 +13,14 @@ import java.util.Vector;
 public class MainServer {
 //TODO СДЕЛАТЬ ВЕКТОР 2 МЕРНЫМ ПЕРВЫЙ ТИП - ClientHandler а второй String будет хранить Nick
     Vector<ClientHandler> clients;
+    Vector<String> clientsNicks;
 
     public MainServer() throws SQLException {
 
         ServerSocket server = null;
         Socket socket = null;
         clients = new Vector<>();
+        clientsNicks = new Vector<>();
 
         try {
             AuthService.connect();
@@ -61,11 +63,16 @@ public class MainServer {
     //TODO метод для отправки шепота конкретному клиенту
     public void whisperTo (String nick, String msg){
         //TODO найти конкретного пользователя по нику и отправить ему сообщение
+        for (int i = 0; i < clientsNicks.size(); i++) {
+
+            if () //TODO работа с Вектором
+        }
     }
 
     // подписываем клиента и добавляем его в список клиентов
-    public void subscribe(ClientHandler client) {
+    public void subscribe(ClientHandler client, String clientNick) {
         clients.add(client);
+        clientsNicks.add(clientNick);
     }
 
     // отписываем клиента и удаляем его из списка клиентов
