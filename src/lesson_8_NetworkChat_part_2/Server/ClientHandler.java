@@ -5,6 +5,8 @@
  */
 package lesson_8_NetworkChat_part_2.Server;
 
+import lesson_8_NetworkChat_part_2.TimeMeter;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -95,7 +97,11 @@ public class ClientHandler {
      * @throws IOException
      */
     public void clientAuthorization() throws IOException {
+        TimeMeter timeMeter = new TimeMeter();
+        timeMeter.timeStart();
         while (true) {
+            timeMeter.timeStop();
+            if ((timeMeter.getWorkingTime() > 12000)){}
             String str = in.readUTF();
             if(str.startsWith("/auth")) {
                 String[] tokens = str.split(" ");
@@ -137,5 +143,4 @@ public class ClientHandler {
             }
         }
     }
-
 }
