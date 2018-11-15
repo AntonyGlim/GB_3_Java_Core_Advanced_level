@@ -20,9 +20,9 @@ public class Server {
         Socket socket = null;
         try {
             AuthService.connect();
-//            AuthService.addUser("login1", "pass1", "nick1");
-//            AuthService.addUser("login2", "pass2", "nick2");
-//            AuthService.addUser("login3", "pass3", "nick3");
+//            AuthService.addUser("l1", "p1", "nick1");
+//            AuthService.addUser("l2", "p2", "nick2");
+//            AuthService.addUser("l3", "p3", "nick3");
             server = new ServerSocket(8189);
             System.out.println("Сервер запущен!");
 

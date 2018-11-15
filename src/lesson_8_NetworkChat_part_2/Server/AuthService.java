@@ -33,7 +33,7 @@ public class AuthService {
      * если Hash паролей совпал.
      * @param login - введенный пользователем логин
      * @param pass - введенный пользователем пароль
-     * @return - nick пользователя, если пароли совпали
+     * @return - nick пользователя, если пароли совпали или null
      */
     public static String getNickByLoginAndPass(String login, String pass) {
         String sql = String.format("SELECT nickname, password FROM main\n" +                    //String.format позволяет использовать %s и другие значки
@@ -57,18 +57,27 @@ public class AuthService {
         return null;
     }
 
-
+    /**
+     * Метод добавляет нового пользователя в БД
+     * @param login - введенный логин
+     * @param pass - введенный пароль
+     * @param nick - введенный ник
+     */
     public static void addUser(String login, String pass, String nick) {
         String sql = String.format("INSERT INTO main (login, password, nickname)" +
-                "VALUES ('%s', '%s', '%s')", login, pass.hashCode(), nick);
+                "VALUES ('%s', '%s', '%s')", login, pass.hashCode(), nick);                     //Формируем запрос на добавление
+
         try {
-            stmt.execute(sql);
+            stmt.execute(sql);                                                                  //execute - метод выполнения SQL-выражений
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
     }
 
+    /**
+     * Метод закрывает соединение с БД
+     */
     public static void disconnect() {
         try {
             connection.close();
@@ -76,6 +85,4 @@ public class AuthService {
             e.printStackTrace();
         }
     }
-
-
 }
