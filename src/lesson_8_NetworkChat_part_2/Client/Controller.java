@@ -43,9 +43,13 @@ public class Controller {
     Socket socket;
     DataInputStream in;
     DataOutputStream out;
-
     private boolean isAuthorized;
 
+    /**
+     * В зависимости от того, авторизовался-ли пользователь,
+     * метод меняет интерфейс программы
+     * @param isAuthorized - авторизовался-ли пользователь
+     */
     public void setAuthorized(boolean isAuthorized) {
         this.isAuthorized = isAuthorized;
         if(!isAuthorized) {
@@ -65,8 +69,8 @@ public class Controller {
         }
     }
 
-    public void connect() {
 
+    public void connect() {
         try {
             socket = new Socket(IPADRESS, PORT);
             in = new DataInputStream(socket.getInputStream());
@@ -76,48 +80,9 @@ public class Controller {
                 @Override
                 public void run() {
                     try {
-                        while (true) {
-                            String str = in.readUTF();
-                            if(str.startsWith("/authok")) {
-                                setAuthorized(true);
-                                break;
-                            } else {
-                                textArea.appendText(str + "\n");
-                            }
-                        }
 
-                        while (true) {
-                            String str = in.readUTF();
-                            if(str.startsWith("/")) {
-                                if (str.equals("/serverClosed")) break;
-                                if(str.startsWith("/clientlist")) {
-                                    String[] tokens = str.split(" ");
-
-                                    Platform.runLater(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            clientList.getItems().clear();
-                                            for (int i = 1; i < tokens.length; i++) {
-                                                clientList.getItems().add(tokens[i]);
-                                            }
-                                        }
-                                    });
-                                }
-                            } else {
-                                textArea.appendText(str + "\n");
-//                                Platform.runLater(new Runnable() {
-//                                    @Override
-//                                    public void run() {
-//                                        try {
-//                                            createWindow();
-//                                        } catch (IOException e) {
-//                                            e.printStackTrace();
-//                                        }
-//                                    }
-//                                });
-
-                            }
-                        }
+                        authorization();
+                        workWithServer();
 
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -136,6 +101,53 @@ public class Controller {
             e.printStackTrace();
         }
     }
+
+    public void authorization() throws IOException {
+        while (true) {
+            String str = in.readUTF();
+            if(str.startsWith("/authok")) {
+                setAuthorized(true);
+                break;
+            } else {
+                textArea.appendText(str + "\n");
+            }
+        }
+    }
+
+    public void workWithServer() throws IOException {
+        while (true) {
+            String str = in.readUTF();
+            if(str.startsWith("/")) {
+                if (str.equals("/serverClosed")) break;
+                if(str.startsWith("/clientlist")) {
+                    String[] tokens = str.split(" ");
+
+                    Platform.runLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            clientList.getItems().clear();
+                            for (int i = 1; i < tokens.length; i++) {
+                                clientList.getItems().add(tokens[i]);
+                            }
+                        }
+                    });
+                }
+            } else {
+                textArea.appendText(str + "\n");
+//                Platform.runLater(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        try {
+//                            createWindow();
+//                        } catch (IOException e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                });
+            }
+        }
+    }
+
 
     public void createWindow() throws IOException {
         MiniStage miniStage = new MiniStage();

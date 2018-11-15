@@ -99,8 +99,8 @@ public class ClientHandler {
     public void clientAuthorization() throws IOException {
 
         while (true) {
-
             String str = in.readUTF();
+
             if(str.startsWith("/auth")) {
                 String[] tokens = str.split(" ");
                 String newNick = AuthService.getNickByLoginAndPass(tokens[1], tokens[2]);
