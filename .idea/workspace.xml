@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/Client/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/Client/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/Client/MiniStage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/Client/SecondControler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/Client/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/Client/secondWindow.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/Server/AuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/Server/ClientHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/Server/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/Server/StartServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/Новый текстовый документ.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/MiniStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/MiniStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/SecondControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/SecondControler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/StartServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/StartServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,19 +101,20 @@
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="2" />
-          <entry key="java" value="62" />
+          <entry key="fxml" value="3" />
+          <entry key="java" value="73" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="62" />
-          <entry key="XML" value="2" />
+          <entry key="JAVA" value="73" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -137,11 +135,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/task.txt">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="43" selection-start-column="43" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/MiniStage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="43" selection-start-column="43" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/sample.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/SecondControler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="43" selection-start-column="43" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/AuthService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="43" selection-start-column="43" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="43" selection-start-column="43" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/StartServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="43" selection-start-column="43" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -180,14 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/SendMessage.java" />
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/ClientHandler.java" />
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/StartServer.java" />
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Controller.java" />
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Main.java" />
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/Server.java" />
-        <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Server.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerOut.java" />
         <option value="$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java" />
@@ -231,6 +290,14 @@
         <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/ClientHandler.java" />
         <option value="$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/MainServer.java" />
         <option value="$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/task.txt" />
+        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java" />
+        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Main.java" />
+        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/MiniStage.java" />
+        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/SecondControler.java" />
+        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/AuthService.java" />
+        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java" />
+        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/StartServer.java" />
       </list>
     </option>
   </component>
@@ -240,7 +307,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="684" />
     <option name="y" value="7" />
     <option name="width" value="960" />
@@ -254,6 +321,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,20 +339,32 @@
               <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
               <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lesson_8__NetworkChat_part_2" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_8_NetworkChat_part_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_8_NetworkChat_part_2" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GB_3_Java_Core_Advanced_level" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GB_3_Java_Core_Advanced_level" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="lesson_8_NetworkChat_part_2" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542227723633" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542266193089" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlite-jdbc-3.8.11.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -307,13 +388,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.chatTaskPart_1.client.Main" />
       <module name="GB_3_Java_Core_Advanced_level" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lesson_7_NetworkChat_part_1.chatTaskPart_1.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_8_NetworkChat_part_2.Client.Main" />
+      <module name="GB_3_Java_Core_Advanced_level" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson_8_NetworkChat_part_2.Client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -334,32 +428,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.methodicalInstruction.MainServer.MainClass" />
-      <module name="GB_3_Java_Core_Advanced_level" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.methodicalInstruction.MainServer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServerStart (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.lessonMaterials.server.ServerStart" />
-      <module name="GB_3_Java_Core_Advanced_level" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson_7_NetworkChat_part_1.lessonMaterials.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ServerStart (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson_7_NetworkChat_part_1.chatTaskPart_1.server.ServerStart" />
       <module name="GB_3_Java_Core_Advanced_level" />
@@ -373,20 +441,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StartServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson_8_NetworkChat_part_2.Server.StartServer" />
+      <module name="GB_3_Java_Core_Advanced_level" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson_8_NetworkChat_part_2.Server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.ServerStart (1)" />
-      <item itemvalue="Application.MainClass" />
       <item itemvalue="Application.MainClass (1)" />
       <item itemvalue="Application.ServerStart (2)" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.StartServer" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.StartServer" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.ServerStart (2)" />
         <item itemvalue="Application.MainClass (1)" />
-        <item itemvalue="Application.MainClass" />
-        <item itemvalue="Application.ServerStart (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -419,17 +500,18 @@
       <workItem from="1542014680020" duration="7152000" />
       <workItem from="1542048876650" duration="5567000" />
       <workItem from="1542227481392" duration="228000" />
+      <workItem from="1542263996014" duration="796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85789000" />
+    <option name="totallyTimeSpent" value="86585000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8367347" visible="true" weight="0.18683812" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8367347" visible="true" weight="0.18869936" />
       <window_info id="Structure" order="1" sideWeight="0.1632653" side_tool="true" weight="0.19969743" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -457,7 +539,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.0816944" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.08155651" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8367347" visible="true" weight="0.19969743" />
@@ -498,15 +580,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/fromNetExample/ClientFromNet.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/java/lang/Thread.class" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/ClientHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Client/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/StartS.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/Temp/Server.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/Lesson_6/Server/Server.java" />
-    <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerOut.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientOut.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/server/ServerIn.java" />
     <entry file="file://$PROJECT_DIR$/src/lesson_6_Work_with_network/consoleСhatTask/client/ClientIn.java" />
@@ -563,12 +636,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/client/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/server/AuthService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -591,10 +664,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/task.txt">
+    <entry file="file://$PROJECT_DIR$/src/lesson_8__NetworkChat_part_2/task.txt" />
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/MiniStage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/SecondControler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/AuthService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/StartServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
         </state>
       </provider>
     </entry>

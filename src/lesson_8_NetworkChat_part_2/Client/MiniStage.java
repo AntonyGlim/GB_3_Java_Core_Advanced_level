@@ -1,4 +1,4 @@
-package Lesson_6.Client;
+package lesson_8_NetworkChat_part_2.Client;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

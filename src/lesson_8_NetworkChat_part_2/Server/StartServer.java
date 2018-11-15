@@ -1,4 +1,4 @@
-package Lesson_6.Server;
+package lesson_8_NetworkChat_part_2.Server;
 
 import java.sql.SQLException;
 
