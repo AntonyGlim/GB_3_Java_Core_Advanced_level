@@ -158,7 +158,6 @@ public class Controller {
         if(socket == null || socket.isClosed()) {
             connect();
         }
-
         try {
             out.writeUTF("/auth " + loginField.getText() + " " + passwordField.getText());
             loginField.clear();
