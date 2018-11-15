@@ -100,10 +100,19 @@ public class ClientHandler {
         }
     }
 
+    /**
+     * Метод укажет помещел-ли данный ник в черный список
+     * @param nick - который нужно проверить
+     * @return - да, если nick присутствует в списке
+     */
     public boolean checkBlackList(String nick) {
         return blackList.contains(nick);
     }
 
+    /**
+     * Метод посылает сообщение конкретному пользователю
+     * @param msg - сообщение
+     */
     public void sendMsg(String msg) {
         try {
             out.writeUTF(msg);

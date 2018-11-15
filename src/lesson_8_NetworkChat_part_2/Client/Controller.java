@@ -14,6 +14,9 @@ import java.net.Socket;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import static lesson_8_NetworkChat_part_2.Constants.IPADRESS;
+import static lesson_8_NetworkChat_part_2.Constants.PORT;
+
 
 public class Controller {
     @FXML
@@ -41,9 +44,6 @@ public class Controller {
     DataInputStream in;
     DataOutputStream out;
 
-    final String IP_ADRESS = "localhost";
-    final int PORT = 8189;
-
     private boolean isAuthorized;
 
     public void setAuthorized(boolean isAuthorized) {
@@ -68,7 +68,7 @@ public class Controller {
     public void connect() {
 
         try {
-            socket = new Socket(IP_ADRESS, PORT);
+            socket = new Socket(IPADRESS, PORT);
             in = new DataInputStream(socket.getInputStream());
             out = new DataOutputStream(socket.getOutputStream());
 
