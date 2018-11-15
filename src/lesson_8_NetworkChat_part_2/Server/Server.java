@@ -42,7 +42,7 @@ public class Server {
             while (true) {
                 socket = server.accept();                               //Ждем клиента
                 System.out.println("Клиент подключился");
-                new ClientHandler(this,socket);                     //Создаем новый класс для работы с клиентом
+                new ClientHandler(this, socket);                     //Создаем новый класс для работы с клиентом
             }
 
         } catch (IOException e) {

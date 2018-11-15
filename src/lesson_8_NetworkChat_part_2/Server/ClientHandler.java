@@ -39,7 +39,7 @@ public class ClientHandler {
                     try {
 
                         clientAuthorization();                              //Авторизация клиента
-                        clientWork();                                       //Работа с клиентом
+                        workWithClient();                                       //Работа с клиентом
 
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -116,7 +116,7 @@ public class ClientHandler {
         }
     }
 
-    public void clientWork () throws IOException {
+    public void workWithClient () throws IOException {
         while (true) {
             String str = in.readUTF();
             if(str.startsWith("/")) {

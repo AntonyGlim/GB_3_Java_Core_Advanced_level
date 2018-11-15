@@ -105,16 +105,16 @@ public class Controller {
                                 }
                             } else {
                                 textArea.appendText(str + "\n");
-                                Platform.runLater(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        try {
-                                            createWindow();
-                                        } catch (IOException e) {
-                                            e.printStackTrace();
-                                        }
-                                    }
-                                });
+//                                Platform.runLater(new Runnable() {
+//                                    @Override
+//                                    public void run() {
+//                                        try {
+//                                            createWindow();
+//                                        } catch (IOException e) {
+//                                            e.printStackTrace();
+//                                        }
+//                                    }
+//                                });
 
                             }
                         }

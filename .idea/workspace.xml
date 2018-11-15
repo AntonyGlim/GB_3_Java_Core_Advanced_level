@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,14 +55,14 @@
         <counts>
           <entry key="class" value="2" />
           <entry key="fxml" value="1" />
-          <entry key="java" value="185" />
+          <entry key="java" value="188" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="185" />
+          <entry key="JAVA" value="188" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -68,13 +70,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="fxml" value="9" />
-          <entry key="java" value="11641" />
+          <entry key="java" value="11652" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11641" />
+          <entry key="JAVA" value="11652" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="9" />
         </counts>
@@ -140,8 +142,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="-804">
+              <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -155,10 +157,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/MiniStage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="70" column="43" lean-forward="true" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+            <state relative-caret-position="-540">
+              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+              <folding>
+                <marker date="1542305641495" expanded="true" signature="3392:3931" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -243,11 +279,11 @@
         <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/MiniStage.java" />
         <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/SecondControler.java" />
         <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/StartServer.java" />
-        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java" />
         <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Constants.java" />
         <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/AuthService.java" />
-        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java" />
+        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java" />
         <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java" />
       </list>
     </option>
   </component>
@@ -327,7 +363,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542304368036" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542305641809" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlite-jdbc-3.8.11.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -472,7 +508,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94906000" />
+    <option name="totallyTimeSpent" value="95698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -644,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/MiniStage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/SecondControler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -658,24 +687,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/task.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/java/net/ServerSocket.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="210" column="18" selection-start-line="210" selection-start-column="18" selection-end-line="210" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -703,10 +718,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/MiniStage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+          <folding>
+            <marker date="1542305641495" expanded="true" signature="3392:3931" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/task.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+        <state relative-caret-position="290">
+          <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -714,17 +760,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="70" column="43" lean-forward="true" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="26" />
+        <state relative-caret-position="-804">
+          <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
