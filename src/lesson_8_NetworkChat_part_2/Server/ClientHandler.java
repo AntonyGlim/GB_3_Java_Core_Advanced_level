@@ -97,11 +97,9 @@ public class ClientHandler {
      * @throws IOException
      */
     public void clientAuthorization() throws IOException {
-        TimeMeter timeMeter = new TimeMeter();
-        timeMeter.timeStart();
+
         while (true) {
-            timeMeter.timeStop();
-            if ((timeMeter.getWorkingTime() > 12000)){}
+
             String str = in.readUTF();
             if(str.startsWith("/auth")) {
                 String[] tokens = str.split(" ");

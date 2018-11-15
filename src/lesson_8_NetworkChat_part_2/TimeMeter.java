@@ -3,12 +3,27 @@ package lesson_8_NetworkChat_part_2;
 /**
  * Класс вычисляет время выполнения методов (операций, вычислений)
  */
-public class TimeMeter {
+public class TimeMeter implements Runnable {
 
     private String title;                       //Описание выполняемого метода (операции, вычисления)
     private long workingTime;                   //Время, сколько длилось выполнение
     private long startTime;                     //Время начала отсчета
     private long stopTime;                      //Время конца отсчета
+    boolean isTimePassed = false;
+
+    @Override
+    public void run() {
+        for (int i = 1; i <= 12 ; i++) {
+            try {
+                wait(1000);
+                System.out.println(i);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        isTimePassed = true;
+    }
+
 
     /**
      * Запишет время начала
@@ -43,5 +58,6 @@ public class TimeMeter {
     public long getWorkingTime() {
         return workingTime;
     }
+
 
 }
