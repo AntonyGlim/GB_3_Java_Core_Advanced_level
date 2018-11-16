@@ -102,9 +102,6 @@ public class ClientHandler {
      * @throws IOException
      */
     public void clientAuthorization() throws IOException {
-        WaitingUserAuthorization waitingUserAuthorization = new WaitingUserAuthorization();
-        Thread authorizationLimit = new Thread(waitingUserAuthorization);
-        authorizationLimit.start();
 
         while (true) {
             String str = in.readUTF();
