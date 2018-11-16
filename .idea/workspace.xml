@@ -4,7 +4,6 @@
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,12 +113,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3284" />
+          <entry key="java" value="3346" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3284" />
+          <entry key="JAVA" value="3346" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -130,20 +129,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="109" column="42" lean-forward="true" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="42" />
+            <state relative-caret-position="391">
+              <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="152" column="20" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
+            <state relative-caret-position="153">
+              <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
               <folding>
                 <element signature="e#2716#2717#0" expanded="true" />
                 <element signature="e#2763#2764#0" expanded="true" />
@@ -246,8 +245,8 @@
         <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/AuthService.java" />
         <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java" />
         <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/TimeMeter.java" />
-        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java" />
         <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java" />
+        <option value="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java" />
       </list>
     </option>
   </component>
@@ -257,7 +256,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="684" />
     <option name="y" value="7" />
     <option name="width" value="960" />
@@ -314,7 +313,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542353601079" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542359672729" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlite-jdbc-3.8.11.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -460,14 +459,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100977000" />
+    <option name="totallyTimeSpent" value="101872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8367347" visible="true" weight="0.19296375" />
-      <window_info id="Structure" order="1" sideWeight="0.1632653" side_tool="true" weight="0.19969743" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.83505154" visible="true" weight="0.19296375" />
+      <window_info id="Structure" order="1" sideWeight="0.16494845" side_tool="true" visible="true" weight="0.19296375" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -476,7 +474,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31751227" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.16299137" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -702,23 +700,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="109" column="42" lean-forward="true" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="152" column="20" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
+        <state relative-caret-position="153">
+          <caret line="89" column="16" selection-start-line="89" selection-start-column="16" selection-end-line="89" selection-end-column="16" />
           <folding>
             <element signature="e#2716#2717#0" expanded="true" />
             <element signature="e#2763#2764#0" expanded="true" />
             <element signature="e#5071#5072#0" expanded="true" />
             <element signature="e#5097#5098#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Client/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
         </state>
       </provider>
     </entry>

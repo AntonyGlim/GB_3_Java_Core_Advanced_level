@@ -61,6 +61,7 @@ public class ClientHandler {
                         }
                         try {
                             socket.close();
+                            System.out.println("Соединение с клиентом потеряно");
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
@@ -104,8 +105,9 @@ public class ClientHandler {
         while (true) {
             String str = in.readUTF();
             if(timeHasPassed()){
-                sendMsg("Лимит ожидания превышен. Соединение будет закрыто");
+                sendMsg("Лимит ожидания превышен. Сокет закрыт");
                 sendMsg("/timeLimit");
+                break;
             }
             if(str.startsWith("/auth")) {
                 String[] tokens = str.split(" ");

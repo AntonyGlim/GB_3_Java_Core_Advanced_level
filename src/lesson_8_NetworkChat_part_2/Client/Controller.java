@@ -76,7 +76,7 @@ public class Controller {
             in = new DataInputStream(socket.getInputStream());
             out = new DataOutputStream(socket.getOutputStream());
 
-            new Thread(new Runnable() {
+            Thread t1 = new Thread(new Runnable() {
                 @Override
                 public void run() {
                     try {
@@ -92,13 +92,20 @@ public class Controller {
                         try {
                             socket.close();
                             System.out.println("Соединение с сервером закрыто");
+                            try {
+                                Thread.sleep(3000);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
                         setAuthorized(false);
+                        System.exit(0);
                     }
                 }
-            }).start();
+            });
+            t1.start();
 
         } catch (IOException e) {
             e.printStackTrace();
