@@ -127,12 +127,22 @@ public class ClientHandler {
         }
     }
 
+    /**
+     * Непосредственно, работа с клиентом
+     * Работает с ключевыми словами:
+     * "/end" - Будет произведено завершение работы с сервером
+     * "/serverClosed" - Передаем сообщение на сервер, чтобы он завершил свою работу
+     * "/w " - Сообщене будет отправлено конкретному пользователю
+     * "/blacklist " - Добавление пользователя в черный список
+     * @throws IOException
+     */
     public void workWithClient () throws IOException {
         while (true) {
             String str = in.readUTF();
             if(str.startsWith("/")) {
                 if(str.equals("/end")) {
                     out.writeUTF("/serverClosed");
+                    break;
                 }
                 if(str.startsWith("/w ")) {
                     String[] tokens = str.split(" ",3);
@@ -149,6 +159,10 @@ public class ClientHandler {
         }
     }
 
+    /**
+     * TODO доработать метод выхода из приложения по таймеру
+     * @param wosLimit
+     */
     public void isTimeGone(boolean wosLimit){
         new Thread(new Runnable() {
             int workingTime = 0;
