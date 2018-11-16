@@ -5,8 +5,6 @@
  */
 package lesson_8_NetworkChat_part_2.Server;
 
-import lesson_8_NetworkChat_part_2.TimeMeter;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -15,19 +13,13 @@ import java.util.ArrayList;
 
 public class ClientHandler {
 
-    Socket socket = null;
-    DataInputStream in;
-    DataOutputStream out;
-    Server server;
-    ArrayList<String> blackList;
+    private Socket socket = null;
+    private DataInputStream in;
+    private DataOutputStream out;
+    private Server server;
+    private ArrayList<String> blackList;
     private boolean isAuthorized = false;
-    boolean wosLimit = false;
-
-    public String getNick() {
-        return nick;
-    }
-
-    String nick;
+    private String nick;
 
     public ClientHandler(Server server, Socket socket) {
         try {
@@ -41,7 +33,6 @@ public class ClientHandler {
                 @Override
                 public void run() {
                     try {
-
                         clientAuthorization();                              //Авторизация клиента
                         if(isAuthorized) {
                             workWithClient();                               //Работа с клиентом
@@ -66,7 +57,9 @@ public class ClientHandler {
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
-                        server.unsubscribe(ClientHandler.this);     //Убираем клиента из списка подключенных
+                        if (isAuthorized) {
+                            server.unsubscribe(ClientHandler.this);     //Убираем клиента из списка подключенных
+                        }
                     }
                 }
             }).start();
@@ -74,6 +67,14 @@ public class ClientHandler {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * getNick
+     * @return
+     */
+    public String getNick() {
+        return nick;
     }
 
     /**
@@ -105,8 +106,11 @@ public class ClientHandler {
 
         while (true) {
             String str = in.readUTF();
-            isTimeGone(wosLimit);
-
+            timeCount();
+            if (str.startsWith("/timeLimit")){
+                System.out.println("Отключили клиента по времени");
+                break;
+            }
             if(str.startsWith("/auth")) {
                 String[] tokens = str.split(" ");
                 String newNick = AuthService.getNickByLoginAndPass(tokens[1], tokens[2]);
@@ -159,29 +163,28 @@ public class ClientHandler {
         }
     }
 
-    /**
-     * TODO доработать метод выхода из приложения по таймеру
-     * @param wosLimit
-     */
-    public void isTimeGone(boolean wosLimit){
-        new Thread(new Runnable() {
-            int workingTime = 0;
+    public void timeCount(){
+        Thread timer = new Thread(new Runnable() {
             @Override
             public void run() {
-                while (workingTime < 5){
-                    System.out.println(workingTime);
+                long timeFromStart = 0L;
+                while (true){
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
-                    workingTime++;
+                    timeFromStart++;
+                    if (timeFromStart == 3); {
+                        sendMsg("Время ожидания превышено");
+                        sendMsg("/timeLimit");
+                        break;
+                    }
                 }
-                sendMsg("Лимит ожидания превышен. Сокет закрыт");
-                sendMsg("/timeLimit");
-
             }
-        }).start();
+        });
+        timer.start();
     }
+
 
 }

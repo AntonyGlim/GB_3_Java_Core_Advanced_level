@@ -116,6 +116,7 @@ public class Controller {
         while (true) {
             String str = in.readUTF();
             if(str.startsWith("/timeLimit")){
+                out.writeUTF("/timeLimit");
                 break;
             }
             if(str.startsWith("/authok")) {
