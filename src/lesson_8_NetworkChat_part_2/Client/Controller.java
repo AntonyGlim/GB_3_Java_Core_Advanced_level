@@ -82,7 +82,9 @@ public class Controller {
                     try {
 
                         authorization();
-                        workWithServer();
+                        if (isAuthorized){
+                            workWithServer();
+                        }
 
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -105,6 +107,7 @@ public class Controller {
     public void authorization() throws IOException {
         while (true) {
             String str = in.readUTF();
+            //TODO if(str.startsWith("/timeLimit")){break;}
             if(str.startsWith("/authok")) {
                 setAuthorized(true);
                 break;
