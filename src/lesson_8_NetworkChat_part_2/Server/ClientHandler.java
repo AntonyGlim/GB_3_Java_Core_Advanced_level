@@ -21,6 +21,7 @@ public class ClientHandler {
     Server server;
     ArrayList<String> blackList;
     private boolean isAuthorized = false;
+    boolean wosLimit = false;
 
     public String getNick() {
         return nick;
@@ -101,14 +102,14 @@ public class ClientHandler {
      * @throws IOException
      */
     public void clientAuthorization() throws IOException {
+        WaitingUserAuthorization waitingUserAuthorization = new WaitingUserAuthorization();
+        Thread authorizationLimit = new Thread(waitingUserAuthorization);
+        authorizationLimit.start();
 
         while (true) {
             String str = in.readUTF();
-            if(timeHasPassed()){
-                sendMsg("Лимит ожидания превышен. Сокет закрыт");
-                sendMsg("/timeLimit");
-                break;
-            }
+            isTimeGone(wosLimit);
+
             if(str.startsWith("/auth")) {
                 String[] tokens = str.split(" ");
                 String newNick = AuthService.getNickByLoginAndPass(tokens[1], tokens[2]);
@@ -151,7 +152,25 @@ public class ClientHandler {
         }
     }
 
-    public boolean timeHasPassed(){
-        return true;
+    public void isTimeGone(boolean wosLimit){
+        new Thread(new Runnable() {
+            int workingTime = 0;
+            @Override
+            public void run() {
+                while (workingTime < 5){
+                    System.out.println(workingTime);
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    workingTime++;
+                }
+                sendMsg("Лимит ожидания превышен. Сокет закрыт");
+                sendMsg("/timeLimit");
+
+            }
+        }).start();
     }
+
 }
