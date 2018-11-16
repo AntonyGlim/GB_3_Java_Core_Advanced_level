@@ -20,6 +20,7 @@ public class ClientHandler {
     DataOutputStream out;
     Server server;
     ArrayList<String> blackList;
+    private boolean isAuthorized = false;
 
     public String getNick() {
         return nick;
@@ -41,7 +42,9 @@ public class ClientHandler {
                     try {
 
                         clientAuthorization();                              //Авторизация клиента
-                        workWithClient();                                       //Работа с клиентом
+                        if(isAuthorized) {
+                            workWithClient();                               //Работа с клиентом
+                        }
 
                     } catch (IOException e) {
                         e.printStackTrace();
@@ -100,7 +103,10 @@ public class ClientHandler {
 
         while (true) {
             String str = in.readUTF();
-
+            if(timeHasPassed()){
+                sendMsg("Лимит ожидания превышен. Соединение будет закрыто");
+                sendMsg("/timeLimit");
+            }
             if(str.startsWith("/auth")) {
                 String[] tokens = str.split(" ");
                 String newNick = AuthService.getNickByLoginAndPass(tokens[1], tokens[2]);
@@ -109,6 +115,7 @@ public class ClientHandler {
                         sendMsg("/authok");
                         nick = newNick;
                         server.subscribe(ClientHandler.this);
+                        isAuthorized = true;
                         break;
                     } else {
                         sendMsg("Учетная запись уже используется!");
@@ -140,5 +147,9 @@ public class ClientHandler {
                 server.broadcastMsg(ClientHandler.this,nick + ": " + str);
             }
         }
+    }
+
+    public boolean timeHasPassed(){
+        return true;
     }
 }
