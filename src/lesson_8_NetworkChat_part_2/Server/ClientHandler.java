@@ -177,7 +177,10 @@ public class ClientHandler {
 //                    blackList.add(tokens[1]);                                                   //TODO считать БД в лист (обновить лист)
                     sendMsg("Вы добавили пользователя " + tokens[1] + " в черный список");
                 }
-            } else {
+                if(str.startsWith("/seeblacklist")) {
+                    sendMsg("Ваш черный список включает: " + AuthService.getBlackListStringFromDB(this.nick));
+                }
+                } else {
                 server.broadcastMsg(ClientHandler.this,nick + ": " + str);
             }
         }
