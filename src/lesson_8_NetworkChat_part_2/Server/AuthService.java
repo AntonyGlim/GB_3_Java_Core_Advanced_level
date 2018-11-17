@@ -102,6 +102,10 @@ public class AuthService {
         }
     }
 
+    public static void deleteUserFromBlackList(String nickFrom, String nickToBlackList) {
+
+    }
+
     /**
      * Метод:
      * Формируем запрос для получения черного списка у клиента из БД по нику
@@ -156,4 +160,6 @@ public class AuthService {
             e.printStackTrace();
         }
     }
+
+
 }

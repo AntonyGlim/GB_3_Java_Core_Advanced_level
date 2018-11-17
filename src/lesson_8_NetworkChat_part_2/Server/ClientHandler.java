@@ -184,6 +184,12 @@ public class ClientHandler {
                 if(str.startsWith("/printlist")) {
                     sendMsg("Ваш черный список в листе включает: " + blackList);
                 }
+                if(str.startsWith("/delfrombl")) {                                             //Если от клиента приходит ник для удаления из черного списка
+                    String[] tokens = str.split(" ", 2);
+                    AuthService.deleteUserFromBlackList(this.nick, tokens[1]);
+                    blackListStringInArrayList(blackList, this.nick);
+                    sendMsg("Вы удалили пользователя " + tokens[1] + " из черного списка");
+                }
             } else {
                 server.broadcastMsg(ClientHandler.this,nick + ": " + str);
             }
