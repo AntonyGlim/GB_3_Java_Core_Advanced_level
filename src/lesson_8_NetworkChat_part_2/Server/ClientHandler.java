@@ -29,7 +29,7 @@ public class ClientHandler {
             this.socket = socket;
             this.in = new DataInputStream(socket.getInputStream());
             this.out = new DataOutputStream(socket.getOutputStream());
-            this.blackList = new ArrayList<>();
+            this.blackList = new ArrayList<>();                             //TODO считать БД в лист
 
             new Thread(new Runnable() {                                     //Работаем с каждым клиентом в отдельном потоке
                 @Override
@@ -170,7 +170,8 @@ public class ClientHandler {
                 }
                 if(str.startsWith("/blacklist ")) {                                             //Если от клиента приходит ник для черного списка
                     String[] tokens = str.split(" ");
-                    blackList.add(tokens[1]);                                                   //TODO добавить пользователя в черный список в БД
+                    AuthService.addUserInBlackList(ClientHandler.this.nick, tokens[1]);
+//                    blackList.add(tokens[1]);                                                   //TODO считать БД в лист (обновить лист)
                     sendMsg("Вы добавили пользователя " + tokens[1] + " в черный список");
                 }
             } else {
