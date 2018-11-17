@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2be0b1b-21f6-498e-9527-8121ff1ccf4f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/mainDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/mainDB.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/AuthService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -146,12 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-83">
-              <caret line="172" column="145" selection-start-line="172" selection-start-column="145" selection-end-line="172" selection-end-column="145" />
-              <folding>
-                <element signature="e#2955#2956#0" expanded="true" />
-                <element signature="e#3002#3003#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2686">
+              <caret line="172" column="45" selection-start-line="172" selection-start-column="45" selection-end-line="172" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -159,8 +156,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1367">
-              <caret line="33" selection-start-line="33" selection-start-column="2" selection-end-line="42" selection-end-column="55" />
+            <state relative-caret-position="561">
+              <caret line="33" selection-start-line="33" selection-start-column="2" selection-end-line="37" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -172,10 +169,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/AuthService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+            <state relative-caret-position="226">
+              <caret line="77" selection-start-line="77" selection-start-column="2" selection-end-line="89" selection-end-column="7" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <marker date="1542458616321" expanded="true" signature="3895:4527" ph="..." />
               </folding>
             </state>
           </provider>
@@ -289,6 +287,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,14 +324,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542450195389" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542458767408" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sqlite-jdbc-3.8.11.2.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -477,18 +475,19 @@
       <workItem from="1542362915465" duration="342000" />
       <workItem from="1542397532292" duration="3575000" />
       <workItem from="1542440389915" duration="6585000" />
+      <workItem from="1542458345400" duration="271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116404000" />
+    <option name="totallyTimeSpent" value="116424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.82937366" visible="true" weight="0.18003026" />
-      <window_info id="Structure" order="1" sideWeight="0.17062636" side_tool="true" visible="true" weight="0.18003026" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8281506" visible="true" weight="0.18229954" />
+      <window_info id="Structure" order="1" sideWeight="0.17184943" side_tool="true" visible="true" weight="0.18229954" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -742,19 +741,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/ClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-83">
-          <caret line="172" column="145" selection-start-line="172" selection-start-column="145" selection-end-line="172" selection-end-column="145" />
-          <folding>
-            <element signature="e#2955#2956#0" expanded="true" />
-            <element signature="e#3002#3003#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2686">
+          <caret line="172" column="45" selection-start-line="172" selection-start-column="45" selection-end-line="172" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1367">
-          <caret line="33" selection-start-line="33" selection-start-column="2" selection-end-line="42" selection-end-column="55" />
+        <state relative-caret-position="561">
+          <caret line="33" selection-start-line="33" selection-start-column="2" selection-end-line="37" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -764,10 +759,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson_8_NetworkChat_part_2/Server/AuthService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+        <state relative-caret-position="226">
+          <caret line="77" selection-start-line="77" selection-start-column="2" selection-end-line="89" selection-end-column="7" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <marker date="1542458616321" expanded="true" signature="3895:4527" ph="..." />
           </folding>
         </state>
       </provider>
