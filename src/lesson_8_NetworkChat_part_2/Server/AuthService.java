@@ -76,6 +76,20 @@ public class AuthService {
     }
 
     /**
+     * Метод добавляет ник пользователя в черный список другого пользователя в БД
+     */
+    public static void addUserInBlackList(String nickFrom, String nickTo) {
+        String sql = String.format("INSERT INTO main (blacklist)" +
+                "VALUES ('%s', '%s', '%s')", login, pass.hashCode(), nick);                     //Формируем запрос на добавление
+
+        try {
+            stmt.execute(sql);                                                                  //execute - метод выполнения SQL-выражений
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
      * Метод закрывает соединение с БД
      */
     public static void disconnect() {
