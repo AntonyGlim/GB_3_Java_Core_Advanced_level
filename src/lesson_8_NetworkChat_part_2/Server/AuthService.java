@@ -109,7 +109,7 @@ public class AuthService {
             return;
         } else {
             String[] tokens = blackList.split(" ");
-            blackList = "unident";
+            blackList = "";
             for (String s : tokens){
                 if (s.equals(nickToDeleteBlackList)){
                     continue;
