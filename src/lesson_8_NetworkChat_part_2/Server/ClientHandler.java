@@ -168,9 +168,9 @@ public class ClientHandler {
                     String[] tokens = str.split(" ",3);
                     server.sendPersonalMsg(ClientHandler.this, tokens[1], tokens[2]);
                 }
-                if(str.startsWith("/blacklist ")) {
+                if(str.startsWith("/blacklist ")) {                                             //Если от клиента приходит ник для черного списка
                     String[] tokens = str.split(" ");
-                    blackList.add(tokens[1]);
+                    blackList.add(tokens[1]);                                                   //TODO добавить пользователя в черный список в БД
                     sendMsg("Вы добавили пользователя " + tokens[1] + " в черный список");
                 }
             } else {
