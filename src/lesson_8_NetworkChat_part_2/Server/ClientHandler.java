@@ -157,6 +157,9 @@ public class ClientHandler {
      * @throws IOException
      */
     public void workWithClient () throws IOException {
+        //TODO записать в лист массив из черного списка
+//        writeBlackListStringInArrayList(blackList);
+
         while (true) {
             String str = in.readUTF();
             if(str.startsWith("/")) {
