@@ -12,6 +12,7 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ClientHandler {
 
@@ -158,7 +159,7 @@ public class ClientHandler {
      */
     public void workWithClient () throws IOException {
         //TODO записать в лист массив из черного списка
-//        writeBlackListStringInArrayList(blackList);
+        blackListStringInArrayList(blackList, this.nick);
 
         while (true) {
             String str = in.readUTF();
@@ -173,17 +174,27 @@ public class ClientHandler {
                 }
                 if(str.startsWith("/blacklist ")) {                                             //Если от клиента приходит ник для черного списка
                     String[] tokens = str.split(" ");
-                    AuthService.addUserInBlackList(ClientHandler.this.nick, tokens[1]);
-//                    blackList.add(tokens[1]);                                                   //TODO считать БД в лист (обновить лист)
+                    AuthService.addUserInBlackList(this.nick, tokens[1]);
+                    blackListStringInArrayList(blackList, this.nick);                                                   //TODO считать БД в лист (обновить лист)
                     sendMsg("Вы добавили пользователя " + tokens[1] + " в черный список");
                 }
                 if(str.startsWith("/seeblacklist")) {
-                    sendMsg("Ваш черный список включает: " + AuthService.getBlackListStringFromDB(this.nick));
+                    sendMsg("Ваш черный список в БД включает: " + AuthService.getBlackListStringFromDB(this.nick));
                 }
-                } else {
+                if(str.startsWith("/printlist")) {
+                    sendMsg("Ваш черный список в листе включает: " + blackList);
+                }
+            } else {
                 server.broadcastMsg(ClientHandler.this,nick + ": " + str);
             }
         }
+    }
+
+    public static void blackListStringInArrayList(ArrayList<String> blackList, String nick){
+        String blackListString = AuthService.getBlackListStringFromDB(nick);
+        String[] tokens = blackListString.split(" ");
+        blackList.clear();
+        Collections.addAll(blackList, tokens);
     }
 
 //    /**
