@@ -163,6 +163,11 @@ public class ClientHandler {
         }
     }
 
+    /**
+     * Метод засекает время в отдельном потоке
+     * когда лимит времени превысит определенное число секунд -
+     * метод отправит команду для завершения клиента
+     */
     public void timeCount(){
         Thread timer = new Thread(new Runnable() {
             @Override
@@ -175,7 +180,7 @@ public class ClientHandler {
                         e.printStackTrace();
                     }
                     timeFromStart++;
-                    if (timeFromStart == 3); {
+                    if (timeFromStart == 120); {
                         sendMsg("Время ожидания превышено");
                         sendMsg("/timeLimit");
                         break;
