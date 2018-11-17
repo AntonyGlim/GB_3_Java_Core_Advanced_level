@@ -79,38 +79,53 @@ public class AuthService {
      * Метод добавляет ник пользователя в черный список другого пользователя в БД
      */
     public static void addUserInBlackList(String nickFrom, String nickToBlackList) {
-        //TODO мы должны считать данные из колонки blacklist в БД
 
+        boolean isNickOnDB = false;
+
+    //Формируем запрос для получения черного списка у клиента из БД по нику
         String sqlGetBlackList = String.format(
                 "SELECT blacklist " +
                 "FROM main " +
                 "WHERE nickname = '%s'", nickFrom);
-        System.out.println(sqlGetBlackList);
 
+    //Записываем результат в String blackList при помощи ResultSet rs
         ResultSet rs = null;                                                                    //ResultSet - множетсво результатов, запроса в БД.
         String blackList = null;
-
         try {
-            rs = stmt.executeQuery(sqlGetBlackList);                                                        //Метод executeQuery отправляет переданный ему запрос к базе данных и в качестве ответа возвращает результат в виде класса ResultSet.
-            System.out.println("1");
+            rs = stmt.executeQuery(sqlGetBlackList);                                            //Метод executeQuery отправляет переданный ему запрос к базе данных и в качестве ответа возвращает результат в виде класса ResultSet.
             if (rs.next()) {                                                                    //Метод ResultSet.next используется для перемещения к следующей строке ResultSet, делая ее текущей.
-                blackList = rs.getString("blacklist");                                      //Методы getXXX пытаются сконвертировать низкоуровневые данные в типы данных языка Java
-                System.out.println("2");
+                blackList = rs.getString("blacklist");                                          //Методы getXXX пытаются сконвертировать низкоуровневые данные в типы данных языка Java
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
         System.out.println(blackList);
 
-        //TODO если соответствует "unident" просто добавить nickToBlackList
-        //TODO если не соответствует "unident" то к имеющейся строке добавить nickToBlackList
-        //TODO после всего выполнить UPDATE
+        if (blackList.equals("unident")){
+            blackList = nickToBlackList;
+            updateBlackListInDB(nickFrom, blackList);
+        } else {
+            String[] tokens = blackList.split(" ");
+            for (String s : tokens){
+                if (s.equals(nickToBlackList)){
+                    System.out.println("Такой ник уже занесен в черный список");
+                    isNickOnDB = true;
+                    break;
+                }
+            }
+            if (!isNickOnDB){
+                blackList += " " + nickToBlackList;
+                updateBlackListInDB(nickFrom, blackList);
+            }
+        }
+        System.out.println(blackList);
+    }
 
-    //Формируем запрос на добавление
-        String sql = String.format(
+    public static void updateBlackListInDB (String  nickFrom, String blackList){
+        String sql = String.format(                                                             //Формируем запрос на добавление
                 "UPDATE main " +
-                "SET blacklist = '%s' " +
-                "WHERE nickname = '%s';", nickToBlackList, nickFrom
+                        "SET blacklist = '%s' " +
+                        "WHERE nickname = '%s';", blackList, nickFrom
         );
         try {
             stmt.execute(sql);                                                                  //execute - метод выполнения SQL-выражений
