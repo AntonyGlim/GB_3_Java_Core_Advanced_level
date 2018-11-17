@@ -79,13 +79,39 @@ public class AuthService {
      * Метод добавляет ник пользователя в черный список другого пользователя в БД
      */
     public static void addUserInBlackList(String nickFrom, String nickToBlackList) {
+        //TODO мы должны считать данные из колонки blacklist в БД
+
+        String sqlGetBlackList = String.format(
+                "SELECT blacklist " +
+                "FROM main " +
+                "WHERE nickname = '%s'", nickFrom);
+        System.out.println(sqlGetBlackList);
+
+        ResultSet rs = null;                                                                    //ResultSet - множетсво результатов, запроса в БД.
+        String blackList = null;
+
+        try {
+            rs = stmt.executeQuery(sqlGetBlackList);                                                        //Метод executeQuery отправляет переданный ему запрос к базе данных и в качестве ответа возвращает результат в виде класса ResultSet.
+            System.out.println("1");
+            if (rs.next()) {                                                                    //Метод ResultSet.next используется для перемещения к следующей строке ResultSet, делая ее текущей.
+                blackList = rs.getString("blacklist");                                      //Методы getXXX пытаются сконвертировать низкоуровневые данные в типы данных языка Java
+                System.out.println("2");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        System.out.println(blackList);
+
+        //TODO если соответствует "unident" просто добавить nickToBlackList
+        //TODO если не соответствует "unident" то к имеющейся строке добавить nickToBlackList
+        //TODO после всего выполнить UPDATE
+
+    //Формируем запрос на добавление
         String sql = String.format(
                 "UPDATE main " +
                 "SET blacklist = '%s' " +
                 "WHERE nickname = '%s';", nickToBlackList, nickFrom
         );
-        //Формируем запрос на добавление
-
         try {
             stmt.execute(sql);                                                                  //execute - метод выполнения SQL-выражений
         } catch (SQLException e) {
