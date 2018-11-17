@@ -41,6 +41,7 @@ public class Server {
 //            AuthService.addUser("l7", "p7", "nick7", "unident");
 //            AuthService.addUser("l8", "p8", "nick8", "unident");
 //            AuthService.addUser("l9", "p9", "nick9", "unident");
+            AuthService.addUserInBlackList("nick1", "nick7");
 
             server = new ServerSocket(PORT);                            //Берем константу
             System.out.println("Сервер запущен!");
