@@ -90,7 +90,6 @@ public class AuthService {
             String[] tokens = blackList.split(" ");
             for (String s : tokens){
                 if (s.equals(nickToBlackList)){
-                    System.out.println("Такой ник уже занесен в черный список");
                     isNickOnDB = true;
                     break;
                 }
@@ -102,8 +101,24 @@ public class AuthService {
         }
     }
 
-    public static void deleteUserFromBlackList(String nickFrom, String nickToBlackList) {
+    public static void deleteUserFromBlackList(String nickFrom, String nickToDeleteBlackList) {
 
+        String blackList = getBlackListStringFromDB(nickFrom);
+
+        if (blackList.equals("unident")){
+            return;
+        } else {
+            String[] tokens = blackList.split(" ");
+            blackList = "unident";
+            for (String s : tokens){
+                if (s.equals(nickToDeleteBlackList)){
+                    continue;
+                } else {
+                    blackList += " " + s;
+                }
+                updateBlackListInDB(nickFrom, blackList);
+            }
+        }
     }
 
     /**
