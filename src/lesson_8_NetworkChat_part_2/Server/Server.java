@@ -92,7 +92,7 @@ public class Server {
     public void broadcastMsg(ClientHandler from, String msg) {
         for (ClientHandler o: clients) {
             if(!o.checkBlackList(from.getNick())) {                                 //Если тот, кто хочет послать сообщение не в черном списке конкретного клиента
-                o.sendMsg(msg);                                                     //то он может послать ему сообщение
+                o.sendMsgWithDate(msg);                                                     //то он может послать ему сообщение
             }
         }
     }
@@ -121,12 +121,12 @@ public class Server {
     public void sendPersonalMsg(ClientHandler from, String nickTo, String msg) {
         for (ClientHandler o: clients) {
             if(o.getNick().equals(nickTo)) {                                        //Если в списке есть вызываемый ник
-                o.sendMsg("from " + from.getNick() + ": " + msg);
-                from.sendMsg("to " + nickTo + ": " + msg);
+                o.sendMsgWithDate("from " + from.getNick() + ": " + msg);
+                from.sendMsgWithDate("to " + nickTo + ": " + msg);
                 return;
             }
         }
-        from.sendMsg("Клиент с ником " + nickTo + " не найден!");
+        from.sendMsgWithDate("Клиент с ником " + nickTo + " не найден!");
     }
 
     /**

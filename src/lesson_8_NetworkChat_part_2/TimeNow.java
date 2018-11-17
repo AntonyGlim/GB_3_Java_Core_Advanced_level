@@ -12,6 +12,10 @@ public class TimeNow {
 
     private String str;
 
+    public String getStr() {
+        return str;
+    }
+
     public String TimeNow() {
         Date date = new Date();                         //Инициализация объекта date
         str = date.toString();                          //Дата формата: Sat Nov 17 11:49:07 GMT+03:00 2018

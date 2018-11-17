@@ -5,6 +5,8 @@
  */
 package lesson_8_NetworkChat_part_2.Server;
 
+import lesson_8_NetworkChat_part_2.TimeNow;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -99,6 +101,20 @@ public class ClientHandler {
     }
 
     /**
+     * Метод посылает сообщение одному пользователю включая в него дату
+     * @param msg - сообщение
+     */
+    public void sendMsgWithDate(String msg) {
+        TimeNow timeNow = new TimeNow();
+        String date = timeNow.TimeNow();
+        try {
+            out.writeUTF(date + msg);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
      * Авторизация клиента и проверка корректности введенного логина и пароля
      * @throws IOException
      */
@@ -106,7 +122,7 @@ public class ClientHandler {
 
         while (true) {
             String str = in.readUTF();
-            timeCount();
+//            timeCount();
             if (str.startsWith("/timeLimit")){
                 System.out.println("Отключили клиента по времени");
                 break;
@@ -163,33 +179,33 @@ public class ClientHandler {
         }
     }
 
-    /**
-     * Метод засекает время в отдельном потоке
-     * когда лимит времени превысит определенное число секунд -
-     * метод отправит команду для завершения клиента
-     */
-    public void timeCount(){
-        Thread timer = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                long timeFromStart = 0L;
-                while (true){
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    timeFromStart++;
-                    if (timeFromStart == 120); {
-                        sendMsg("Время ожидания превышено");
-                        sendMsg("/timeLimit");
-                        break;
-                    }
-                }
-            }
-        });
-        timer.start();
-    }
+//    /**
+//     * Метод засекает время в отдельном потоке
+//     * когда лимит времени превысит определенное число секунд -
+//     * метод отправит команду для завершения клиента
+//     */
+//    public void timeCount(){
+//        Thread timer = new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                long timeFromStart = 0L;
+//                while (true){
+//                    try {
+//                        Thread.sleep(1000);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                    timeFromStart++;
+//                    if (timeFromStart == 120); {
+//                        sendMsg("Время ожидания превышено");
+//                        sendMsg("/timeLimit");
+//                        break;
+//                    }
+//                }
+//            }
+//        });
+//        timer.start();
+//    }
 
 
 }
