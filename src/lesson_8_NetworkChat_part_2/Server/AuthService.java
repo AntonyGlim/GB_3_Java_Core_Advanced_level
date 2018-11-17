@@ -81,25 +81,7 @@ public class AuthService {
     public static void addUserInBlackList(String nickFrom, String nickToBlackList) {
 
         boolean isNickOnDB = false;
-
-    //Формируем запрос для получения черного списка у клиента из БД по нику
-        String sqlGetBlackList = String.format(
-                "SELECT blacklist " +
-                "FROM main " +
-                "WHERE nickname = '%s'", nickFrom);
-
-    //Записываем результат в String blackList при помощи ResultSet rs
-        ResultSet rs = null;                                                                    //ResultSet - множетсво результатов, запроса в БД.
-        String blackList = null;
-        try {
-            rs = stmt.executeQuery(sqlGetBlackList);                                            //Метод executeQuery отправляет переданный ему запрос к базе данных и в качестве ответа возвращает результат в виде класса ResultSet.
-            if (rs.next()) {                                                                    //Метод ResultSet.next используется для перемещения к следующей строке ResultSet, делая ее текущей.
-                blackList = rs.getString("blacklist");                                          //Методы getXXX пытаются сконвертировать низкоуровневые данные в типы данных языка Java
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        System.out.println(blackList);
+        String blackList = getBlackListStringFromDB(nickFrom);
 
         if (blackList.equals("unident")){
             blackList = nickToBlackList;
@@ -118,14 +100,44 @@ public class AuthService {
                 updateBlackListInDB(nickFrom, blackList);
             }
         }
-        System.out.println(blackList);
     }
 
+    /**
+     * Метод:
+     * Формируем запрос для получения черного списка у клиента из БД по нику
+     * Записываем результат в String blackList при помощи ResultSet rs
+     * @param nickFrom - ник, черый список которого нужно получить
+     * @return - черный список конкретного ника в виде строки
+     */
+    public static String getBlackListStringFromDB(String nickFrom){
+        String sqlGetBlackList = String.format(
+                "SELECT blacklist " +
+                        "FROM main " +
+                        "WHERE nickname = '%s'", nickFrom);
+
+        ResultSet rs = null;                                                                    //ResultSet - множетсво результатов, запроса в БД.
+        String blackList = null;
+        try {
+            rs = stmt.executeQuery(sqlGetBlackList);                                            //Метод executeQuery отправляет переданный ему запрос к базе данных и в качестве ответа возвращает результат в виде класса ResultSet.
+            if (rs.next()) {                                                                    //Метод ResultSet.next используется для перемещения к следующей строке ResultSet, делая ее текущей.
+                blackList = rs.getString("blacklist");                                          //Методы getXXX пытаются сконвертировать низкоуровневые данные в типы данных языка Java
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return blackList;
+    }
+
+    /**
+     * Метод обновляет в БД черный список ника
+     * @param nickFrom - ник, черный список которого необходимо изменить
+     * @param blackList - ник, который нужно добавить в черный список
+     */
     public static void updateBlackListInDB (String  nickFrom, String blackList){
         String sql = String.format(                                                             //Формируем запрос на добавление
                 "UPDATE main " +
-                        "SET blacklist = '%s' " +
-                        "WHERE nickname = '%s';", blackList, nickFrom
+                    "SET blacklist = '%s' " +
+                    "WHERE nickname = '%s';", blackList, nickFrom
         );
         try {
             stmt.execute(sql);                                                                  //execute - метод выполнения SQL-выражений
