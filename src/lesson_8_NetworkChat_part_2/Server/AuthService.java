@@ -63,12 +63,12 @@ public class AuthService {
      * @param pass - введенный пароль
      * @param nick - введенный ник
      */
-    public static void addUser(String login, String pass, String nick) {
-        String sql = String.format("INSERT INTO main (login, password, nickname)" +
-                "VALUES ('%s', '%s', '%s')", login, pass.hashCode(), nick);                     //Формируем запрос на добавление
+    public static void addUser(String login, String pass, String nick, String blacklist) {
+        String sql = String.format("INSERT INTO main (login, password, nickname, blacklist)" +
+                "VALUES ('%s', '%s', '%s', '%s')", login, pass.hashCode(), nick, blacklist);            //Формируем запрос на добавление
 
         try {
-            stmt.execute(sql);                                                                  //execute - метод выполнения SQL-выражений
+            stmt.execute(sql);                                                                          //execute - метод выполнения SQL-выражений
         } catch (SQLException e) {
             e.printStackTrace();
         }
