@@ -32,15 +32,15 @@ public class Server {
             AuthService.connect();                                      //Устанавливаем соединение с БД
 
 ////          Блок в котором мы костыльно добавляли пользователь в БД
-            AuthService.addUser("l1", "p1", "nick1", "unident");
-            AuthService.addUser("l2", "p2", "nick2", "unident");
-            AuthService.addUser("l3", "p3", "nick3", "unident");
-            AuthService.addUser("l4", "p4", "nick4", "unident");
-            AuthService.addUser("l5", "p5", "nick5", "unident");
-            AuthService.addUser("l6", "p6", "nick6", "unident");
-            AuthService.addUser("l7", "p7", "nick7", "unident");
-            AuthService.addUser("l8", "p8", "nick8", "unident");
-            AuthService.addUser("l9", "p9", "nick9", "unident");
+//            AuthService.addUser("l1", "p1", "nick1", "unident");
+//            AuthService.addUser("l2", "p2", "nick2", "unident");
+//            AuthService.addUser("l3", "p3", "nick3", "unident");
+//            AuthService.addUser("l4", "p4", "nick4", "unident");
+//            AuthService.addUser("l5", "p5", "nick5", "unident");
+//            AuthService.addUser("l6", "p6", "nick6", "unident");
+//            AuthService.addUser("l7", "p7", "nick7", "unident");
+//            AuthService.addUser("l8", "p8", "nick8", "unident");
+//            AuthService.addUser("l9", "p9", "nick9", "unident");
 //            System.out.println(AuthService.getBlackListStringFromDB("nick1"));
 //            System.out.println(AuthService.getBlackListStringFromDB("nick2"));
 
