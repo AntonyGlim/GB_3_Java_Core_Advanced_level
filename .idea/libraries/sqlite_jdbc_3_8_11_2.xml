@@ -1,11 +1,7 @@
 <component name="libraryTable">
   <library name="sqlite-jdbc-3.8.11.2">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/sqlite-jdbc-3.8.11.2.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
-    <SOURCES>
-      <root url="jar://$PROJECT_DIR$/src/lesson_7_NetworkChat_part_1/chatTaskPart_1/sqlite-jdbc-3.8.11.2.jar!/" />
-    </SOURCES>
+    <SOURCES />
   </library>
 </component>
