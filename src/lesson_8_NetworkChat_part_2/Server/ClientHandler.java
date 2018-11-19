@@ -11,6 +11,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -30,7 +31,8 @@ public class ClientHandler {
             this.socket = socket;
             this.in = new DataInputStream(socket.getInputStream());
             this.out = new DataOutputStream(socket.getOutputStream());
-            this.blackList = new ArrayList<>();                             //TODO считать БД в лист
+            this.blackList = new ArrayList<>();
+
 
             new Thread(new Runnable() {                                     //Работаем с каждым клиентом в отдельном потоке
                 @Override
@@ -120,30 +122,41 @@ public class ClientHandler {
      * @throws IOException
      */
     public void clientAuthorization() throws IOException {
+        try {
+            socket.setSoTimeout(10000);
 
-        while (true) {
-            String str = in.readUTF();
-//            timeCount();
-            if (str.startsWith("/timeLimit")){
-                System.out.println("Отключили клиента по времени");
-                break;
-            }
-            if(str.startsWith("/auth")) {
-                String[] tokens = str.split(" ");
-                String newNick = AuthService.getNickByLoginAndPass(tokens[1], tokens[2]);
-                if(newNick != null) {
-                    if(!server.isNickBusy(newNick)) {
-                        sendMsg("/authok");
-                        nick = newNick;
-                        server.subscribe(ClientHandler.this);
-                        isAuthorized = true;
-                        break;
-                    } else {
-                        sendMsg("Учетная запись уже используется!");
-                    }
-                } else {
-                    sendMsg("Неверный логин/пароль!");
+            while (true) {
+                String str = in.readUTF();
+        //            timeCount();
+                if (str.startsWith("/timeLimit")){
+                    System.out.println("Отключили клиента по времени");
+                    break;
                 }
+                if(str.startsWith("/auth")) {
+                    String[] tokens = str.split(" ");
+                    String newNick = AuthService.getNickByLoginAndPass(tokens[1], tokens[2]);
+                    if(newNick != null) {
+                        if(!server.isNickBusy(newNick)) {
+                            sendMsg("/authok");
+                            nick = newNick;
+                            server.subscribe(ClientHandler.this);
+                            isAuthorized = true;
+                            break;
+                        } else {
+                            sendMsg("Учетная запись уже используется!");
+                        }
+                    } else {
+                        sendMsg("Неверный логин/пароль!");
+                    }
+                }
+            }
+        }catch (SocketTimeoutException s){
+            sendMsg("3 seconds passed");
+            sendMsg("/timeLimit");
+            try {
+                wait(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }
@@ -160,6 +173,7 @@ public class ClientHandler {
     public void workWithClient () throws IOException {
         //TODO записать в лист массив из черного списка
         blackListStringInArrayList(blackList, this.nick);
+        socket.setSoTimeout(0);
 
         while (true) {
             String str = in.readUTF();
