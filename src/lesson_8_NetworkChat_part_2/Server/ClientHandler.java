@@ -151,7 +151,7 @@ public class ClientHandler {
                 }
             }
         }catch (SocketTimeoutException s){
-            sendMsg("3 seconds passed");
+            sendMsg("10 seconds passed");
             sendMsg("/timeLimit");
             try {
                 wait(5000);
